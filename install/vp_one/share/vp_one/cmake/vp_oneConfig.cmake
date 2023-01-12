@@ -1,0 +1,1 @@
+/home/vp/robot_ws/build/vp_one/ament_cmake_core/vp_oneConfig.cmake

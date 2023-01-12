@@ -1,0 +1,4 @@
+source;share/vp_one/local_setup.bash
+source;share/vp_one/local_setup.dsv
+source;share/vp_one/local_setup.sh
+source;share/vp_one/local_setup.zsh

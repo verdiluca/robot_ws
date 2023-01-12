@@ -1,0 +1,3 @@
+[console_scripts]
+odrive_node = odrive_driver.odrive_node:main
+

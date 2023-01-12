@@ -1,0 +1,3 @@
+[console_scripts]
+run_demo = two_wheel_demo.demo:main
+
