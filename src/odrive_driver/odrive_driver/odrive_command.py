@@ -9,7 +9,7 @@ from odrive.enums import *
 Find ODrive serial number (need it in hex format) in odrivetool by running:
     hex(odrv0.serial_number).split('x')[1].upper()
 '''
-ODRIVE_SERIAL_NUMBER = "364D38623030"
+ODRIVE_SERIAL_NUMBER = "3661385B3030"
 
 class ODriveController:
     def __init__(self):
