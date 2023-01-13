@@ -1,0 +1,24 @@
+[1.758s] Invoking command in '/home/vp/robot_ws/build/odom': PYTHONPATH=/home/vp/robot_ws/build/odom/prefix_override:/home/vp/robot_ws/install/odom/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odom/build --no-deps install_data
+[2.105s] running develop
+[2.325s] running egg_info
+[2.325s] creating odom.egg-info
+[2.325s] writing odom.egg-info/PKG-INFO
+[2.326s] writing dependency_links to odom.egg-info/dependency_links.txt
+[2.326s] writing entry points to odom.egg-info/entry_points.txt
+[2.326s] writing requirements to odom.egg-info/requires.txt
+[2.326s] writing top-level names to odom.egg-info/top_level.txt
+[2.328s] writing manifest file 'odom.egg-info/SOURCES.txt'
+[2.375s] reading manifest file 'odom.egg-info/SOURCES.txt'
+[2.376s] writing manifest file 'odom.egg-info/SOURCES.txt'
+[2.423s] running build_ext
+[2.423s] Creating /home/vp/robot_ws/install/odom/lib/python3.8/site-packages/site.py
+[2.426s] Creating /home/vp/robot_ws/install/odom/lib/python3.8/site-packages/odom.egg-link (link to .)
+[2.427s] 
+[2.428s] Installed /home/vp/robot_ws/build/odom
+[2.428s] running install_data
+[2.428s] creating /home/vp/robot_ws/install/odom/share/ament_index
+[2.428s] creating /home/vp/robot_ws/install/odom/share/ament_index/resource_index
+[2.429s] creating /home/vp/robot_ws/install/odom/share/ament_index/resource_index/packages
+[2.429s] copying resource/odom -> /home/vp/robot_ws/install/odom/share/ament_index/resource_index/packages
+[2.429s] copying package.xml -> /home/vp/robot_ws/install/odom/share/odom
+[2.478s] Invoked command in '/home/vp/robot_ws/build/odom' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odom/prefix_override:/home/vp/robot_ws/install/odom/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odom/build --no-deps install_data

@@ -1,0 +1,9 @@
+{
+  "package_name": "drive_base_msgs",
+  "non_idl_tuples": [
+    "/home/vp/robot_ws/src/uros/drive_base/drive_base_msgs:msg/CommandHeader.msg",
+    "/home/vp/robot_ws/src/uros/drive_base/drive_base_msgs:msg/BaseInfo.msg",
+    "/home/vp/robot_ws/src/uros/drive_base/drive_base_msgs:msg/CommandStatus.msg",
+    "/home/vp/robot_ws/src/uros/drive_base/drive_base_msgs:msg/TRVCommand.msg"
+  ]
+}

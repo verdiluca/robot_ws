@@ -1,0 +1,23 @@
+[1.670s] Invoking command in '/home/vp/robot_ws/build/odrive_driver': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build --no-deps install_data
+[2.052s] running develop
+[2.306s] running egg_info
+[2.307s] writing odrive_driver.egg-info/PKG-INFO
+[2.307s] writing dependency_links to odrive_driver.egg-info/dependency_links.txt
+[2.307s] writing entry points to odrive_driver.egg-info/entry_points.txt
+[2.308s] writing requirements to odrive_driver.egg-info/requires.txt
+[2.308s] writing top-level names to odrive_driver.egg-info/top_level.txt
+[2.371s] reading manifest file 'odrive_driver.egg-info/SOURCES.txt'
+[2.372s] writing manifest file 'odrive_driver.egg-info/SOURCES.txt'
+[2.444s] running build_ext
+[2.444s] Creating /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/site.py
+[2.447s] Creating /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive-driver.egg-link (link to .)
+[2.449s] Installing odrive_node script to /home/vp/robot_ws/install/odrive_driver/lib/odrive_driver
+[2.449s] 
+[2.450s] Installed /home/vp/robot_ws/build/odrive_driver
+[2.450s] running install_data
+[2.450s] creating /home/vp/robot_ws/install/odrive_driver/share/ament_index
+[2.450s] creating /home/vp/robot_ws/install/odrive_driver/share/ament_index/resource_index
+[2.450s] creating /home/vp/robot_ws/install/odrive_driver/share/ament_index/resource_index/packages
+[2.450s] copying resource/odrive_driver -> /home/vp/robot_ws/install/odrive_driver/share/ament_index/resource_index/packages
+[2.451s] copying package.xml -> /home/vp/robot_ws/install/odrive_driver/share/odrive_driver
+[2.494s] Invoked command in '/home/vp/robot_ws/build/odrive_driver' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build --no-deps install_data

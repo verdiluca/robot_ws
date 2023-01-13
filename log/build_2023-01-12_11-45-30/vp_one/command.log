@@ -1,0 +1,1 @@
+Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8

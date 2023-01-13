@@ -1,0 +1,50 @@
+[0.081s] Invoking command in '/home/vp/robot_ws/build/odom_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/odom_pub -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odom_pub
+[0.659s] -- The C compiler identification is GNU 9.4.0
+[0.659s] -- The CXX compiler identification is GNU 9.4.0
+[0.659s] -- Check for working C compiler: /usr/bin/cc
+[0.660s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.661s] -- Detecting C compiler ABI info
+[0.662s] -- Detecting C compiler ABI info - done
+[0.662s] -- Detecting C compile features
+[0.663s] -- Detecting C compile features - done
+[0.665s] -- Check for working CXX compiler: /usr/bin/c++
+[0.666s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.667s] -- Detecting CXX compiler ABI info
+[0.668s] -- Detecting CXX compiler ABI info - done
+[0.668s] -- Detecting CXX compile features
+[0.669s] -- Detecting CXX compile features - done
+[0.669s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.691s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.691s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.963s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.997s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.104s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.107s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.107s] -- Added test 'lint_cmake' to check CMake code style
+[1.108s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.110s] -- Added test 'xmllint' to check XML markup files
+[1.113s] -- Configuring done
+[1.116s] -- Generating done
+[1.117s] -- Build files have been written to: /home/vp/robot_ws/build/odom_pub
+[1.121s] Invoked command in '/home/vp/robot_ws/build/odom_pub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/odom_pub -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odom_pub
+[1.123s] Invoking command in '/home/vp/robot_ws/build/odom_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odom_pub -- -j8 -l8
+[1.170s] Invoked command in '/home/vp/robot_ws/build/odom_pub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odom_pub -- -j8 -l8
+[1.192s] Invoking command in '/home/vp/robot_ws/build/odom_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odom_pub
+[1.200s] -- Install configuration: ""
+[1.201s] -- Execute custom install script
+[1.201s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/ament_index/resource_index/package_run_dependencies/odom_pub
+[1.213s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/ament_index/resource_index/parent_prefix_path/odom_pub
+[1.223s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/environment/ament_prefix_path.sh
+[1.233s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/environment/ament_prefix_path.dsv
+[1.243s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/environment/path.sh
+[1.252s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/environment/path.dsv
+[1.262s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/local_setup.bash
+[1.272s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/local_setup.sh
+[1.282s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/local_setup.zsh
+[1.292s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/local_setup.dsv
+[1.302s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/package.dsv
+[1.312s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/ament_index/resource_index/packages/odom_pub
+[1.321s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/cmake/odom_pubConfig.cmake
+[1.331s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/cmake/odom_pubConfig-version.cmake
+[1.343s] -- Symlinking: /home/vp/robot_ws/install/odom_pub/share/odom_pub/package.xml
+[1.355s] Invoked command in '/home/vp/robot_ws/build/odom_pub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odom_pub

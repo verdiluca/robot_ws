@@ -1,0 +1,1 @@
+/home/vp/robot_ws/src/src/micro_ros_setup/scripts/flash_firmware.sh

@@ -1,0 +1,33 @@
+[0.887s] Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[0.954s] Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[1.087s] Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one
+[1.110s] -- Install configuration: ""
+[1.163s] -- Execute custom install script
+[1.205s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/config/empty.yaml
+[1.206s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/config/view_bot.rviz
+[1.206s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/gazebo_control.xacro
+[1.206s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/inertial_macros.xacro
+[1.206s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/lidar.xacro
+[1.207s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot.urdf.xacro
+[1.207s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot_core.xacro
+[1.207s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/ros2_control.xacro
+[1.207s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_robot.launch.py
+[1.207s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_sim.launch.py
+[1.207s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/rsp.launch.py
+[1.208s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/worlds/empty.world
+[1.208s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/package_run_dependencies/vp_one
+[1.208s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/parent_prefix_path/vp_one
+[1.208s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/ament_prefix_path.sh
+[1.209s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/ament_prefix_path.dsv
+[1.209s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/path.sh
+[1.209s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/path.dsv
+[1.209s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.bash
+[1.209s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.sh
+[1.210s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.zsh
+[1.210s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.dsv
+[1.210s] -- Symlinking: /home/vp/robot_ws/install/vp_one/share/vp_one/package.dsv
+[1.211s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/packages/vp_one
+[1.212s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/cmake/vp_oneConfig.cmake
+[1.212s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/cmake/vp_oneConfig-version.cmake
+[1.212s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/package.xml
+[1.226s] Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one

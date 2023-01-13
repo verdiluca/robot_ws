@@ -2,9 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <gazebo>
-
         <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
-    
     
             <!-- Wheel Information -->
             <left_joint>left_wheel_joint</left_joint>
@@ -26,9 +24,8 @@
             <publish_odom_tf>true</publish_odom_tf>
             <publish_wheel_tf>true</publish_wheel_tf>
     
-    
         </plugin>
-
     </gazebo>
+
 
 </robot>

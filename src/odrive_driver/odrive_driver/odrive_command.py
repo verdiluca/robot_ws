@@ -57,7 +57,7 @@ class ODriveController:
         for axis in axes:
             print(f'Arming axis{axis}')
             self.axes[axis].controller.input_vel = 0
-            self.axes[axis].controller.config.input_mode = INPUT_MODE_VEL_RAMP
+            self.axes[axis].controller.config.control_mode = CONTROL_MODE_VELOCITY_CONTROL
             self.axes[axis].requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
         self.armed_vel = True
 

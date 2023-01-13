@@ -1,0 +1,622 @@
+[0.014s] Invoking command in '/home/vp/robot_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:/home/vp/robot_ws/install/micro_ros_setup:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vp/robot_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/vp/robot_ws/src/uros/micro-ROS-Agent/micro_ros_agent -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/micro_ros_agent
+[0.022s] Not searching for unused variables given on the command line.
+[0.091s] -- The C compiler identification is GNU 9.4.0
+[0.097s] -- Check for working C compiler: /usr/bin/cc
+[0.176s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.177s] -- Detecting C compiler ABI info
+[0.248s] -- Detecting C compiler ABI info - done
+[0.261s] -- Detecting C compile features
+[0.261s] -- Detecting C compile features - done
+[0.311s] -- The CXX compiler identification is GNU 9.4.0
+[0.316s] -- Check for working CXX compiler: /usr/bin/c++
+[0.405s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.406s] -- Detecting CXX compiler ABI info
+[0.483s] -- Detecting CXX compiler ABI info - done
+[0.496s] -- Detecting CXX compile features
+[0.497s] -- Detecting CXX compile features - done
+[0.535s] -- Configuring done
+[0.538s] -- Generating done
+[0.539s] -- Build files have been written to: /home/vp/robot_ws/build/micro_ros_agent
+[0.545s] Invoked command in '/home/vp/robot_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:/home/vp/robot_ws/install/micro_ros_setup:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vp/robot_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/vp/robot_ws/src/uros/micro-ROS-Agent/micro_ros_agent -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/micro_ros_agent
+[0.546s] Invoking command in '/home/vp/robot_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:/home/vp/robot_ws/install/micro_ros_setup:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vp/robot_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vp/robot_ws/build/micro_ros_agent -- -j8 -l8
+[0.582s] [35m[1mScanning dependencies of target xrceagent[0m
+[0.592s] [  6%] [34m[1mCreating directories for 'xrceagent'[0m
+[0.664s] [ 12%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+[0.685s] Clone in 'xrceagent' in corso...
+[4.001s] Si è passati a un nuovo branch 'ros2'
+[4.002s] Branch 'ros2' impostato per tracciare il branch remoto 'ros2' da 'origin'.
+[4.060s] [ 25%] [34m[1mPerforming update step for 'xrceagent'[0m
+[4.060s] [ 25%] [34m[1mNo patch step for 'xrceagent'[0m
+[4.545s] Il branch corrente ros2 è aggiornato.
+[4.583s] [ 31%] [34m[1mPerforming configure step for 'xrceagent'[0m
+[4.593s] loading initial cache file /home/vp/robot_ws/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake
+[4.656s] -- The C compiler identification is GNU 9.4.0
+[4.662s] -- Check for working C compiler: /usr/bin/cc
+[4.731s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.732s] -- Detecting C compiler ABI info
+[4.804s] -- Detecting C compiler ABI info - done
+[4.820s] -- Detecting C compile features
+[4.820s] -- Detecting C compile features - done
+[4.868s] -- The CXX compiler identification is GNU 9.4.0
+[4.872s] -- Check for working CXX compiler: /usr/bin/c++
+[4.953s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.954s] -- Detecting CXX compiler ABI info
+[5.036s] -- Detecting CXX compiler ABI info - done
+[5.049s] -- Detecting CXX compile features
+[5.050s] -- Detecting CXX compile features - done
+[5.093s] -- Configuring done
+[5.096s] -- Generating done
+[5.097s] -- Build files have been written to: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[5.121s] [ 37%] [34m[1mPerforming build step for 'xrceagent'[0m
+[5.157s] [35m[1mScanning dependencies of target spdlog[0m
+[5.169s] [  6%] [34m[1mCreating directories for 'spdlog'[0m
+[5.254s] [ 12%] [34m[1mPerforming download step (git clone) for 'spdlog'[0m
+[5.277s] Clone in 'spdlog' in corso...
+[22.909s] Nota: eseguo il checkout di 'v1.9.2'.
+[22.909s] 
+[22.909s] Sei nello stato 'HEAD scollegato'. Puoi dare un'occhiata, apportare modifiche
+[22.909s] sperimentali ed eseguirne il commit, e puoi scartare qualunque commit eseguito
+[22.910s] in questo stato senza che ciò abbia alcuna influenza sugli altri branch tornando
+[22.910s] su un branch.
+[22.910s] 
+[22.910s] Se vuoi creare un nuovo branch per mantenere i commit creati, puoi farlo
+[22.910s] (ora o in seguito) usando l'opzione -c con il comando switch. Ad esempio:
+[22.910s] 
+[22.910s]   git switch -c <nome nuovo branch>
+[22.910s] 
+[22.910s] Oppure puoi annullare quest'operazione con:
+[22.910s] 
+[22.911s]   git switch -
+[22.911s] 
+[22.911s] Disattiva questo consiglio impostando la variabile di configurazione
+[22.911s] advice.detachedHead a false
+[22.911s] 
+[22.911s] HEAD si trova ora a eb322062 Bump version to 1.9.2
+[22.967s] [ 25%] [34m[1mNo patch step for 'spdlog'[0m
+[22.967s] [ 25%] [34m[1mPerforming update step for 'spdlog'[0m
+[22.993s] [ 31%] [34m[1mPerforming configure step for 'spdlog'[0m
+[23.002s] loading initial cache file /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/tmp/spdlog-cache-.cmake
+[23.057s] -- The CXX compiler identification is GNU 9.4.0
+[23.063s] -- Check for working CXX compiler: /usr/bin/c++
+[23.139s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[23.140s] -- Detecting CXX compiler ABI info
+[23.221s] -- Detecting CXX compiler ABI info - done
+[23.234s] -- Detecting CXX compile features
+[23.234s] -- Detecting CXX compile features - done
+[23.235s] -- Build spdlog: 1.9.2
+[23.239s] -- Looking for C++ include pthread.h
+[23.324s] -- Looking for C++ include pthread.h - found
+[23.324s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[23.416s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[23.416s] -- Looking for pthread_create in pthreads
+[23.491s] -- Looking for pthread_create in pthreads - not found
+[23.491s] -- Looking for pthread_create in pthread
+[23.580s] -- Looking for pthread_create in pthread - found
+[23.581s] -- Found Threads: TRUE  
+[23.581s] -- Build type: Release
+[23.582s] -- Generating example(s)
+[23.583s] -- Generating install
+[23.594s] -- Configuring done
+[23.600s] -- Generating done
+[23.601s] -- Build files have been written to: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build
+[23.619s] [ 37%] [34m[1mPerforming build step for 'spdlog'[0m
+[23.648s] [35m[1mScanning dependencies of target spdlog[0m
+[23.674s] [ 30%] [32mBuilding CXX object CMakeFiles/spdlog.dir/src/spdlog.cpp.o[0m
+[23.674s] [ 30%] [32mBuilding CXX object CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o[0m
+[23.675s] [ 30%] [32mBuilding CXX object CMakeFiles/spdlog.dir/src/fmt.cpp.o[0m
+[23.675s] [ 40%] [32mBuilding CXX object CMakeFiles/spdlog.dir/src/color_sinks.cpp.o[0m
+[23.676s] [ 60%] [32mBuilding CXX object CMakeFiles/spdlog.dir/src/async.cpp.o[0m
+[23.676s] [ 60%] [32mBuilding CXX object CMakeFiles/spdlog.dir/src/file_sinks.cpp.o[0m
+[23.677s] [ 70%] [32mBuilding CXX object CMakeFiles/spdlog.dir/src/cfg.cpp.o[0m
+[32.602s] [ 80%] [32m[1mLinking CXX static library libspdlog.a[0m
+[32.644s] [ 80%] Built target spdlog
+[32.654s] [35m[1mScanning dependencies of target example[0m
+[32.671s] [ 90%] [32mBuilding CXX object example/CMakeFiles/example.dir/example.cpp.o[0m
+[36.874s] [100%] [32m[1mLinking CXX executable example[0m
+[36.977s] [100%] Built target example
+[37.003s] [ 43%] [34m[1mPerforming install step for 'spdlog'[0m
+[37.048s] [ 80%] Built target spdlog
+[37.072s] [100%] Built target example
+[37.093s] [36mInstall the project...[0m
+[37.102s] -- Install configuration: "Release"
+[37.102s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include
+[37.103s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog
+[37.103s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/pattern_formatter.h
+[37.103s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/spdlog-inl.h
+[37.103s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/async_logger-inl.h
+[37.103s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/async.h
+[37.104s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/spdlog.h
+[37.104s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/logger-inl.h
+[37.104s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks
+[37.104s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ansicolor_sink-inl.h
+[37.104s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/rotating_file_sink-inl.h
+[37.104s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/null_sink.h
+[37.105s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/qt_sinks.h
+[37.105s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_sinks-inl.h
+[37.105s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/wincolor_sink.h
+[37.105s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/sink-inl.h
+[37.105s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/base_sink.h
+[37.105s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/sink.h
+[37.106s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/dup_filter_sink.h
+[37.106s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_color_sinks-inl.h
+[37.106s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/rotating_file_sink.h
+[37.106s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/wincolor_sink-inl.h
+[37.106s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/syslog_sink.h
+[37.106s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ringbuffer_sink.h
+[37.106s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/daily_file_sink.h
+[37.107s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/mongo_sink.h
+[37.107s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ansicolor_sink.h
+[37.107s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/dist_sink.h
+[37.107s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/hourly_file_sink.h
+[37.107s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_color_sinks.h
+[37.107s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/tcp_sink.h
+[37.107s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/android_sink.h
+[37.108s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/msvc_sink.h
+[37.108s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/basic_file_sink.h
+[37.108s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/systemd_sink.h
+[37.108s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ostream_sink.h
+[37.108s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_sinks.h
+[37.108s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/base_sink-inl.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/basic_file_sink-inl.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/win_eventlog_sink.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/common-inl.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/tweakme.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/stopwatch.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/pattern_formatter-inl.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/chrono.h
+[37.109s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/xchar.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bin_to_hex.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/compile.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/fmt.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/ostr.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/env.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/helpers.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/helpers-inl.h
+[37.110s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/argv.h
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/formatter.h
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/version.h
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fwd.h
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/logger.h
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/async_logger.h
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/periodic_worker.h
+[37.111s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/periodic_worker-inl.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg_buffer-inl.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/backtracer-inl.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg-inl.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/windows_include.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/backtracer.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/file_helper-inl.h
+[37.112s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/null_mutex.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/fmt_helper.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/tcp_client-windows.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg_buffer.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/file_helper.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/os.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/thread_pool-inl.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/console_globals.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/tcp_client.h
+[37.113s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/mpmc_blocking_q.h
+[37.114s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/circular_q.h
+[37.114s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/synchronous_factory.h
+[37.114s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/os-inl.h
+[37.114s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/registry.h
+[37.114s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/registry-inl.h
+[37.114s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/thread_pool.h
+[37.115s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/common.h
+[37.115s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/libspdlog.a
+[37.115s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled/
+[37.115s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//color.h
+[37.115s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//chrono.h
+[37.115s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//xchar.h
+[37.115s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//printf.h
+[37.116s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//format.h
+[37.116s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//ranges.h
+[37.116s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//compile.h
+[37.116s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//args.h
+[37.116s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//locale.h
+[37.116s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//os.h
+[37.116s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//format-inl.h
+[37.117s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//ostream.h
+[37.117s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//core.h
+[37.117s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/pkgconfig/spdlog.pc
+[37.117s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigTargets.cmake
+[37.117s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigTargets-release.cmake
+[37.117s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfig.cmake
+[37.117s] -- Installing: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigVersion.cmake
+[37.139s] [ 50%] [34m[1mCompleted 'spdlog'[0m
+[37.178s] [ 50%] Built target spdlog
+[37.191s] [35m[1mScanning dependencies of target uagent[0m
+[37.204s] [ 56%] [34m[1mCreating directories for 'uagent'[0m
+[37.285s] [ 62%] [34m[1mNo download step for 'uagent'[0m
+[37.310s] [ 75%] [34m[1mNo update step for 'uagent'[0m
+[37.310s] [ 75%] [34m[1mNo patch step for 'uagent'[0m
+[37.337s] [ 81%] [34m[1mPerforming configure step for 'uagent'[0m
+[37.347s] loading initial cache file /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake
+[37.353s] -- Setting build type to 'Release' as none was specified.
+[37.380s] -- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[37.430s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[37.433s] -- Looking for pthread.h
+[37.517s] -- Looking for pthread.h - found
+[37.517s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[37.600s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[37.600s] -- Looking for pthread_create in pthreads
+[37.665s] -- Looking for pthread_create in pthreads - not found
+[37.666s] -- Looking for pthread_create in pthread
+[37.739s] -- Looking for pthread_create in pthread - found
+[37.739s] -- Found Threads: TRUE  
+[37.744s] -- Configuring done
+[37.757s] -- Generating done
+[37.758s] -- Build files have been written to: /home/vp/robot_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[37.778s] [ 87%] [34m[1mPerforming build step for 'uagent'[0m
+[37.811s] [35m[1mScanning dependencies of target microxrcedds_agent[0m
+[37.928s] [  2%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o[0m
+[37.929s] [  7%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o[0m
+[37.930s] [  7%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o[0m
+[37.930s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o[0m
+[37.931s] [ 11%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o[0m
+[37.933s] [ 14%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o[0m
+[37.936s] [ 16%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o[0m
+[37.942s] [ 19%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o[0m
+[40.089s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o[0m
+[40.156s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o[0m
+[40.246s] [ 26%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o[0m
+[42.356s] [ 28%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o[0m
+[45.239s] [ 30%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o[0m
+[46.663s] [ 33%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o[0m
+[46.996s] [ 35%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o[0m
+[47.772s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o[0m
+[48.817s] [ 40%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o[0m
+[49.105s] [ 42%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o[0m
+[49.560s] [ 45%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o[0m
+[49.860s] [ 47%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o[0m
+[50.234s] [ 50%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o[0m
+[52.836s] [ 52%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o[0m
+[53.026s] [ 54%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o[0m
+[53.562s] [ 57%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o[0m
+[55.032s] [ 59%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o[0m
+[55.045s] [ 61%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o[0m
+[55.390s] [ 64%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o[0m
+[55.967s] [ 66%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o[0m
+[60.677s] [ 69%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o[0m
+[61.111s] [ 71%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o[0m
+[61.151s] [ 73%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o[0m
+[61.754s] [ 76%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o[0m
+[62.251s] [ 78%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o[0m
+[62.350s] [ 80%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o[0m
+[63.955s] [ 83%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o[0m
+[64.636s] [ 85%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o[0m
+[65.430s] [ 88%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o[0m
+[66.683s] [ 90%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o[0m
+[67.758s] [ 92%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o[0m
+[67.775s] [ 95%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o[0m
+[68.221s] [ 97%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o[0m
+[74.501s] [100%] [32m[1mLinking CXX shared library libmicroxrcedds_agent.so[0m
+[74.801s] [100%] Built target microxrcedds_agent
+[74.828s] [34m[1mNo install step for 'uagent'[0m
+[74.855s] [34m[1mCompleted 'uagent'[0m
+[74.891s] Built target uagent
+[74.919s] [ 43%] [34m[1mPerforming install step for 'xrceagent'[0m
+[75.005s] [100%] Built target microxrcedds_agent
+[75.025s] [36mInstall the project...[0m
+[75.035s] -- Install configuration: "Release"
+[75.035s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.3.0
+[75.041s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.3
+[75.041s] -- Set runtime path of "/home/vp/robot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.3.0" to ""
+[75.042s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so
+[75.042s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent
+[75.042s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware
+[75.042s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast
+[75.042s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp
+[75.043s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp
+[75.043s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp
+[75.043s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils
+[75.043s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp
+[75.043s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced
+[75.043s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp
+[75.044s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp
+[75.044s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds
+[75.044s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp
+[75.044s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp
+[75.044s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/topic
+[75.045s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp
+[75.045s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/datareader
+[75.045s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp
+[75.045s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/types
+[75.045s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp
+[75.045s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp
+[75.046s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp
+[75.046s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp
+[75.046s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp
+[75.046s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/requester
+[75.046s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp
+[75.047s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/visibility.hpp
+[75.047s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client
+[75.047s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp
+[75.047s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client/session
+[75.047s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp
+[75.048s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream
+[75.048s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp
+[75.048s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp
+[75.048s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp
+[75.048s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils
+[75.048s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp
+[75.049s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp
+[75.049s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp
+[75.049s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp
+[75.049s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp
+[75.049s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp
+[75.049s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp
+[75.050s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp
+[75.050s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp
+[75.050s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/publisher
+[75.050s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp
+[75.050s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/p2p
+[75.050s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp
+[75.051s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp
+[75.051s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/object
+[75.051s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp
+[75.051s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp
+[75.051s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/Agent.hpp
+[75.052s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/datawriter
+[75.052s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp
+[75.052s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/Root.hpp
+[75.052s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/processor
+[75.052s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp
+[75.052s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/reader
+[75.053s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp
+[75.053s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/scheduler
+[75.053s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp
+[75.053s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp
+[75.053s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/subscriber
+[75.053s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp
+[75.054s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/replier
+[75.054s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp
+[75.054s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport
+[75.054s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp
+[75.054s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp
+[75.054s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp
+[75.055s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp
+[75.055s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp
+[75.055s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp
+[75.055s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp
+[75.055s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp
+[75.055s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp
+[75.056s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp
+[75.056s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp
+[75.056s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp
+[75.056s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint
+[75.056s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp
+[75.057s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp
+[75.057s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp
+[75.057s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp
+[75.057s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp
+[75.057s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp
+[75.058s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp
+[75.058s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp
+[75.058s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/custom
+[75.058s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp
+[75.058s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/can
+[75.058s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp
+[75.058s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p
+[75.059s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp
+[75.059s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp
+[75.059s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery
+[75.059s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp
+[75.059s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp
+[75.059s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp
+[75.060s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp
+[75.060s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing
+[75.060s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp
+[75.060s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial
+[75.060s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp
+[75.061s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h
+[75.061s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp
+[75.061s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp
+[75.061s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp
+[75.061s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp
+[75.061s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/util
+[75.061s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp
+[75.062s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp
+[75.062s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/participant
+[75.062s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp
+[75.062s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/logger
+[75.062s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp
+[75.062s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/message
+[75.062s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp
+[75.063s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp
+[75.063s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp
+[75.063s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake
+[75.063s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake
+[75.063s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/uxr/agent/config.hpp
+[75.063s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/microxrcedds_agent/LICENSE
+[75.063s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake
+[75.064s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake
+[75.064s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_agent
+[75.064s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_agent/lib
+[75.064s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/cmake
+[75.064s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/cmake/spdlog
+[75.065s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/cmake/spdlog/spdlogConfigTargets-release.cmake
+[75.065s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/cmake/spdlog/spdlogConfig.cmake
+[75.065s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/cmake/spdlog/spdlogConfigVersion.cmake
+[75.065s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/cmake/spdlog/spdlogConfigTargets.cmake
+[75.065s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/pkgconfig
+[75.065s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/pkgconfig/spdlog.pc
+[75.066s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/libspdlog.a
+[75.066s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_agent/include
+[75.066s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog
+[75.066s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/pattern_formatter.h
+[75.066s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/spdlog-inl.h
+[75.066s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/async_logger-inl.h
+[75.067s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/async.h
+[75.067s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/spdlog.h
+[75.067s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/logger-inl.h
+[75.067s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks
+[75.067s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/ansicolor_sink-inl.h
+[75.068s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/rotating_file_sink-inl.h
+[75.068s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/null_sink.h
+[75.068s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/qt_sinks.h
+[75.068s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/stdout_sinks-inl.h
+[75.068s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/wincolor_sink.h
+[75.068s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/sink-inl.h
+[75.069s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/base_sink.h
+[75.069s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/sink.h
+[75.069s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/dup_filter_sink.h
+[75.069s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/stdout_color_sinks-inl.h
+[75.069s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/rotating_file_sink.h
+[75.070s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/wincolor_sink-inl.h
+[75.070s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/syslog_sink.h
+[75.070s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/ringbuffer_sink.h
+[75.070s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/daily_file_sink.h
+[75.070s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/mongo_sink.h
+[75.070s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/ansicolor_sink.h
+[75.071s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/dist_sink.h
+[75.071s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/hourly_file_sink.h
+[75.071s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/stdout_color_sinks.h
+[75.071s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/tcp_sink.h
+[75.071s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/android_sink.h
+[75.071s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/msvc_sink.h
+[75.071s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/basic_file_sink.h
+[75.072s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/systemd_sink.h
+[75.072s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/ostream_sink.h
+[75.072s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/stdout_sinks.h
+[75.072s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/base_sink-inl.h
+[75.072s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/basic_file_sink-inl.h
+[75.072s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/sinks/win_eventlog_sink.h
+[75.073s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/common-inl.h
+[75.073s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/tweakme.h
+[75.073s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/stopwatch.h
+[75.073s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/pattern_formatter-inl.h
+[75.073s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt
+[75.073s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/chrono.h
+[75.074s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/xchar.h
+[75.074s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bin_to_hex.h
+[75.074s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/compile.h
+[75.074s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/fmt.h
+[75.074s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/ostr.h
+[75.074s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled
+[75.075s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/color.h
+[75.075s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/chrono.h
+[75.075s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/xchar.h
+[75.075s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/printf.h
+[75.075s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/format.h
+[75.076s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/ranges.h
+[75.076s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/compile.h
+[75.076s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/args.h
+[75.076s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/locale.h
+[75.076s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/os.h
+[75.076s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/format-inl.h
+[75.077s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/ostream.h
+[75.077s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/core.h
+[75.077s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/cfg
+[75.077s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/cfg/env.h
+[75.077s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/cfg/helpers.h
+[75.078s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/cfg/helpers-inl.h
+[75.078s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/cfg/argv.h
+[75.078s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/formatter.h
+[75.078s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/version.h
+[75.078s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/fwd.h
+[75.078s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/logger.h
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/async_logger.h
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/periodic_worker.h
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/periodic_worker-inl.h
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/log_msg_buffer-inl.h
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/backtracer-inl.h
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/log_msg-inl.h
+[75.079s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/log_msg.h
+[75.080s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/windows_include.h
+[75.080s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/backtracer.h
+[75.080s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/file_helper-inl.h
+[75.080s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/null_mutex.h
+[75.080s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/fmt_helper.h
+[75.080s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/tcp_client-windows.h
+[75.080s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/log_msg_buffer.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/file_helper.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/os.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/thread_pool-inl.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/console_globals.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/tcp_client.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/mpmc_blocking_q.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/circular_q.h
+[75.081s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/synchronous_factory.h
+[75.082s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/os-inl.h
+[75.082s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/registry.h
+[75.082s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/registry-inl.h
+[75.082s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/details/thread_pool.h
+[75.082s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/include/spdlog/common.h
+[75.098s] [ 50%] [34m[1mCompleted 'xrceagent'[0m
+[75.134s] [ 50%] Built target xrceagent
+[75.145s] [35m[1mScanning dependencies of target micro_ros_agent[0m
+[75.157s] [ 56%] [34m[1mCreating directories for 'micro_ros_agent'[0m
+[75.256s] [ 62%] [34m[1mNo download step for 'micro_ros_agent'[0m
+[75.280s] [ 75%] [34m[1mNo update step for 'micro_ros_agent'[0m
+[75.280s] [ 75%] [34m[1mNo patch step for 'micro_ros_agent'[0m
+[75.305s] [ 81%] [34m[1mPerforming configure step for 'micro_ros_agent'[0m
+[75.314s] loading initial cache file /home/vp/robot_ws/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake
+[75.319s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[75.348s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[75.348s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[75.654s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[75.668s] -- Looking for C++ include pthread.h
+[75.756s] -- Looking for C++ include pthread.h - found
+[75.757s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[75.877s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[75.878s] -- Looking for pthread_create in pthreads
+[75.962s] -- Looking for pthread_create in pthreads - not found
+[75.962s] -- Looking for pthread_create in pthread
+[76.072s] -- Looking for pthread_create in pthread - found
+[76.073s] -- Found Threads: TRUE  
+[76.076s] -- Found rosidl_cmake: 1.3.0 (/opt/ros/foxy/share/rosidl_cmake/cmake)
+[76.078s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[76.110s] -- Found fastrtps_cmake_module: 1.0.4 (/opt/ros/foxy/share/fastrtps_cmake_module/cmake)
+[76.113s] -- Found rmw_dds_common: 1.0.3 (/opt/ros/foxy/share/rmw_dds_common/cmake)
+[76.148s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[76.210s] -- Found FastRTPS: /opt/ros/foxy/include  
+[76.281s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[76.314s] -- Found rmw_fastrtps_shared_cpp: 1.3.1 (/opt/ros/foxy/share/rmw_fastrtps_shared_cpp/cmake)
+[76.363s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[76.366s] -- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[76.367s] -- Found micro_ros_msgs: 1.0.0 (/home/vp/robot_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake)
+[76.441s] -- Configuring done
+[76.449s] -- Generating done
+[76.450s] -- Build files have been written to: /home/vp/robot_ws/build/micro_ros_agent
+[76.474s] [ 87%] [34m[1mPerforming build step for 'micro_ros_agent'[0m
+[76.517s] [35m[1mScanning dependencies of target micro_ros_agent[0m
+[76.598s] [ 16%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/utils/demangle.cpp.o[0m
+[76.601s] [ 50%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/Agent.cpp.o[0m
+[76.601s] [ 50%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/main.cpp.o[0m
+[76.601s] [ 66%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_manager.cpp.o[0m
+[76.601s] [ 83%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_typesupport.cpp.o[0m
+[80.983s] [100%] [32m[1mLinking CXX executable micro_ros_agent[0m
+[81.245s] [100%] Built target micro_ros_agent
+[81.270s] [34m[1mNo install step for 'micro_ros_agent'[0m
+[81.298s] [34m[1mCompleted 'micro_ros_agent'[0m
+[81.333s] Built target micro_ros_agent
+[81.346s] Invoked command in '/home/vp/robot_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:/home/vp/robot_ws/install/micro_ros_setup:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vp/robot_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/vp/robot_ws/build/micro_ros_agent -- -j8 -l8
+[81.375s] Invoking command in '/home/vp/robot_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:/home/vp/robot_ws/install/micro_ros_setup:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vp/robot_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vp/robot_ws/build/micro_ros_agent
+[81.384s] -- Install configuration: ""
+[81.384s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent
+[81.384s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent
+[81.384s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh
+[81.385s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv
+[81.385s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh
+[81.385s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv
+[81.385s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash
+[81.386s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh
+[81.386s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh
+[81.386s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv
+[81.386s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv
+[81.386s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent
+[81.387s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake
+[81.387s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake
+[81.387s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake
+[81.387s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/package.xml
+[81.387s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent
+[81.390s] -- Set runtime path of "/home/vp/robot_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent" to ""
+[81.391s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/launch
+[81.391s] -- Installing: /home/vp/robot_ws/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py
+[81.395s] Invoked command in '/home/vp/robot_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/micro_ros_msgs:/home/vp/robot_ws/install/micro_ros_setup:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/vp/robot_ws/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/vp/robot_ws/build/micro_ros_agent

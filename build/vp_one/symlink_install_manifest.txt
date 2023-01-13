@@ -1,5 +1,4 @@
 /home/vp/robot_ws/install/vp_one/share/vp_one/config/empty.yaml
-/home/vp/robot_ws/install/vp_one/share/vp_one/config/my_controllers.yaml
 /home/vp/robot_ws/install/vp_one/share/vp_one/config/view_bot.rviz
 /home/vp/robot_ws/install/vp_one/share/vp_one/description/gazebo_control.xacro
 /home/vp/robot_ws/install/vp_one/share/vp_one/description/inertial_macros.xacro

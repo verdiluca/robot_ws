@@ -1,0 +1,4 @@
+[console_scripts]
+listener = odom.minimal_subscriber:main
+talker = odom.minimal_publisher:main
+
