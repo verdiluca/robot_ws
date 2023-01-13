@@ -5,7 +5,6 @@
 /home/vp/robot_ws/install/vp_one/share/vp_one/description/lidar.xacro
 /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot.urdf.xacro
 /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot_core.xacro
-/home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_robot.launch.py
 /home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_sim.launch.py
 /home/vp/robot_ws/install/vp_one/share/vp_one/launch/rsp.launch.py
 /home/vp/robot_ws/install/vp_one/share/vp_one/worlds/empty.world

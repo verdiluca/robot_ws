@@ -7,6 +7,7 @@ import geometry_msgs
 from odrive.enums import *
 from rclpy.node import Node
 from std_msgs.msg import Char
+#from std_msgs.msg import time
 from std_msgs.msg import Int32
 from std_msgs.msg import String
 from std_msgs.msg import Float32
@@ -25,13 +26,19 @@ demandx = 0.0
 demandz = 0.0
 pos0 = 0.0
 pos1 = 0.0
+pos0_diff = 0.0
+pos1_diff = 0.0
+pos0_old = 0.0
+pos1_old = 0.0
+pos0_mm_diff = 0.0
+pos1_mm_diff = 0.0
 
 x = 0.0
 y = 0.0
 dth = 0.0
 
 prev_update_time = time.time()
-current_time = time.time()
+current_time = time.now()
 
 #CONVERSIONE EULER A QUATERNION
  
@@ -101,11 +108,18 @@ class ODriveNode(Node):
         global demandz
         global pos0
         global pos1
+        global pos0_diff
+        global pos1_diff
+        global pos0_old
+        global pos1_old
+        global pos0_mm_diff
+        global pos1_mm_diff
 
         #odometria = Int32()
         vel = Int32()
         msg = Float32()
         msg2 = Twist()
+        #tempo = Time()
         msg.data = self.odrv0.get_velocity(0)
         self.axis0_vel_pub.publish(msg)
 
@@ -127,12 +141,9 @@ class ODriveNode(Node):
         current_time = time.time()
         dt = (current_time - prev_update_time)
         delta_th = (demandz) * dt
-        
 
         delta_x = pos0 * math.cos(delta_th) * dt
         delta_y = pos1 * math.sin(delta_th) * dt
-
-        
 
         x += delta_x
         y += delta_y
@@ -142,20 +153,30 @@ class ODriveNode(Node):
         quat_tf = get_quaternion_from_euler(0,0,dth)
         msg_quat = Quaternion(x=quat_tf[0], y=quat_tf[1], z=quat_tf[2], w=quat_tf[3])
 
-        self.odometry.pose.pose.position.x = x
-        self.odometry.pose.pose.position.y = y
+        tempo = current_time
+
+        pos0_diff = pos0 - pos0_old
+        pos1_diff = pos1 - pos1_old
+        pos0_old = pos0
+        pos1_old = pos1
+
+        pos0_mm_diff = pos0_diff / 0.0058
+        pos1_mm_diff = pos1_diff / 0.0058
+
+        self.odometry.pose.pose.position.x = x/1000
+        self.odometry.pose.pose.position.y = y/1000
         self.odometry.pose.pose.position.z = 0.0
         self.odometry.pose.pose.orientation = msg_quat
         #self.odometry.pose.pose.orientation.y = 
         #self.odometry.pose.pose.orientation.z = 
         #self.odometry.pose.pose.orientation.w = 1.
-        self.odometry.twist.twist.linear.x = demandx
+        self.odometry.twist.twist.linear.x = ((pos0_mm_diff + pos1_mm_diff) /2)/10
         self.odometry.twist.twist.linear.y = 0.0
         self.odometry.twist.twist.linear.z = 0.0
         self.odometry.twist.twist.angular.x = 0.0
         self.odometry.twist.twist.angular.y = 0.0
-        self.odometry.twist.twist.angular.z = demandz
-        #self.odometry.header.stamp = current_time
+        self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /360)*100
+        self.odometry.header.stamp = current_time
         self.odom.publish(self.odometry)
         #self.odom.publish()
 
