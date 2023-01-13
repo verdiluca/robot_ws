@@ -56,8 +56,6 @@
         </sensor>
     </gazebo>
 
-    <material name="red">
-        <color rgba="1 0 0 1"/>
-    </material>
+    
 
 </robot>
