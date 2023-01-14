@@ -1,0 +1,185 @@
+[0.213s] Invoking command in '/home/vp/robot_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/micro_ros_setup -- -j8 -l8
+[1.738s] Invoked command in '/home/vp/robot_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/micro_ros_setup -- -j8 -l8
+[1.888s] Invoking command in '/home/vp/robot_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/micro_ros_setup
+[1.957s] -- Install configuration: ""
+[1.958s] -- Execute custom install script
+[1.988s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup
+[1.989s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup
+[1.990s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.sh
+[1.991s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/environment/ament_prefix_path.dsv
+[1.991s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.sh
+[1.995s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/environment/path.dsv
+[1.997s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.bash
+[1.998s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.sh
+[2.000s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.zsh
+[2.001s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/local_setup.dsv
+[2.001s] -- Symlinking: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv
+[2.028s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/ament_index/resource_index/packages/micro_ros_setup
+[2.031s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig.cmake
+[2.032s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/cmake/micro_ros_setupConfig-version.cmake
+[2.035s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/share/micro_ros_setup/package.xml
+[2.037s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/create_ws.sh
+[2.037s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/create_agent_ws.sh
+[2.038s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/create_firmware_ws.sh
+[2.038s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/configure_firmware.sh
+[2.039s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/flash_firmware.sh
+[2.050s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/reset_firmware.sh
+[2.050s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/build_firmware.sh
+[2.050s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/build_agent.sh
+[2.051s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/yaml_filter.py
+[2.051s] -- Up-to-date symlink: /home/vp/robot_ws/install/micro_ros_setup/lib/micro_ros_setup/clean_env.sh
+[2.051s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config
+[2.051s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx
+[2.051s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic
+[2.052s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/uros_packages.repos
+[2.052s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/client-colcon.meta
+[2.052s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/reset.sh
+[2.052s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/client_uros_packages.repos
+[2.052s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/supported_platforms
+[2.053s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/flash.sh
+[2.053s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/configure.sh
+[2.053s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/package.xml
+[2.053s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/create.sh
+[2.053s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/generic/build.sh
+[2.054s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/dev_ros2_packages.txt
+[2.054s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/nuttx/dev_uros_packages.repos
+[2.054s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian
+[2.055s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic
+[2.056s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic/client-colcon.meta
+[2.065s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic/client_uros_packages.repos
+[2.065s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic/supported_platforms
+[2.066s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic/flash.sh
+[2.067s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic/configure.sh
+[2.067s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic/create.sh
+[2.067s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/generic/build.sh
+[2.068s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/dev_ros2_packages.txt
+[2.068s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/raspbian/dev_uros_packages.repos
+[2.068s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos
+[2.068s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21
+[2.069s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client-colcon.meta
+[2.069s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/board.repos
+[2.069s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/client_uros_packages.repos
+[2.069s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/flash.sh
+[2.070s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/configure.sh
+[2.070s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/package.xml
+[2.070s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/create.sh
+[2.070s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/crazyflie21/build.sh
+[2.070s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/list_apps.sh
+[2.072s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg
+[2.072s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client-colcon.meta
+[2.074s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/board.repos
+[2.075s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/reset.sh
+[2.075s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/client_uros_packages.repos
+[2.076s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/flash.sh
+[2.076s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/configure.sh
+[2.077s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/package.xml
+[2.078s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/create.sh
+[2.078s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f746zg/build.sh
+[2.079s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/dev_ros2_packages.txt
+[2.079s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407
+[2.079s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client-colcon.meta
+[2.079s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/board.repos
+[2.080s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/reset.sh
+[2.080s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/client_uros_packages.repos
+[2.080s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/flash.sh
+[2.081s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/configure.sh
+[2.081s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/package.xml
+[2.081s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/create.sh
+[2.082s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/olimex-stm32-e407/build.sh
+[2.082s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/dev_uros_packages.repos
+[2.082s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32
+[2.082s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/client-colcon.meta
+[2.083s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/board.repos
+[2.083s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/client_uros_packages.repos
+[2.083s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/flash.sh
+[2.083s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/configure.sh
+[2.083s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/package.xml
+[2.084s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/create.sh
+[2.084s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/build.sh
+[2.084s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/esp32/README.md
+[2.084s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi
+[2.085s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client-colcon.meta
+[2.085s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/board.repos
+[2.086s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/reset.sh
+[2.086s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/client_uros_packages.repos
+[2.088s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/flash.sh
+[2.088s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/configure.sh
+[2.090s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/package.xml
+[2.091s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/create.sh
+[2.091s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f767zi/build.sh
+[2.092s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re
+[2.093s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client-colcon.meta
+[2.094s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/board.repos
+[2.095s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/reset.sh
+[2.096s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/client_uros_packages.repos
+[2.096s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/flash.sh
+[2.097s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/configure.sh
+[2.097s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/package.xml
+[2.099s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/create.sh
+[2.099s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446re/build.sh
+[2.100s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze
+[2.101s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client-colcon.meta
+[2.103s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/board.repos
+[2.104s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/reset.sh
+[2.104s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/client_uros_packages.repos
+[2.105s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/flash.sh
+[2.109s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/configure.sh
+[2.112s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/package.xml
+[2.113s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/create.sh
+[2.113s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/freertos/nucleo_f446ze/build.sh
+[2.114s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra
+[2.115s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/list_apps.sh
+[2.115s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/dev_ros2_packages.txt
+[2.115s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/dev_uros_packages.repos
+[2.116s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5
+[2.116s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client-colcon.meta
+[2.116s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/board.repos
+[2.117s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/client_uros_packages.repos
+[2.117s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/flash.sh
+[2.127s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/configure.sh
+[2.127s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/create.sh
+[2.128s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/renesas_ra/ra6m5/build.sh
+[2.129s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/client_uros_packages.repos
+[2.129s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host
+[2.131s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic
+[2.132s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic/client_host_packages.repos
+[2.133s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic/client-host-colcon.meta
+[2.134s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic/reset.sh
+[2.135s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic/flash.sh
+[2.135s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic/package.xml
+[2.136s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic/create.sh
+[2.139s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/generic/build.sh
+[2.148s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/dev_ros2_packages.txt
+[2.150s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/dev_uros_packages.repos
+[2.151s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/host/client_ros2_packages.txt
+[2.152s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr
+[2.153s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic
+[2.158s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/client-colcon.meta
+[2.159s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/board.repos
+[2.162s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/reset.sh
+[2.162s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/client_uros_packages.repos
+[2.164s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/supported_platforms
+[2.166s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/flash.sh
+[2.166s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/configure.sh
+[2.166s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/package.xml
+[2.167s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/create.sh
+[2.167s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/generic/build.sh
+[2.167s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/list_apps.sh
+[2.168s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/dev_ros2_packages.txt
+[2.168s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/zephyr/dev_uros_packages.repos
+[2.168s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib
+[2.168s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic
+[2.168s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic/client-colcon.meta
+[2.169s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic/client_uros_packages.repos
+[2.169s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic/flash.sh
+[2.170s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic/package.xml
+[2.175s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic/create.sh
+[2.177s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic/demo_toolchain.cmake
+[2.177s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/generic/build.sh
+[2.178s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/dev_ros2_packages.txt
+[2.179s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/generate_lib/dev_uros_packages.repos
+[2.181s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/agent_uros_packages.repos
+[2.184s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/client_ros2_packages.txt
+[2.194s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/utils.sh
+[2.195s] -- Up-to-date: /home/vp/robot_ws/install/micro_ros_setup/./config/agent_ros2_packages.txt
+[2.195s] Invoked command in '/home/vp/robot_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/micro_ros_setup

@@ -1,0 +1,17 @@
+[2.960s] Invoking command in '/home/vp/robot_ws/build/two_wheel_demo': PYTHONPATH=/home/vp/robot_ws/build/two_wheel_demo/prefix_override:/home/vp/robot_ws/install/two_wheel_demo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/two_wheel_demo/build --no-deps install_data
+[3.745s] running develop
+[4.209s] running egg_info
+[4.209s] writing two_wheel_demo.egg-info/PKG-INFO
+[4.209s] writing dependency_links to two_wheel_demo.egg-info/dependency_links.txt
+[4.210s] writing entry points to two_wheel_demo.egg-info/entry_points.txt
+[4.211s] writing requirements to two_wheel_demo.egg-info/requires.txt
+[4.211s] writing top-level names to two_wheel_demo.egg-info/top_level.txt
+[4.278s] reading manifest file 'two_wheel_demo.egg-info/SOURCES.txt'
+[4.279s] writing manifest file 'two_wheel_demo.egg-info/SOURCES.txt'
+[4.350s] running build_ext
+[4.350s] Creating /home/vp/robot_ws/install/two_wheel_demo/lib/python3.8/site-packages/two-wheel-demo.egg-link (link to .)
+[4.351s] Installing run_demo script to /home/vp/robot_ws/install/two_wheel_demo/lib/two_wheel_demo
+[4.351s] 
+[4.352s] Installed /home/vp/robot_ws/build/two_wheel_demo
+[4.352s] running install_data
+[4.409s] Invoked command in '/home/vp/robot_ws/build/two_wheel_demo' returned '0': PYTHONPATH=/home/vp/robot_ws/build/two_wheel_demo/prefix_override:/home/vp/robot_ws/install/two_wheel_demo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/two_wheel_demo/build --no-deps install_data

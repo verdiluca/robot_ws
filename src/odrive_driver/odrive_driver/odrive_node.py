@@ -32,13 +32,16 @@ pos0_old = 0.0
 pos1_old = 0.0
 pos0_mm_diff = 0.0
 pos1_mm_diff = 0.0
+phi = 0.0
+delta_th = 0.0
 
 x = 0.0
 y = 0.0
 dth = 0.0
 
 prev_update_time = time.time()
-current_time = time.now()
+current_time = time.time()
+
 
 #CONVERSIONE EULER A QUATERNION
  
@@ -57,7 +60,9 @@ def get_quaternion_from_euler(roll, pitch, yaw):
 
 class ODriveNode(Node):
 
-    
+   
+
+   
 
     def __init__(self, odrv0):
 
@@ -114,6 +119,8 @@ class ODriveNode(Node):
         global pos1_old
         global pos0_mm_diff
         global pos1_mm_diff
+        global phi
+        global delta_th
 
         #odometria = Int32()
         vel = Int32()
@@ -138,23 +145,6 @@ class ODriveNode(Node):
         self.odometry.header.frame_id = 'odom'
         self.odometry.child_frame_id = 'base_link'
 
-        current_time = time.time()
-        dt = (current_time - prev_update_time)
-        delta_th = (demandz) * dt
-
-        delta_x = pos0 * math.cos(delta_th) * dt
-        delta_y = pos1 * math.sin(delta_th) * dt
-
-        x += delta_x
-        y += delta_y
-        dth += delta_th
-
-        #quat_tf = [0.0, 1.0, 0.0, 0.0]
-        quat_tf = get_quaternion_from_euler(0,0,dth)
-        msg_quat = Quaternion(x=quat_tf[0], y=quat_tf[1], z=quat_tf[2], w=quat_tf[3])
-
-        tempo = current_time
-
         pos0_diff = pos0 - pos0_old
         pos1_diff = pos1 - pos1_old
         pos0_old = pos0
@@ -162,6 +152,33 @@ class ODriveNode(Node):
 
         pos0_mm_diff = pos0_diff / 0.0058
         pos1_mm_diff = pos1_diff / 0.0058
+
+
+        current_time = time.time()
+        phi = ((pos1_mm_diff - pos0_mm_diff) / 360)
+        dt = (current_time - prev_update_time)
+        #delta_th = (demandz) * dt
+        delta_th += phi
+
+        print(delta_th)
+
+        if delta_th >= 6.28 :
+            delta_th -= 6.28
+            
+        if delta_th <= (-6.28) :
+            delta_th += 6.28
+
+        delta_x = pos0 * math.cos(delta_th) #* dt
+        delta_y = pos1 * math.sin(delta_th) #* dt
+
+        x += delta_x
+        y += delta_y
+        dth += delta_th
+
+        #quat_tf = [0.0, 1.0, 0.0, 0.0]
+        quat_tf = get_quaternion_from_euler(0,0,dth)
+        msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
+
 
         self.odometry.pose.pose.position.x = x/1000
         self.odometry.pose.pose.position.y = y/1000
@@ -176,7 +193,7 @@ class ODriveNode(Node):
         self.odometry.twist.twist.angular.x = 0.0
         self.odometry.twist.twist.angular.y = 0.0
         self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /360)*100
-        self.odometry.header.stamp = current_time
+        #self.odometry.header.stamp = current_time
         self.odom.publish(self.odometry)
         #self.odom.publish()
 
