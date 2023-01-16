@@ -1,0 +1,40 @@
+[0.234s] Invoking command in '/home/vp/robot_ws/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diff_drive_controller -- -j8 -l8
+[1.561s] [ 13%] Built target gmock_main
+[1.561s] [ 33%] Built target gmock
+[1.563s] [ 60%] Built target diff_drive_controller
+[1.564s] [ 73%] Built target test_accumulator
+[1.565s] [ 86%] Built target test_diff_drive_controller
+[1.565s] [100%] Built target test_load_diff_drive_controller
+[1.574s] Invoked command in '/home/vp/robot_ws/build/diff_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diff_drive_controller -- -j8 -l8
+[1.682s] Invoking command in '/home/vp/robot_ws/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/diff_drive_controller
+[1.705s] -- Install configuration: ""
+[1.706s] -- Execute custom install script
+[1.707s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller//diff_drive_plugin.xml
+[1.707s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp
+[1.708s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/include/diff_drive_controller/odometry.hpp
+[1.708s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/include/diff_drive_controller/rolling_mean_accumulator.hpp
+[1.709s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/include/diff_drive_controller/speed_limiter.hpp
+[1.709s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/include/diff_drive_controller/visibility_control.h
+[1.710s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/lib/libdiff_drive_controller.so
+[1.710s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/environment/library_path.sh
+[1.711s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/environment/library_path.dsv
+[1.711s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/ament_index/resource_index/package_run_dependencies/diff_drive_controller
+[1.711s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/ament_index/resource_index/parent_prefix_path/diff_drive_controller
+[1.712s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/environment/ament_prefix_path.sh
+[1.713s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/environment/ament_prefix_path.dsv
+[1.713s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/environment/path.sh
+[1.714s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/environment/path.dsv
+[1.716s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.bash
+[1.717s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.sh
+[1.718s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.zsh
+[1.719s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/local_setup.dsv
+[1.720s] -- Symlinking: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/package.dsv
+[1.874s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/ament_index/resource_index/packages/diff_drive_controller
+[1.886s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/diff_drive_controller
+[1.887s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.888s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.900s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[1.903s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig.cmake
+[1.905s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/cmake/diff_drive_controllerConfig-version.cmake
+[1.906s] -- Up-to-date symlink: /home/vp/robot_ws/install/diff_drive_controller/share/diff_drive_controller/package.xml
+[1.908s] Invoked command in '/home/vp/robot_ws/build/diff_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/diff_drive_controller

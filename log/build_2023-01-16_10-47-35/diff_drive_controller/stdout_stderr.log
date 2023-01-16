@@ -1,0 +1,6 @@
+[ 33%] Built target gmock_main
+[ 33%] Built target gmock
+[ 60%] Built target diff_drive_controller
+[ 73%] Built target test_accumulator
+[ 86%] Built target test_load_diff_drive_controller
+[100%] Built target test_diff_drive_controller

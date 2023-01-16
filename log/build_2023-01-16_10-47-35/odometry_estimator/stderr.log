@@ -1,0 +1,24 @@
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/vehicle_models/vehicle_models.cpp:26:14:[m[K [01;31m[Kerror: [m[K‘[01m[KVehicleState DifferentialDriveModel::calculateNextState[m[K’ is not a static data member of ‘[01m[Kclass DifferentialDriveModel[m[K’
+   26 | VehicleState [01;31m[KDifferentialDriveModel[m[K::calculateNextState(Float32 rpm_left_wheel, Float32 rpm_right_wheel,
+      |              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/vehicle_models/vehicle_models.cpp:26:57:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ was not declared in this scope
+   26 | VehicleState DifferentialDriveModel::calculateNextState([01;31m[KFloat32[m[K rpm_left_wheel, Float32 rpm_right_wheel,
+      |                                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/vehicle_models/vehicle_models.cpp:26:81:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ was not declared in this scope
+   26 | alDriveModel::calculateNextState(Float32 rpm_left_wheel, [01;31m[KFloat32[m[K rpm_right_wheel,
+      |                                                          [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/vehicle_models/vehicle_models.cpp:27:70:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprev_state[m[K’
+   27 |                                             VehicleState [01;31m[Kprev_state[m[K, double dt)
+      |                                                          [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/vehicle_models/vehicle_models.cpp:27:82:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   27 |                                         VehicleState prev_state, [01;31m[Kdouble[m[K dt)
+      |                                                                  [01;31m[K^~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/vehicle_models/vehicle_models.cpp:28:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+   28 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/vehicle_models.dir/build.make:63: CMakeFiles/vehicle_models.dir/src/vehicle_models/vehicle_models.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:148: CMakeFiles/vehicle_models.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

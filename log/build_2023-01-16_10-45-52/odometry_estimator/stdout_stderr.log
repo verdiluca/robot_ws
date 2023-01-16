@@ -1,0 +1,87 @@
+[ 20%] Built target gtest_main
+[ 50%] Built target vehicle_models
+[ 60%] Built target gtest
+[35m[1mScanning dependencies of target odometry_estimator[0m
+[ 80%] Built target vehicle_models_test
+[ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In constructor ‘[01m[KOdometryEstimator::OdometryEstimator()[m[K’:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:19:70:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   19 | ight_wheel_subscriber_ = this->create_subscription<std_msgs::msg::[01;31m[KFloat32[m[K>(
+      |                                                                   [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:19:70:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:21:88:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOdometryEstimator::create_subscription<<expression error> >(const char [14], int, std::_Bind_helper<false, void (OdometryEstimator::*)(std::shared_ptr<std_msgs::msg::Int64_<std::allocator<void> > >), OdometryEstimator*, const std::_Placeholder<1>&>::type)[m[K’
+   21 | ator::handleRightWheelInput, this, std::placeholders::_1)[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:10[m[K,
+                 from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  213 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:21:88:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 | ator::handleRightWheelInput, this, std::placeholders::_1)[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:22:69:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   22 | left_wheel_subscriber_ = this->create_subscription<std_msgs::msg::[01;31m[KFloat32[m[K>(
+      |                                                                   [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:22:69:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:24:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOdometryEstimator::create_subscription<<expression error> >(const char [14], int, std::_Bind_helper<false, void (OdometryEstimator::*)(std::shared_ptr<std_msgs::msg::Int64_<std::allocator<void> > >), OdometryEstimator*, const std::_Placeholder<1>&>::type)[m[K’
+   24 | mator::handleLeftWheelInput, this, std::placeholders::_1)[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:10[m[K,
+                 from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  213 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:24:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   24 | mator::handleLeftWheelInput, this, std::placeholders::_1)[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K At global scope:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:31:68:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+   31 | tryEstimator::handleRightWheelInput(const std_msgs::msg::[01;31m[KFloat32[m[K::SharedPtr rpm_right)
+      |                                                          [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:31:87:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Krpm_right[m[K’
+   31 | r::handleRightWheelInput(const std_msgs::msg::Float32::SharedPtr [01;31m[Krpm_right[m[K)
+      |                                                                  [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:31:86:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Krpm_right[m[K’
+   31 | r::handleRightWheelInput[34m[K([m[Kconst std_msgs::msg::Float32::SharedPtr[01;31m[K [m[K[32m[Krpm_right[m[K)
+      |                         [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+      |                                                                 [32m[K)[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:31:87:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Krpm_right[m[K’
+   31 | r::handleRightWheelInput(const std_msgs::msg::Float32::SharedPtr [01;31m[Krpm_right[m[K)
+      |                                                                  [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:36:67:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat32[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+   36 | etryEstimator::handleLeftWheelInput(const std_msgs::msg::[01;31m[KFloat32[m[K::SharedPtr rpm_left)
+      |                                                          [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:36:86:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Krpm_left[m[K’
+   36 | tor::handleLeftWheelInput(const std_msgs::msg::Float32::SharedPtr [01;31m[Krpm_left[m[K)
+      |                                                                   [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:36:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Krpm_left[m[K’
+   36 | tor::handleLeftWheelInput[34m[K([m[Kconst std_msgs::msg::Float32::SharedPtr[01;31m[K [m[K[32m[Krpm_left[m[K)
+      |                          [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~~~~~~~~[m[K
+      |                                                                  [32m[K)[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:36:86:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Krpm_left[m[K’
+   36 | tor::handleLeftWheelInput(const std_msgs::msg::Float32::SharedPtr [01;31m[Krpm_left[m[K)
+      |                                                                   [01;31m[K^~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

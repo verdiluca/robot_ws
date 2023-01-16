@@ -9,6 +9,7 @@ from rclpy.node import Node
 from std_msgs.msg import Char
 #from std_msgs.msg import time
 from std_msgs.msg import Int32
+from std_msgs.msg import Int64
 from std_msgs.msg import String
 from std_msgs.msg import Float32
 from nav_msgs.msg import Odometry
@@ -79,8 +80,10 @@ class ODriveNode(Node):
         self.axis1_pos_pub = self.create_publisher(
             Float32, 'axis1_pos_pub', 50)
 
-        self.odom = self.create_publisher(
-            Odometry, 'odom', 100)
+        self.right_wheel_rpm = self.create_publisher(
+            Int64, 'right_wheel_rpm', 10)
+        self.left_wheel_rpm = self.create_publisher(
+            Int64, 'left_wheel_rpm', 10)
 
         timer_period = 1 / 100
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -124,6 +127,8 @@ class ODriveNode(Node):
 
         #odometria = Int32()
         vel = Int32()
+        msg3 = Int64()
+        msg4 = Int64()
         msg = Float32()
         msg2 = Twist()
         #tempo = Time()
@@ -141,61 +146,13 @@ class ODriveNode(Node):
         pos1 = msg.data
         self.axis1_pos_pub.publish(msg)
 
-        self.odometry = Odometry()
-        self.odometry.header.frame_id = 'odom'
-        self.odometry.child_frame_id = 'base_link'
 
-        pos0_diff = pos0 - pos0_old
-        pos1_diff = pos1 - pos1_old
-        pos0_old = pos0
-        pos1_old = pos1
-
-        pos0_mm_diff = pos0_diff / 0.0058
-        pos1_mm_diff = pos1_diff / 0.0058
+        msg3.data = int((self.odrv0.get_velocity(0))*60)
+        self.right_wheel_rpm.publish(msg3)
 
 
-        current_time = time.time()
-        phi = ((pos1_mm_diff - pos0_mm_diff) / 360)
-        dt = (current_time - prev_update_time)
-        #delta_th = (demandz) * dt
-        delta_th += phi
-
-        print(delta_th)
-
-        if delta_th >= 6.28 :
-            delta_th -= 6.28
-            
-        if delta_th <= (-6.28) :
-            delta_th += 6.28
-
-        delta_x = pos0 * math.cos(delta_th) #* dt
-        delta_y = pos1 * math.sin(delta_th) #* dt
-
-        x += delta_x
-        y += delta_y
-        dth += delta_th
-
-        #quat_tf = [0.0, 1.0, 0.0, 0.0]
-        quat_tf = get_quaternion_from_euler(0,0,dth)
-        msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
-
-
-        self.odometry.pose.pose.position.x = x/1000
-        self.odometry.pose.pose.position.y = y/1000
-        self.odometry.pose.pose.position.z = 0.0
-        self.odometry.pose.pose.orientation = msg_quat
-        #self.odometry.pose.pose.orientation.y = 
-        #self.odometry.pose.pose.orientation.z = 
-        #self.odometry.pose.pose.orientation.w = 1.
-        self.odometry.twist.twist.linear.x = ((pos0_mm_diff + pos1_mm_diff) /2)/10
-        self.odometry.twist.twist.linear.y = 0.0
-        self.odometry.twist.twist.linear.z = 0.0
-        self.odometry.twist.twist.angular.x = 0.0
-        self.odometry.twist.twist.angular.y = 0.0
-        self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /360)*100
-        #self.odometry.header.stamp = current_time
-        self.odom.publish(self.odometry)
-        #self.odom.publish()
+        msg4.data = int((self.odrv0.get_velocity(1))*60)
+        self.left_wheel_rpm.publish(msg4)
 
 
     def axis0_vel_callback(self, msg):

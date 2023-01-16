@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_accumulator.dir/test/test_accumulator.cpp.o  -o test_accumulator  gmock/libgmock_main.a gmock/libgmock.a -pthread 

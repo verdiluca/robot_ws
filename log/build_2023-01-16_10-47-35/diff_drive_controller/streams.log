@@ -1,0 +1,8 @@
+[0.084s] Invoking command in '/home/vp/robot_ws/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diff_drive_controller -- -j8 -l8
+[0.775s] [ 33%] Built target gmock_main
+[0.776s] [ 33%] Built target gmock
+[0.777s] [ 60%] Built target diff_drive_controller
+[0.777s] [ 73%] Built target test_accumulator
+[0.778s] [ 86%] Built target test_load_diff_drive_controller
+[0.778s] [100%] Built target test_diff_drive_controller
+[0.789s] Invoked command in '/home/vp/robot_ws/build/diff_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/two_wheel_demo:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diff_drive_controller -- -j8 -l8
