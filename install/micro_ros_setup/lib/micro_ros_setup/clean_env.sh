@@ -1,1 +1,0 @@
-/home/vp/robot_ws/src/src/micro_ros_setup/scripts/clean_env.sh

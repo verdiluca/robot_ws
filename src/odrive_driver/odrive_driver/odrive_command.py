@@ -13,12 +13,12 @@ ODRIVE_SERIAL_NUMBER = "3661385B3030"
 
 class ODriveController:
     def __init__(self):
-        print(f'Attempting to connect to ODrive {ODRIVE_SERIAL_NUMBER}')
+        print(f'Connessione in Corso a ODRIVE {ODRIVE_SERIAL_NUMBER}')
         try:
             self.odrive = odrive.find_any(serial_number=ODRIVE_SERIAL_NUMBER)
-            print(f'Connected to ODrive {ODRIVE_SERIAL_NUMBER}')
+            print(f'Connesso a ODrive {ODRIVE_SERIAL_NUMBER}')
         except Exception as e:
-            print(f'Failed to connect to ODrive: {e}')
+            print(f'IMPOSSIBILE CONNETTERSI A ODRIVE: {e}')
 
         self.axis0 = self.odrive.axis0
         self.axis1 = self.odrive.axis1
@@ -35,7 +35,7 @@ class ODriveController:
         if not calibration_override:
             for axis in axes:
                 if not self.axes[axis].encoder.is_ready:
-                    print(f'Calibrating encoder on axis{axis}')
+                    print(f'Calibrazione encoder su asse{axis}')
                     self.axes[axis].requested_state = AXIS_STATE_ENCODER_OFFSET_CALIBRATION
                 else:
                     pass
@@ -51,11 +51,11 @@ class ODriveController:
             print(f'Waiting {self.calibration_override_timer} seconds for calibration to complete...')
             sleep(self.calibration_override_timer)
         
-        print('Encoders calibrated.')
+        print('Encoder Calibrati')
 
     def arm_velocity_control(self, axes=[0, 1]):
         for axis in axes:
-            print(f'Arming axis{axis}')
+            print(f'Axis{axis} Pronto')
             self.axes[axis].controller.input_vel = 0
             self.axes[axis].controller.config.control_mode = CONTROL_MODE_VELOCITY_CONTROL
             self.axes[axis].requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
@@ -63,7 +63,7 @@ class ODriveController:
 
     def arm_position_control(self, axes=[0, 1]):
         for axis in axes:
-            print(f'Arming axis{axis}')
+            print(f'Axis{axis} Pronto')
             self.axes[axis].controller.input_pos = 0
             self.axes[axis].controller.config.input_mode = INPUT_MODE_POS_FILTER
             self.axes[axis].requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL
@@ -71,7 +71,7 @@ class ODriveController:
 
     def command_velocity(self, axis, velocity):
         if self.armed_vel:
-            print(f'Commanding velocity {velocity} on axis{axis}')
+            #print(f'Commanding velocity {velocity} on axis{axis}')
             self.axes[axis].controller.input_vel = velocity
 
     def command_position(self, axis, position):
@@ -91,6 +91,8 @@ class ODriveController:
             print('Motor: ' + str(hex(self.axes[axis].motor.error)))
             print('Controller :' + str(hex(self.axes[axis].controller.error)))
             print('Encoder: ' + str(hex(self.axes[axis].encoder.error)))
+
+    print(f'VP ODRIVE CONTROL PRONTO')
 
 if __name__ == '__main__':
     import math

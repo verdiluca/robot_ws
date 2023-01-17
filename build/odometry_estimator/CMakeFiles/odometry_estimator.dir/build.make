@@ -100,7 +100,7 @@ odometry_estimator: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_cpp.
 odometry_estimator: /opt/ros/foxy/lib/librmw_implementation.so
 odometry_estimator: /opt/ros/foxy/lib/librmw.so
 odometry_estimator: /opt/ros/foxy/lib/librcl_logging_spdlog.so
-odometry_estimator: /home/vp/robot_ws/install/micro_ros_agent/lib/libspdlog.a
+odometry_estimator: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.5.0
 odometry_estimator: /opt/ros/foxy/lib/librcl_yaml_param_parser.so
 odometry_estimator: /opt/ros/foxy/lib/libyaml.so
 odometry_estimator: /opt/ros/foxy/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so

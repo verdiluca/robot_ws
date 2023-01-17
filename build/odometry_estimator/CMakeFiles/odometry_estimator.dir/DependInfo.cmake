@@ -20,7 +20,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/vp/robot_ws/src/ros2_odometry_estimation/include/node"
   "/home/vp/robot_ws/src/ros2_odometry_estimation/include/vehicle_models"
   "/opt/ros/foxy/include"
-  "/home/vp/robot_ws/install/micro_ros_agent/include"
   )
 
 # Targets to which this target links.
