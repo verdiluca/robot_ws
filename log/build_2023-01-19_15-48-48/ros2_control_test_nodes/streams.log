@@ -1,0 +1,25 @@
+[1.704s] Invoking command in '/home/vp/robot_ws/build/ros2_control_test_nodes': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/ros2_control_test_nodes/build
+[2.138s] running develop
+[2.411s] Invoked command in '/home/vp/robot_ws/build/ros2_control_test_nodes' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/ros2_control_test_nodes/build
+[2.415s] Invoking command in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_test_nodes': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_control_test_nodes build --build-base /home/vp/robot_ws/build/ros2_control_test_nodes/build install --record /home/vp/robot_ws/build/ros2_control_test_nodes/install.log --install-scripts $base/lib/ros2_control_test_nodes --single-version-externally-managed
+[2.741s] running egg_info
+[2.741s] writing ../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info/PKG-INFO
+[2.741s] writing dependency_links to ../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info/dependency_links.txt
+[2.741s] writing entry points to ../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info/entry_points.txt
+[2.741s] writing requirements to ../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info/requires.txt
+[2.742s] writing top-level names to ../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info/top_level.txt
+[2.789s] reading manifest file '../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info/SOURCES.txt'
+[2.790s] writing manifest file '../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info/SOURCES.txt'
+[2.790s] running build
+[2.791s] running build_py
+[2.791s] running install
+[2.792s] running install_lib
+[2.794s] running install_data
+[2.795s] running install_egg_info
+[2.797s] removing '/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages/ros2_control_test_nodes-0.0.1-py3.8.egg-info' (and everything under it)
+[2.797s] Copying ../../../build/ros2_control_test_nodes/ros2_control_test_nodes.egg-info to /home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages/ros2_control_test_nodes-0.0.1-py3.8.egg-info
+[2.799s] running install_scripts
+[2.822s] Installing publisher_forward_position_controller script to /home/vp/robot_ws/install/ros2_control_test_nodes/lib/ros2_control_test_nodes
+[2.823s] Installing publisher_joint_trajectory_position_controller script to /home/vp/robot_ws/install/ros2_control_test_nodes/lib/ros2_control_test_nodes
+[2.823s] writing list of installed files to '/home/vp/robot_ws/build/ros2_control_test_nodes/install.log'
+[2.849s] Invoked command in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_test_nodes' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_control_test_nodes build --build-base /home/vp/robot_ws/build/ros2_control_test_nodes/build install --record /home/vp/robot_ws/build/ros2_control_test_nodes/install.log --install-scripts $base/lib/ros2_control_test_nodes --single-version-externally-managed

@@ -1,0 +1,44 @@
+[0.550s] Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/rrbot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/rrbot_description
+[1.138s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.138s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.138s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.160s] -- Configuring done
+[1.161s] -- Generating done
+[1.161s] -- Build files have been written to: /home/vp/robot_ws/build/rrbot_description
+[1.189s] Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/rrbot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/rrbot_description
+[1.194s] Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/rrbot_description -- -j8 -l8
+[1.289s] Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/rrbot_description -- -j8 -l8
+[1.395s] Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/rrbot_description
+[1.411s] -- Install configuration: ""
+[1.412s] -- Execute custom install script
+[1.412s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/config/rrbot.rviz
+[1.421s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/gazebo/rrbot.gazebo.xacro
+[1.421s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/gazebo/rrbot.materials.xacro
+[1.427s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/meshes/hokuyo.dae
+[1.427s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/launch/view_robot.launch.py
+[1.428s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot.ros2_control.xacro
+[1.428s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot_system_multi_interface.ros2_control.xacro
+[1.429s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot_system_position_only.ros2_control.xacro
+[1.429s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot_system_with_sensor.ros2_control.xacro
+[1.429s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot.urdf.xacro
+[1.430s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_description.urdf.xacro
+[1.434s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_system_multi_interface.urdf.xacro
+[1.434s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_system_position_only.urdf.xacro
+[1.435s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_system_with_sensor.urdf.xacro
+[1.435s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/rrbot_description.dsv
+[1.435s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/ament_index/resource_index/package_run_dependencies/rrbot_description
+[1.436s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/ament_index/resource_index/parent_prefix_path/rrbot_description
+[1.436s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/ament_prefix_path.sh
+[1.436s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/ament_prefix_path.dsv
+[1.437s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/path.sh
+[1.437s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/path.dsv
+[1.437s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.bash
+[1.437s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.sh
+[1.437s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.zsh
+[1.437s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.dsv
+[1.438s] -- Symlinking: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.dsv
+[1.460s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/ament_index/resource_index/packages/rrbot_description
+[1.461s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/cmake/rrbot_descriptionConfig.cmake
+[1.461s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/cmake/rrbot_descriptionConfig-version.cmake
+[1.462s] -- Up-to-date symlink: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.xml
+[1.524s] Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/rrbot_description

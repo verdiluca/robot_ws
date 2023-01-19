@@ -1,0 +1,11 @@
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In constructor ‘[01m[KOdometryEstimator::OdometryEstimator()[m[K’:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:32:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster[m[K’ does not name a type
+   32 |   static [01;31m[Kbroadcaster[m[K = tf2_ros::TransformBroadcaster(*this);
+      |          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In member function ‘[01m[Kvoid OdometryEstimator::publish()[m[K’:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:85:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster[m[K’ was not declared in this scope
+   85 |   [01;31m[Kbroadcaster[m[K.sendTransform(message_trans);
+      |   [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

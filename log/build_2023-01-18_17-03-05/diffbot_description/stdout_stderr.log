@@ -1,0 +1,29 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vp/robot_ws/build/diffbot_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/config/diffbot.rviz
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/gazebo/diffbot.gazebo.xacro
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/gazebo/diffbot.materials.xacro
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/ros2_control/diffbot_system.ros2_control.xacro
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/urdf/diffbot.urdf.xacro
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/urdf/diffbot_system.urdf.xacro
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/package_run_dependencies/diffbot_description
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/parent_prefix_path/diffbot_description
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/path.sh
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/path.dsv
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.bash
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.sh
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.zsh
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.dsv
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.dsv
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/packages/diffbot_description
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/cmake/diffbot_descriptionConfig.cmake
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/cmake/diffbot_descriptionConfig-version.cmake
+-- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.xml

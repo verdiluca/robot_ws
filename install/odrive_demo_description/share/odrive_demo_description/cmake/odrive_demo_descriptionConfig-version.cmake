@@ -1,0 +1,1 @@
+/home/vp/robot_ws/build/odrive_demo_description/ament_cmake_core/odrive_demo_descriptionConfig-version.cmake

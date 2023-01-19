@@ -29,6 +29,12 @@ def generate_launch_description():
         parameters=[params]
     )
 
+    # joint_state_broadcaster_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner.py",
+    #     arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
+    # )
+
 
     # Launch!
     return LaunchDescription([
@@ -36,6 +42,14 @@ def generate_launch_description():
             'use_sim_time',
             default_value='false',
             description='Use sim time if true'),
+        
+        # Node(
+        #     package="tf2_ros",
+        #     executable="static_transform_publisher",
+        #     output="screen",
+        #     arguments=["0", "0", "0", "0", "0", "0", "odom", "base_link"]
+        # ),
 
-        node_robot_state_publisher
+        node_robot_state_publisher,
+        #joint_state_broadcaster_spawner,
     ])

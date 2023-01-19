@@ -1,0 +1,16 @@
+[ 20%] Built target vehicle_models
+[ 40%] Built target gtest
+[ 60%] Built target gtest_main
+[35m[1mScanning dependencies of target odometry_estimator[0m
+[ 80%] Built target vehicle_models_test
+[ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In constructor ‘[01m[KOdometryEstimator::OdometryEstimator()[m[K’:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:30:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster_[m[K’ was not declared in this scope
+   30 |   [01;31m[Kbroadcaster_[m[K = this->tf2_ros::TransformBroadcaster(this, 10);
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:30:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_ros::TransformBroadcaster[m[K’ is not a class member
+   30 |   broadcaster_ = this->[01;31m[Ktf2_ros[m[K::TransformBroadcaster(this, 10);
+      |                        [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

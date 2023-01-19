@@ -348,7 +348,13 @@ CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o
  /opt/ros/foxy/include/tf2/transform_datatypes.h
  /opt/ros/foxy/include/tf2/visibility_control.h
  /opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h
+ /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__builder.hpp
+ /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__struct.hpp
+ /opt/ros/foxy/include/tf2_msgs/msg/detail/tf_message__traits.hpp
+ /opt/ros/foxy/include/tf2_msgs/msg/tf_message.hpp
  /opt/ros/foxy/include/tf2_ros/buffer_interface.h
+ /opt/ros/foxy/include/tf2_ros/qos.hpp
+ /opt/ros/foxy/include/tf2_ros/transform_broadcaster.h
  /opt/ros/foxy/include/tf2_ros/visibility_control.h
  /opt/ros/foxy/include/tracetools/config.h
  /opt/ros/foxy/include/tracetools/tracetools.h

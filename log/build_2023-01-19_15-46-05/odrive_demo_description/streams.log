@@ -1,0 +1,25 @@
+[0.182s] Invoking command in '/home/vp/robot_ws/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_description -- -j8 -l8
+[0.935s] Invoked command in '/home/vp/robot_ws/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_description -- -j8 -l8
+[1.011s] Invoking command in '/home/vp/robot_ws/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_description
+[1.033s] -- Install configuration: ""
+[1.033s] -- Execute custom install script
+[1.033s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.ros2_control.xacro
+[1.034s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.urdf.xacro
+[1.034s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro
+[1.034s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_rrbot.urdf.xacro
+[1.034s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/ament_index/resource_index/package_run_dependencies/odrive_demo_description
+[1.034s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/ament_index/resource_index/parent_prefix_path/odrive_demo_description
+[1.036s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.sh
+[1.036s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.dsv
+[1.036s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/path.sh
+[1.036s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/path.dsv
+[1.037s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.bash
+[1.037s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.sh
+[1.037s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.zsh
+[1.037s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.dsv
+[1.037s] -- Symlinking: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.dsv
+[1.051s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/ament_index/resource_index/packages/odrive_demo_description
+[1.052s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig.cmake
+[1.052s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig-version.cmake
+[1.052s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.xml
+[1.170s] Invoked command in '/home/vp/robot_ws/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_description

@@ -1,0 +1,5 @@
+[ 40%] Built target gtest_main
+[ 60%] Built target vehicle_models
+[ 60%] Built target gtest
+[ 80%] Built target vehicle_models_test
+[ 90%] [32m[1mLinking CXX executable odometry_estimator[0m

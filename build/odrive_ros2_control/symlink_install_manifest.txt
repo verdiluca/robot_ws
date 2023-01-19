@@ -1,0 +1,15 @@
+/home/vp/robot_ws/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control
+/home/vp/robot_ws/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv
+/home/vp/robot_ws/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake
+/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.xml

@@ -24,17 +24,17 @@
         <color rgba="1 0 0 1"/>
     </material>
 
-    <link name="odom">
+    <link name="base_link">
     </link>
 
-    <joint name="base_link_joint" type="fixed">
+    <!-- <joint name="base_link_joint" type="fixed">
         <parent link="odom"/>
         <child link="base_link"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
     <link name="base_link">
     
-    </link>
+    </link> -->
 
 
     <!-- ODOM LINK
@@ -83,7 +83,7 @@
 
     <!-- LEFT WHEEL -->
 
-    <joint name="left_wheel_joint" type="continuous">
+    <joint name="joint1" type="continuous">
         <parent link="chassis"/>
         <child link="left_wheel"/>
         <origin xyz="0 0.28 0.06" rpy="${-pi/2} 0 0"/>
@@ -115,7 +115,7 @@
 
     <!-- RIGHT WHEEL -->
 
-    <joint name="right_wheel_joint" type="continuous">
+    <joint name="joint0" type="continuous">
         <parent link="chassis"/>
         <child link="right_wheel"/>
         <origin xyz="0 -0.28 0.06" rpy="${pi/2} 0 0"/>

@@ -1,0 +1,24 @@
+[1.490s] Invoking command in '/home/vp/robot_ws/build/odrive_driver': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build
+[1.828s] running develop
+[2.037s] Invoked command in '/home/vp/robot_ws/build/odrive_driver' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build
+[2.040s] Invoking command in '/home/vp/robot_ws/src/odrive_driver': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odrive_driver build --build-base /home/vp/robot_ws/build/odrive_driver/build install --record /home/vp/robot_ws/build/odrive_driver/install.log --single-version-externally-managed
+[2.317s] running egg_info
+[2.318s] writing ../../build/odrive_driver/odrive_driver.egg-info/PKG-INFO
+[2.318s] writing dependency_links to ../../build/odrive_driver/odrive_driver.egg-info/dependency_links.txt
+[2.318s] writing entry points to ../../build/odrive_driver/odrive_driver.egg-info/entry_points.txt
+[2.319s] writing requirements to ../../build/odrive_driver/odrive_driver.egg-info/requires.txt
+[2.319s] writing top-level names to ../../build/odrive_driver/odrive_driver.egg-info/top_level.txt
+[2.357s] reading manifest file '../../build/odrive_driver/odrive_driver.egg-info/SOURCES.txt'
+[2.358s] writing manifest file '../../build/odrive_driver/odrive_driver.egg-info/SOURCES.txt'
+[2.359s] running build
+[2.359s] running build_py
+[2.359s] running install
+[2.360s] running install_lib
+[2.362s] running install_data
+[2.363s] running install_egg_info
+[2.365s] removing '/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver-0.0.0-py3.8.egg-info' (and everything under it)
+[2.365s] Copying ../../build/odrive_driver/odrive_driver.egg-info to /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver-0.0.0-py3.8.egg-info
+[2.367s] running install_scripts
+[2.387s] Installing odrive_node script to /home/vp/robot_ws/install/odrive_driver/lib/odrive_driver
+[2.388s] writing list of installed files to '/home/vp/robot_ws/build/odrive_driver/install.log'
+[2.415s] Invoked command in '/home/vp/robot_ws/src/odrive_driver' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odrive_driver build --build-base /home/vp/robot_ws/build/odrive_driver/build install --record /home/vp/robot_ws/build/odrive_driver/install.log --single-version-externally-managed

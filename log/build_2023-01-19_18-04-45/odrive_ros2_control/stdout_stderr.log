@@ -1,0 +1,23 @@
+-- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vp/robot_ws/build/odrive_ros2_control
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv
+-- Symlinking: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake
+-- Up-to-date symlink: /home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.xml

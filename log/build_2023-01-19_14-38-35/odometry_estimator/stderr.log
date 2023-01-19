@@ -1,0 +1,7 @@
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In member function ‘[01m[Kvoid OdometryEstimator::publish()[m[K’:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:72:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transform_type = struct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Transform_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kstamp[m[K’
+   72 |   message_trans.transform.[01;31m[Kstamp[m[K = current_time;
+      |                           [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2

@@ -1,0 +1,18 @@
+[0.416s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[0.743s] [ 20%] Built target vehicle_models
+[0.743s] [ 40%] Built target gtest
+[0.744s] [ 60%] Built target gtest_main
+[0.744s] [35m[1mScanning dependencies of target odometry_estimator[0m
+[0.747s] [ 80%] Built target vehicle_models_test
+[0.747s] [ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[2.518s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In member function ‘[01m[Kvoid OdometryEstimator::publish()[m[K’:
+[2.518s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:64:41:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kmessage_trans[m[K’
+[2.518s]    64 |   message_trans.header.frame_id = "odom"
+[2.519s]       |                                         [01;31m[K^[m[K
+[2.519s]       |                                         [32m[K;[m[K
+[2.519s]    65 |   [32m[Kmessage_trans[m[K.child_frame_id = "base_link";
+[2.519s]       |   [32m[K~~~~~~~~~~~~~[m[K                          
+[4.350s] make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+[4.350s] make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+[4.350s] make: *** [Makefile:141: all] Errore 2
+[4.352s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8

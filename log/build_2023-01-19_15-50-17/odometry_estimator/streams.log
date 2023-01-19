@@ -1,0 +1,44 @@
+[0.484s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_odometry_estimation -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odometry_estimator
+[1.007s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.007s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.007s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.008s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.027s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.035s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.286s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.399s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.403s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.765s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.055s] -- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[2.059s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.186s] -- Configuring done
+[2.219s] -- Generating done
+[2.223s] -- Build files have been written to: /home/vp/robot_ws/build/odometry_estimator
+[2.236s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_odometry_estimation -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odometry_estimator
+[2.241s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[2.335s] [ 20%] Built target vehicle_models
+[2.372s] [ 40%] Built target gtest_main
+[2.390s] [ 60%] Built target gtest
+[2.428s] [ 80%] Built target odometry_estimator
+[2.429s] [100%] Built target vehicle_models_test
+[2.463s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[2.530s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odometry_estimator
+[2.545s] -- Install configuration: ""
+[2.545s] -- Execute custom install script
+[2.546s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/lib/odometry_estimator/odometry_estimator
+[2.547s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/ament_index/resource_index/package_run_dependencies/odometry_estimator
+[2.548s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/ament_index/resource_index/parent_prefix_path/odometry_estimator
+[2.548s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/environment/ament_prefix_path.sh
+[2.549s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/environment/ament_prefix_path.dsv
+[2.549s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/environment/path.sh
+[2.550s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/environment/path.dsv
+[2.551s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/local_setup.bash
+[2.551s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/local_setup.sh
+[2.552s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/local_setup.zsh
+[2.552s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/local_setup.dsv
+[2.553s] -- Symlinking: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/package.dsv
+[2.569s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/ament_index/resource_index/packages/odometry_estimator
+[2.571s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/cmake/odometry_estimatorConfig.cmake
+[2.571s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/cmake/odometry_estimatorConfig-version.cmake
+[2.572s] -- Up-to-date symlink: /home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/package.xml
+[2.593s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odometry_estimator

@@ -1,0 +1,46 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vp/robot_ws/build/diffbot_description
+-- Install configuration: ""
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/config
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/config/diffbot.rviz
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/gazebo
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/gazebo/diffbot.materials.xacro
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/gazebo/diffbot.gazebo.xacro
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/ros2_control
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/ros2_control/diffbot_system.ros2_control.xacro
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/urdf
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/urdf/diffbot_system.urdf.xacro
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/urdf/diffbot.urdf.xacro
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/package_run_dependencies/diffbot_description
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/parent_prefix_path/diffbot_description
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/ament_prefix_path.sh
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/ament_prefix_path.dsv
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/path.sh
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/path.dsv
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.bash
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.sh
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.zsh
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.dsv
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.dsv
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/packages/diffbot_description
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/cmake/diffbot_descriptionConfig.cmake
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/cmake/diffbot_descriptionConfig-version.cmake
+-- Installing: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.xml

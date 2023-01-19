@@ -1,0 +1,987 @@
+[0.147s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.147s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4267679af0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4267679af0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f42676820a0>)
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.170s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.170s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vp/robot_ws'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_driver) by extension 'ros'
+[0.197s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_driver' with type 'ros.ament_python' and name 'odrive_driver'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'ros'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['cmake', 'python']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'cmake'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'python'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['python_setup_py']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'python_setup_py'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extension 'ignore_ament_install'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extensions ['colcon_pkg']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extension 'colcon_pkg'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extensions ['colcon_meta']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extension 'colcon_meta'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extensions ['ros']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_bringup) by extension 'ros'
+[0.200s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_ros2_control/odrive_demo_bringup' with type 'ros.ament_cmake' and name 'odrive_demo_bringup'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extensions ['ros']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_demo_description) by extension 'ros'
+[0.201s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_ros2_control/odrive_demo_description' with type 'ros.ament_cmake' and name 'odrive_demo_description'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_hardware_interface) by extension 'ros'
+[0.202s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_ros2_control/odrive_hardware_interface' with type 'ros.ament_cmake' and name 'odrive_hardware_interface'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control/odrive_ros2_control) by extension 'ros'
+[0.203s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_ros2_control/odrive_ros2_control' with type 'ros.ament_cmake' and name 'odrive_ros2_control'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'ros'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extensions ['cmake', 'python']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'cmake'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'python'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extensions ['python_setup_py']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/doc) by extension 'python_setup_py'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_bringup) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_control_demos/ros2_control_demo_bringup' with type 'ros.ament_cmake' and name 'ros2_control_demo_bringup'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extensions ['cmake', 'python']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'cmake'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'python'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extensions ['python_setup_py']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description) by extension 'python_setup_py'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/diffbot_description) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_control_demos/ros2_control_demo_description/diffbot_description' with type 'ros.ament_cmake' and name 'diffbot_description'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_description/rrbot_description) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_control_demos/ros2_control_demo_description/rrbot_description' with type 'ros.ament_cmake' and name 'rrbot_description'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demo_hardware) by extension 'ros'
+[0.211s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_control_demos/ros2_control_demo_hardware' with type 'ros.ament_cmake' and name 'ros2_control_demo_hardware'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_demos) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_control_demos/ros2_control_demos' with type 'ros.ament_cmake' and name 'ros2_control_demos'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_control_demos/ros2_control_test_nodes) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_control_demos/ros2_control_test_nodes' with type 'ros.ament_python' and name 'ros2_control_test_nodes'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_odometry_estimation) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_odometry_estimation' with type 'ros.ament_cmake' and name 'odometry_estimator'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/vp_one) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vp_one' with type 'ros.ament_cmake' and name 'vp_one'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.238s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.242s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 14 installed packages in /home/vp/robot_ws/install
+[0.243s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/vp/odrive_ws/install
+[0.245s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/vp/test_ws/install
+[0.246s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 338 installed packages in /opt/ros/foxy
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'diffbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'diffbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/diffbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/diffbot_description', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description', 'symlink_install': False, 'test_result_base': None}
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'cmake_target' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'cmake_clean_first' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'cmake_force_configure' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'ament_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'odometry_estimator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.329s] DEBUG:colcon.colcon_core.verb:Building package 'odometry_estimator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/odometry_estimator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/odometry_estimator', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ros2_odometry_estimation', 'symlink_install': False, 'test_result_base': None}
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_target' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.330s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_demo_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/odrive_demo_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/odrive_demo_description', 'merge_install': False, 'path': '/home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_description', 'symlink_install': False, 'test_result_base': None}
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'cmake_target' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'odrive_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.332s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/odrive_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/odrive_driver', 'merge_install': False, 'path': '/home/vp/robot_ws/src/odrive_driver', 'symlink_install': False, 'test_result_base': None}
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_target' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.333s] Level 5:colcon.colcon_core.verb:set package 'odrive_hardware_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.333s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_hardware_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/odrive_hardware_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/odrive_hardware_interface', 'merge_install': False, 'path': '/home/vp/robot_ws/src/odrive_ros2_control/odrive_hardware_interface', 'symlink_install': False, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.335s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_control_demo_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/ros2_control_demo_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/ros2_control_demo_hardware', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_hardware', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_test_nodes' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_control_test_nodes' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/ros2_control_test_nodes', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/ros2_control_test_nodes', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_test_nodes', 'symlink_install': False, 'test_result_base': None}
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'rrbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.337s] DEBUG:colcon.colcon_core.verb:Building package 'rrbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/rrbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/rrbot_description', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/rrbot_description', 'symlink_install': False, 'test_result_base': None}
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'vp_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'vp_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/vp_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/vp_one', 'merge_install': False, 'path': '/home/vp/robot_ws/src/vp_one', 'symlink_install': False, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ydlidar_ros2_driver', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'odrive_demo_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_demo_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/odrive_demo_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/odrive_demo_bringup', 'merge_install': False, 'path': '/home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_control_demo_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/ros2_control_demo_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/ros2_control_demo_bringup', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/odrive_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/odrive_ros2_control', 'merge_install': False, 'path': '/home/vp/robot_ws/src/odrive_ros2_control/odrive_ros2_control', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_control_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vp/robot_ws/build/ros2_control_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vp/robot_ws/install/ros2_control_demos', 'merge_install': False, 'path': '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demos', 'symlink_install': False, 'test_result_base': None}
+[0.346s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.350s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.351s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description' with build type 'ament_cmake'
+[0.351s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description'
+[0.357s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.357s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.357s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_description' with build type 'ament_cmake'
+[0.372s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_description'
+[0.375s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.392s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_hardware' with build type 'ament_cmake'
+[0.392s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_hardware'
+[0.395s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.395s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.409s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_test_nodes' with build type 'ament_python'
+[0.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_test_nodes', 'ament_prefix_path')
+[0.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/hook/ament_prefix_path.ps1'
+[0.416s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/hook/ament_prefix_path.dsv'
+[0.417s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/hook/ament_prefix_path.sh'
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.434s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/rrbot_description' with build type 'ament_cmake'
+[0.435s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/rrbot_description'
+[0.437s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.437s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.455s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_hardware_interface' with build type 'ament_cmake'
+[0.456s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_hardware_interface'
+[0.459s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.459s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.474s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/ros2_odometry_estimation' with build type 'ament_cmake'
+[0.475s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/ros2_odometry_estimation'
+[0.483s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.483s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.501s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vp/robot_ws/src/odrive_driver' with build type 'ament_python'
+[0.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_driver', 'ament_prefix_path')
+[0.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/hook/ament_prefix_path.ps1'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/hook/ament_prefix_path.dsv'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/hook/ament_prefix_path.sh'
+[0.514s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.514s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/diffbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diffbot_description -- -j8 -l8
+[0.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_description -- -j8 -l8
+[0.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ros2_control_demo_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/ros2_control_demo_hardware -- -j8 -l8
+[0.839s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_test_nodes'
+[0.841s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.841s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/rrbot_description -- -j8 -l8
+[0.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_hardware_interface -- -j8 -l8
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[1.172s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vp/robot_ws/src/odrive_driver'
+[1.175s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.175s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/diffbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diffbot_description -- -j8 -l8
+[1.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ros2_control_demo_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/ros2_control_demo_hardware -- -j8 -l8
+[1.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_description -- -j8 -l8
+[1.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/rrbot_description -- -j8 -l8
+[1.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_hardware_interface -- -j8 -l8
+[1.265s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/diffbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/diffbot_description
+[1.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_description
+[1.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/rrbot_description
+[1.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_hardware_interface
+[1.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ros2_control_demo_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/ros2_control_demo_hardware
+[1.340s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffbot_description)
+[1.360s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description' for CMake module files
+[1.364s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description' for CMake config files
+[1.365s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffbot_description', 'cmake_prefix_path')
+[1.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/hook/cmake_prefix_path.ps1'
+[1.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/diffbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/diffbot_description
+[1.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/hook/cmake_prefix_path.dsv'
+[1.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/hook/cmake_prefix_path.sh'
+[1.371s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/bin'
+[1.371s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/lib/pkgconfig/diffbot_description.pc'
+[1.372s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/lib/python3.8/site-packages'
+[1.372s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/bin'
+[1.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.ps1'
+[1.377s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.dsv'
+[1.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.sh'
+[1.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.bash'
+[1.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.zsh'
+[1.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/diffbot_description/share/colcon-core/packages/diffbot_description)
+[1.391s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrbot_description)
+[1.396s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description' for CMake module files
+[1.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/rrbot_description
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description' for CMake config files
+[1.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrbot_description', 'cmake_prefix_path')
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/hook/cmake_prefix_path.ps1'
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/hook/cmake_prefix_path.dsv'
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/hook/cmake_prefix_path.sh'
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/bin'
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/lib/pkgconfig/rrbot_description.pc'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/lib/python3.8/site-packages'
+[1.406s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/bin'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.ps1'
+[1.410s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.dsv'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.sh'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.bash'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.zsh'
+[1.413s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/rrbot_description/share/colcon-core/packages/rrbot_description)
+[1.416s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_description)
+[1.422s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description' for CMake module files
+[1.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_description
+[1.423s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description' for CMake config files
+[1.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_description', 'cmake_prefix_path')
+[1.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.ps1'
+[1.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.dsv'
+[1.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.sh'
+[1.429s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/bin'
+[1.429s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/lib/pkgconfig/odrive_demo_description.pc'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/lib/python3.8/site-packages'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/bin'
+[1.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.ps1'
+[1.434s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.dsv'
+[1.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.sh'
+[1.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.bash'
+[1.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.zsh'
+[1.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_demo_description/share/colcon-core/packages/odrive_demo_description)
+[1.442s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_hardware_interface)
+[1.447s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface' for CMake module files
+[1.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_hardware_interface
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface' for CMake config files
+[1.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'cmake_prefix_path')
+[1.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.ps1'
+[1.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.dsv'
+[1.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.sh'
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/lib'
+[1.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'ld_library_path_lib')
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.ps1'
+[1.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.dsv'
+[1.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.sh'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/bin'
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/lib/pkgconfig/odrive_hardware_interface.pc'
+[1.461s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/lib/python3.8/site-packages'
+[1.461s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/bin'
+[1.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.ps1'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.dsv'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.sh'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.bash'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.zsh'
+[1.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_hardware_interface/share/colcon-core/packages/odrive_hardware_interface)
+[1.472s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_hardware)
+[1.478s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware' for CMake module files
+[1.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ros2_control_demo_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/ros2_control_demo_hardware
+[1.479s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware' for CMake config files
+[1.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_hardware', 'cmake_prefix_path')
+[1.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/cmake_prefix_path.ps1'
+[1.483s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/cmake_prefix_path.dsv'
+[1.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/cmake_prefix_path.sh'
+[1.484s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/lib'
+[1.484s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_hardware', 'ld_library_path_lib')
+[1.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/ld_library_path_lib.ps1'
+[1.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/ld_library_path_lib.dsv'
+[1.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/ld_library_path_lib.sh'
+[1.488s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/bin'
+[1.488s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/lib/pkgconfig/ros2_control_demo_hardware.pc'
+[1.488s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/lib/python3.8/site-packages'
+[1.489s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/bin'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.ps1'
+[1.493s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.dsv'
+[1.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.sh'
+[1.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.bash'
+[1.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.zsh'
+[1.495s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ros2_control_demo_hardware/share/colcon-core/packages/ros2_control_demo_hardware)
+[1.509s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffbot_description)
+[1.514s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description' for CMake module files
+[1.515s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description' for CMake config files
+[1.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffbot_description', 'cmake_prefix_path')
+[1.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/hook/cmake_prefix_path.ps1'
+[1.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/hook/cmake_prefix_path.dsv'
+[1.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/hook/cmake_prefix_path.sh'
+[1.520s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/bin'
+[1.521s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/lib/pkgconfig/diffbot_description.pc'
+[1.521s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/lib/python3.8/site-packages'
+[1.521s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/diffbot_description/bin'
+[1.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.ps1'
+[1.525s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.dsv'
+[1.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.sh'
+[1.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.bash'
+[1.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.zsh'
+[1.529s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/diffbot_description/share/colcon-core/packages/diffbot_description)
+[1.531s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/vp_one' with build type 'ament_cmake'
+[1.531s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/vp_one'
+[1.535s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.535s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.559s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rrbot_description)
+[1.562s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description' for CMake module files
+[1.563s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description' for CMake config files
+[1.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('rrbot_description', 'cmake_prefix_path')
+[1.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/hook/cmake_prefix_path.ps1'
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/hook/cmake_prefix_path.dsv'
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/hook/cmake_prefix_path.sh'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/bin'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/lib/pkgconfig/rrbot_description.pc'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/lib/python3.8/site-packages'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/rrbot_description/bin'
+[1.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.ps1'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.dsv'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.bash'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.zsh'
+[1.572s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/rrbot_description/share/colcon-core/packages/rrbot_description)
+[1.574s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_description)
+[1.578s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description' for CMake module files
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description' for CMake config files
+[1.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_description', 'cmake_prefix_path')
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.ps1'
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.dsv'
+[1.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/hook/cmake_prefix_path.sh'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/bin'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/lib/pkgconfig/odrive_demo_description.pc'
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/lib/python3.8/site-packages'
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_description/bin'
+[1.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.ps1'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.dsv'
+[1.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.sh'
+[1.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.bash'
+[1.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.zsh'
+[1.588s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_demo_description/share/colcon-core/packages/odrive_demo_description)
+[1.590s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_bringup' with build type 'ament_cmake'
+[1.591s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_bringup'
+[1.595s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.595s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.611s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[1.612s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/ydlidar_ros2_driver'
+[1.614s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.614s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_hardware_interface)
+[1.640s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface' for CMake module files
+[1.641s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface' for CMake config files
+[1.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'cmake_prefix_path')
+[1.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.ps1'
+[1.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.dsv'
+[1.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/cmake_prefix_path.sh'
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/lib'
+[1.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_hardware_interface', 'ld_library_path_lib')
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.ps1'
+[1.650s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.dsv'
+[1.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/hook/ld_library_path_lib.sh'
+[1.651s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/bin'
+[1.651s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/lib/pkgconfig/odrive_hardware_interface.pc'
+[1.652s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/lib/python3.8/site-packages'
+[1.652s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_hardware_interface/bin'
+[1.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.ps1'
+[1.655s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.dsv'
+[1.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.sh'
+[1.656s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.bash'
+[1.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.zsh'
+[1.657s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_hardware_interface/share/colcon-core/packages/odrive_hardware_interface)
+[1.661s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_hardware)
+[1.663s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware' for CMake module files
+[1.664s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware' for CMake config files
+[1.664s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_hardware', 'cmake_prefix_path')
+[1.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/cmake_prefix_path.ps1'
+[1.666s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/cmake_prefix_path.dsv'
+[1.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/cmake_prefix_path.sh'
+[1.667s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/lib'
+[1.667s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_hardware', 'ld_library_path_lib')
+[1.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/ld_library_path_lib.ps1'
+[1.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/ld_library_path_lib.dsv'
+[1.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/hook/ld_library_path_lib.sh'
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/bin'
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/lib/pkgconfig/ros2_control_demo_hardware.pc'
+[1.672s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/lib/python3.8/site-packages'
+[1.672s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_hardware/bin'
+[1.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.ps1'
+[1.678s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.dsv'
+[1.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.sh'
+[1.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.bash'
+[1.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_hardware/share/ros2_control_demo_hardware/package.zsh'
+[1.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ros2_control_demo_hardware/share/colcon-core/packages/ros2_control_demo_hardware)
+[1.690s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[1.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_demo_bringup': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_bringup -- -j8 -l8
+[1.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/ydlidar_ros2_driver -- -j8 -l8
+[1.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[1.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_demo_bringup' returned '0': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_bringup -- -j8 -l8
+[1.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one
+[1.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_demo_bringup': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_bringup
+[1.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/ydlidar_ros2_driver -- -j8 -l8
+[1.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ros2_control_test_nodes': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/ros2_control_test_nodes/build
+[1.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vp_one)
+[1.865s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one' for CMake module files
+[1.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one' for CMake config files
+[1.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('vp_one', 'cmake_prefix_path')
+[1.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/vp_one/share/vp_one/hook/cmake_prefix_path.ps1'
+[1.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/vp_one/share/vp_one/hook/cmake_prefix_path.dsv'
+[1.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/vp_one/share/vp_one/hook/cmake_prefix_path.sh'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/bin'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/lib/pkgconfig/vp_one.pc'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/lib/python3.8/site-packages'
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/bin'
+[1.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.ps1'
+[1.878s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/vp_one/share/vp_one/package.dsv'
+[1.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.sh'
+[1.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.bash'
+[1.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.zsh'
+[1.881s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/vp_one/share/colcon-core/packages/vp_one)
+[1.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/ydlidar_ros2_driver
+[1.892s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_bringup)
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup' for CMake module files
+[1.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_demo_bringup' returned '0': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_bringup
+[1.899s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup' for CMake config files
+[1.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_bringup', 'cmake_prefix_path')
+[1.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.ps1'
+[1.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.dsv'
+[1.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.sh'
+[1.908s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/bin'
+[1.908s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/lib/pkgconfig/odrive_demo_bringup.pc'
+[1.909s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/lib/python3.8/site-packages'
+[1.910s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/bin'
+[1.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.ps1'
+[1.915s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.dsv'
+[1.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.sh'
+[1.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.bash'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.zsh'
+[1.919s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_demo_bringup/share/colcon-core/packages/odrive_demo_bringup)
+[1.931s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vp_one)
+[1.936s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one' for CMake module files
+[1.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_driver': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build
+[1.939s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one' for CMake config files
+[1.939s] Level 1:colcon.colcon_core.shell:create_environment_hook('vp_one', 'cmake_prefix_path')
+[1.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/vp_one/share/vp_one/hook/cmake_prefix_path.ps1'
+[1.942s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/vp_one/share/vp_one/hook/cmake_prefix_path.dsv'
+[1.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/vp_one/share/vp_one/hook/cmake_prefix_path.sh'
+[1.943s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/bin'
+[1.943s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/lib/pkgconfig/vp_one.pc'
+[1.944s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/lib/python3.8/site-packages'
+[1.944s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/vp_one/bin'
+[1.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.ps1'
+[1.946s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/vp_one/share/vp_one/package.dsv'
+[1.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.sh'
+[1.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.bash'
+[1.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/vp_one/share/vp_one/package.zsh'
+[1.948s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/vp_one/share/colcon-core/packages/vp_one)
+[1.951s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_demo_bringup)
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup' for CMake module files
+[1.957s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup' for CMake config files
+[1.958s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_demo_bringup', 'cmake_prefix_path')
+[1.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.ps1'
+[1.961s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.dsv'
+[1.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/hook/cmake_prefix_path.sh'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/bin'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/lib/pkgconfig/odrive_demo_bringup.pc'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/lib/python3.8/site-packages'
+[1.964s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_demo_bringup/bin'
+[1.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.ps1'
+[1.968s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.dsv'
+[1.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.sh'
+[1.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.bash'
+[1.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_demo_bringup/share/odrive_demo_bringup/package.zsh'
+[1.971s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_demo_bringup/share/colcon-core/packages/odrive_demo_bringup)
+[1.972s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_ros2_control' with build type 'ament_cmake'
+[1.972s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/odrive_ros2_control/odrive_ros2_control'
+[1.975s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.975s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.001s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[2.008s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver' for CMake module files
+[2.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/ydlidar_ros2_driver
+[2.010s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver' for CMake config files
+[2.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[2.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[2.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[2.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[2.021s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/lib'
+[2.021s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/bin'
+[2.021s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[2.021s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/lib/python3.8/site-packages'
+[2.021s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/bin'
+[2.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[2.024s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[2.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[2.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[2.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[2.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[2.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/odrive_hardware_interface/lib:/home/vp/robot_ws/install/ros2_control_demo_hardware/lib:/home/vp/odrive_ws/install/odrive_hardware_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_ros2_control -- -j8 -l8
+[2.068s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver' for CMake module files
+[2.073s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver' for CMake config files
+[2.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[2.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[2.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[2.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[2.079s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/lib'
+[2.079s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/bin'
+[2.079s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[2.079s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/lib/python3.8/site-packages'
+[2.080s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ydlidar_ros2_driver/bin'
+[2.083s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[2.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[2.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[2.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[2.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[2.087s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[2.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/odrive_hardware_interface/lib:/home/vp/robot_ws/install/ros2_control_demo_hardware/lib:/home/vp/odrive_ws/install/odrive_hardware_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_ros2_control -- -j8 -l8
+[2.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/odrive_hardware_interface/lib:/home/vp/robot_ws/install/ros2_control_demo_hardware/lib:/home/vp/odrive_ws/install/odrive_hardware_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_ros2_control
+[2.155s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[2.160s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control' for CMake module files
+[2.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy LD_LIBRARY_PATH=/home/vp/robot_ws/install/odrive_hardware_interface/lib:/home/vp/robot_ws/install/ros2_control_demo_hardware/lib:/home/vp/odrive_ws/install/odrive_hardware_interface/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_ros2_control
+[2.161s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control' for CMake config files
+[2.162s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[2.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[2.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[2.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[2.167s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/bin'
+[2.167s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[2.168s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/lib/python3.8/site-packages'
+[2.168s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/bin'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[2.172s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[2.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[2.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[2.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[2.174s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[2.211s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[2.215s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control' for CMake module files
+[2.215s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control' for CMake config files
+[2.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[2.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[2.219s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[2.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/bin'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/lib/python3.8/site-packages'
+[2.222s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_ros2_control/bin'
+[2.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[2.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[2.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[2.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[2.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[2.227s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[2.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ros2_control_test_nodes' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/ros2_control_test_nodes/build
+[2.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_test_nodes': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_control_test_nodes build --build-base /home/vp/robot_ws/build/ros2_control_test_nodes/build install --record /home/vp/robot_ws/build/ros2_control_test_nodes/install.log --install-scripts $base/lib/ros2_control_test_nodes --single-version-externally-managed
+[2.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odrive_driver' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build
+[2.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/src/odrive_driver': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odrive_driver build --build-base /home/vp/robot_ws/build/odrive_driver/build install --record /home/vp/robot_ws/build/odrive_driver/install.log --single-version-externally-managed
+[2.847s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_test_nodes' for CMake module files
+[2.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_test_nodes' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/ros2_control_test_nodes build --build-base /home/vp/robot_ws/build/ros2_control_test_nodes/build install --record /home/vp/robot_ws/build/ros2_control_test_nodes/install.log --install-scripts $base/lib/ros2_control_test_nodes --single-version-externally-managed
+[2.849s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_test_nodes' for CMake config files
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_test_nodes/lib'
+[2.851s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_test_nodes/bin'
+[2.851s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_test_nodes/lib/pkgconfig/ros2_control_test_nodes.pc'
+[2.851s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages'
+[2.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_test_nodes', 'pythonpath')
+[2.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/hook/pythonpath.ps1'
+[2.855s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/hook/pythonpath.dsv'
+[2.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/hook/pythonpath.sh'
+[2.857s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_test_nodes/bin'
+[2.857s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_test_nodes)
+[2.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/package.ps1'
+[2.863s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/package.dsv'
+[2.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/package.sh'
+[2.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/package.bash'
+[2.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_test_nodes/share/ros2_control_test_nodes/package.zsh'
+[2.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ros2_control_test_nodes/share/colcon-core/packages/ros2_control_test_nodes)
+[2.867s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_bringup' with build type 'ament_cmake'
+[2.868s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_bringup'
+[2.870s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.870s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ros2_control_demo_bringup': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/vp/robot_ws/build/ros2_control_demo_bringup -- -j8 -l8
+[2.926s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_driver' for CMake module files
+[2.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/src/odrive_driver' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odrive_driver build --build-base /home/vp/robot_ws/build/odrive_driver/build install --record /home/vp/robot_ws/build/odrive_driver/install.log --single-version-externally-managed
+[2.928s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_driver' for CMake config files
+[2.929s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_driver/lib'
+[2.929s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_driver/bin'
+[2.929s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_driver/lib/pkgconfig/odrive_driver.pc'
+[2.929s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages'
+[2.929s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_driver', 'pythonpath')
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/hook/pythonpath.ps1'
+[2.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/hook/pythonpath.dsv'
+[2.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/hook/pythonpath.sh'
+[2.933s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odrive_driver/bin'
+[2.933s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_driver)
+[2.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/package.ps1'
+[2.935s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/package.dsv'
+[2.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/package.sh'
+[2.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/package.bash'
+[2.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odrive_driver/share/odrive_driver/package.zsh'
+[2.937s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odrive_driver/share/colcon-core/packages/odrive_driver)
+[2.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ros2_control_demo_bringup' returned '0': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/vp/robot_ws/build/ros2_control_demo_bringup -- -j8 -l8
+[2.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ros2_control_demo_bringup': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/vp/robot_ws/build/ros2_control_demo_bringup
+[3.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_bringup)
+[3.020s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup' for CMake module files
+[3.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ros2_control_demo_bringup' returned '0': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/vp/robot_ws/build/ros2_control_demo_bringup
+[3.021s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup' for CMake config files
+[3.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_bringup', 'cmake_prefix_path')
+[3.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/hook/cmake_prefix_path.ps1'
+[3.024s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/hook/cmake_prefix_path.dsv'
+[3.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/hook/cmake_prefix_path.sh'
+[3.025s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/bin'
+[3.025s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/lib/pkgconfig/ros2_control_demo_bringup.pc'
+[3.025s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/lib/python3.8/site-packages'
+[3.026s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/bin'
+[3.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.ps1'
+[3.028s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.dsv'
+[3.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.sh'
+[3.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.bash'
+[3.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.zsh'
+[3.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ros2_control_demo_bringup/share/colcon-core/packages/ros2_control_demo_bringup)
+[3.056s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_bringup)
+[3.058s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup' for CMake module files
+[3.059s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup' for CMake config files
+[3.059s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_bringup', 'cmake_prefix_path')
+[3.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/hook/cmake_prefix_path.ps1'
+[3.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/hook/cmake_prefix_path.dsv'
+[3.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/hook/cmake_prefix_path.sh'
+[3.062s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/bin'
+[3.063s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/lib/pkgconfig/ros2_control_demo_bringup.pc'
+[3.063s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/lib/python3.8/site-packages'
+[3.063s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demo_bringup/bin'
+[3.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.ps1'
+[3.065s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.dsv'
+[3.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.sh'
+[3.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.bash'
+[3.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demo_bringup/share/ros2_control_demo_bringup/package.zsh'
+[3.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ros2_control_demo_bringup/share/colcon-core/packages/ros2_control_demo_bringup)
+[3.068s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demos' with build type 'ament_cmake'
+[3.069s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vp/robot_ws/src/ros2_control_demos/ros2_control_demos'
+[3.071s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.071s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ros2_control_demos': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/vp/robot_ws/build/ros2_control_demos -- -j8 -l8
+[3.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/vp/robot_ws/build/ros2_control_demos -- -j8 -l8
+[3.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vp/robot_ws/build/ros2_control_demos': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/vp/robot_ws/build/ros2_control_demos
+[3.209s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demos)
+[3.212s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos' for CMake module files
+[3.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/ros2_control_demos' returned '0': AMENT_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/robot_ws/install/diffbot_description:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/vp/robot_ws/install/ros2_control_demo_bringup:/home/vp/robot_ws/install/rrbot_description:/home/vp/robot_ws/install/ros2_control_demo_hardware:/home/vp/robot_ws/install/diffbot_description:/home/vp/robot_ws/install/ydlidar_ros2_driver:/home/vp/robot_ws/install/vp_one:/home/vp/robot_ws/install/ros2_control_demos:/home/vp/robot_ws/install/odrive_ros2_control:/home/vp/robot_ws/install/odrive_hardware_interface:/home/vp/robot_ws/install/odrive_demo_bringup:/home/vp/robot_ws/install/odrive_demo_description:/home/vp/robot_ws/install/odometry_estimator:/home/vp/odrive_ws/install/odrive_ros2_control:/home/vp/odrive_ws/install/odrive_hardware_interface:/home/vp/odrive_ws/install/odrive_demo_bringup:/home/vp/odrive_ws/install/odrive_demo_description:/home/vp/test_ws/install/vp_two:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy PYTHONPATH=/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:/home/vp/robot_ws/build/ros2_control_test_nodes:/home/vp/robot_ws/build/odrive_driver:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/vp/robot_ws/build/ros2_control_demos
+[3.214s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos' for CMake config files
+[3.214s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demos', 'cmake_prefix_path')
+[3.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/hook/cmake_prefix_path.ps1'
+[3.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/hook/cmake_prefix_path.dsv'
+[3.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/hook/cmake_prefix_path.sh'
+[3.218s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/bin'
+[3.218s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/lib/pkgconfig/ros2_control_demos.pc'
+[3.218s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/lib/python3.8/site-packages'
+[3.219s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/bin'
+[3.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.ps1'
+[3.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.dsv'
+[3.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.sh'
+[3.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.bash'
+[3.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.zsh'
+[3.223s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ros2_control_demos/share/colcon-core/packages/ros2_control_demos)
+[3.247s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demos)
+[3.250s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos' for CMake module files
+[3.250s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos' for CMake config files
+[3.251s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demos', 'cmake_prefix_path')
+[3.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/hook/cmake_prefix_path.ps1'
+[3.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/hook/cmake_prefix_path.dsv'
+[3.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/hook/cmake_prefix_path.sh'
+[3.254s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/bin'
+[3.254s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/lib/pkgconfig/ros2_control_demos.pc'
+[3.255s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/lib/python3.8/site-packages'
+[3.255s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/ros2_control_demos/bin'
+[3.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.ps1'
+[3.257s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.dsv'
+[3.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.sh'
+[3.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.bash'
+[3.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/ros2_control_demos/share/ros2_control_demos/package.zsh'
+[3.259s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/ros2_control_demos/share/colcon-core/packages/ros2_control_demos)
+[7.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[7.975s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odometry_estimator)
+[7.977s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odometry_estimator' for CMake module files
+[7.978s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odometry_estimator' for CMake config files
+[7.978s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry_estimator', 'cmake_prefix_path')
+[7.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/hook/cmake_prefix_path.ps1'
+[7.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/hook/cmake_prefix_path.dsv'
+[7.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/hook/cmake_prefix_path.sh'
+[7.981s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odometry_estimator/lib'
+[7.982s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odometry_estimator/bin'
+[7.982s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odometry_estimator/lib/pkgconfig/odometry_estimator.pc'
+[7.982s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odometry_estimator/lib/python3.8/site-packages'
+[7.982s] Level 1:colcon.colcon_core.environment:checking '/home/vp/robot_ws/install/odometry_estimator/bin'
+[7.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/package.ps1'
+[7.984s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/package.dsv'
+[7.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/package.sh'
+[7.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/package.bash'
+[7.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/vp/robot_ws/install/odometry_estimator/share/odometry_estimator/package.zsh'
+[7.986s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vp/robot_ws/install/odometry_estimator/share/colcon-core/packages/odometry_estimator)
+[7.997s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.997s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.997s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.997s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.009s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.009s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.010s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.165s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vp/robot_ws/install/local_setup.ps1'
+[8.170s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vp/robot_ws/install/_local_setup_util_ps1.py'
+[8.172s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vp/robot_ws/install/setup.ps1'
+[8.175s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vp/robot_ws/install/local_setup.sh'
+[8.176s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vp/robot_ws/install/_local_setup_util_sh.py'
+[8.177s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vp/robot_ws/install/setup.sh'
+[8.180s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vp/robot_ws/install/local_setup.bash'
+[8.180s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vp/robot_ws/install/setup.bash'
+[8.183s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vp/robot_ws/install/local_setup.zsh'
+[8.184s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vp/robot_ws/install/setup.zsh'

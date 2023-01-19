@@ -1,0 +1,60 @@
+[0.482s] Invoking command in '/home/vp/robot_ws/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/odrive_ros2_control/odrive_hardware_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odrive_hardware_interface
+[0.987s] -- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.987s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.988s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.995s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.997s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.260s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.625s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.630s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.999s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.024s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.025s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.025s] -- Configured cppcheck include dirs: /home/vp/robot_ws/src/odrive_ros2_control/odrive_hardware_interface/include
+[3.026s] -- Configured cppcheck exclude dirs and/or files: 
+[3.026s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.027s] -- Configured cpplint exclude dirs and/or files: 
+[3.027s] -- Added test 'lint_cmake' to check CMake code style
+[3.028s] -- Added test 'uncrustify' to check C / C++ code style
+[3.028s] -- Configured uncrustify additional arguments: 
+[3.029s] -- Added test 'xmllint' to check XML markup files
+[3.035s] -- Configuring done
+[3.081s] -- Generating done
+[3.084s] -- Build files have been written to: /home/vp/robot_ws/build/odrive_hardware_interface
+[3.093s] Invoked command in '/home/vp/robot_ws/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/odrive_ros2_control/odrive_hardware_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odrive_hardware_interface
+[3.097s] Invoking command in '/home/vp/robot_ws/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_hardware_interface -- -j8 -l8
+[3.165s] [ 50%] Built target odrive_usb
+[3.203s] [100%] Built target odrive_hardware_interface
+[3.220s] Invoked command in '/home/vp/robot_ws/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_hardware_interface -- -j8 -l8
+[3.250s] Invoking command in '/home/vp/robot_ws/build/odrive_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_hardware_interface
+[3.260s] -- Install configuration: ""
+[3.261s] -- Execute custom install script
+[3.261s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface//odrive_hardware_interface.xml
+[3.262s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_endpoints.hpp
+[3.262s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_hardware_interface.hpp
+[3.263s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/include/odrive_hardware_interface/odrive_usb.hpp
+[3.263s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/include/odrive_hardware_interface/visibility_control.hpp
+[3.263s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/library_path.sh
+[3.264s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/library_path.dsv
+[3.265s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/lib/libodrive_usb.so
+[3.265s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/lib/libodrive_hardware_interface.so
+[3.266s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/ament_index/resource_index/package_run_dependencies/odrive_hardware_interface
+[3.266s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/ament_index/resource_index/parent_prefix_path/odrive_hardware_interface
+[3.266s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/ament_prefix_path.sh
+[3.267s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/ament_prefix_path.dsv
+[3.267s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/path.sh
+[3.267s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/environment/path.dsv
+[3.268s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.bash
+[3.268s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.sh
+[3.269s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.zsh
+[3.269s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/local_setup.dsv
+[3.269s] -- Symlinking: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.dsv
+[3.280s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/ament_index/resource_index/packages/odrive_hardware_interface
+[3.281s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_hardware_interface
+[3.281s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.282s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.282s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[3.283s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/odrive_hardware_interfaceConfig.cmake
+[3.283s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/cmake/odrive_hardware_interfaceConfig-version.cmake
+[3.283s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_hardware_interface/share/odrive_hardware_interface/package.xml
+[3.291s] Invoked command in '/home/vp/robot_ws/build/odrive_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_hardware_interface

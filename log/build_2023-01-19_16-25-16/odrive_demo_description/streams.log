@@ -1,0 +1,33 @@
+[0.211s] Invoking command in '/home/vp/robot_ws/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_description -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odrive_demo_description
+[1.030s] -- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[1.030s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.033s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.033s] -- Configuring done
+[1.034s] -- Generating done
+[1.038s] -- Build files have been written to: /home/vp/robot_ws/build/odrive_demo_description
+[1.043s] Invoked command in '/home/vp/robot_ws/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/odrive_ros2_control/odrive_demo_description -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odrive_demo_description
+[1.044s] Invoking command in '/home/vp/robot_ws/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_description -- -j8 -l8
+[1.107s] Invoked command in '/home/vp/robot_ws/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odrive_demo_description -- -j8 -l8
+[1.163s] Invoking command in '/home/vp/robot_ws/build/odrive_demo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_description
+[1.188s] -- Install configuration: ""
+[1.188s] -- Execute custom install script
+[1.188s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.ros2_control.xacro
+[1.188s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive.urdf.xacro
+[1.189s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_diffbot.urdf.xacro
+[1.189s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/urdf/odrive_rrbot.urdf.xacro
+[1.189s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/ament_index/resource_index/package_run_dependencies/odrive_demo_description
+[1.189s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/ament_index/resource_index/parent_prefix_path/odrive_demo_description
+[1.190s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.sh
+[1.190s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/ament_prefix_path.dsv
+[1.191s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/path.sh
+[1.192s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/environment/path.dsv
+[1.192s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.bash
+[1.193s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.sh
+[1.194s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.zsh
+[1.195s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/local_setup.dsv
+[1.195s] -- Symlinking: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.dsv
+[1.211s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/ament_index/resource_index/packages/odrive_demo_description
+[1.211s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig.cmake
+[1.212s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/cmake/odrive_demo_descriptionConfig-version.cmake
+[1.212s] -- Up-to-date symlink: /home/vp/robot_ws/install/odrive_demo_description/share/odrive_demo_description/package.xml
+[1.215s] Invoked command in '/home/vp/robot_ws/build/odrive_demo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/odrive_demo_description

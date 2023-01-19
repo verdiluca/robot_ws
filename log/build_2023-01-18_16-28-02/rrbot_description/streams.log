@@ -1,0 +1,63 @@
+[0.419s] Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/odrive_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/rrbot_description -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/rrbot_description
+[0.858s] -- The C compiler identification is GNU 9.4.0
+[0.858s] -- The CXX compiler identification is GNU 9.4.0
+[0.858s] -- Check for working C compiler: /usr/bin/cc
+[0.860s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.861s] -- Detecting C compiler ABI info
+[0.862s] -- Detecting C compiler ABI info - done
+[0.864s] -- Detecting C compile features
+[0.865s] -- Detecting C compile features - done
+[0.865s] -- Check for working CXX compiler: /usr/bin/c++
+[0.988s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.990s] -- Detecting CXX compiler ABI info
+[1.133s] -- Detecting CXX compiler ABI info - done
+[1.160s] -- Detecting CXX compile features
+[1.162s] -- Detecting CXX compile features - done
+[1.168s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.236s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.236s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.809s] -- Configuring done
+[1.817s] -- Generating done
+[1.818s] -- Build files have been written to: /home/vp/robot_ws/build/rrbot_description
+[1.829s] Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/odrive_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/rrbot_description -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/rrbot_description
+[1.833s] Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/odrive_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/rrbot_description -- -j8 -l8
+[1.899s] Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/odrive_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/rrbot_description -- -j8 -l8
+[1.936s] Invoking command in '/home/vp/robot_ws/build/rrbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/odrive_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/rrbot_description
+[1.950s] -- Install configuration: ""
+[1.950s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/config
+[1.950s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/config/rrbot.rviz
+[1.951s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/gazebo
+[1.951s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/gazebo/rrbot.materials.xacro
+[1.952s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/gazebo/rrbot.gazebo.xacro
+[1.952s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/meshes
+[1.952s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/meshes/hokuyo.dae
+[1.952s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/launch
+[1.953s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/launch/view_robot.launch.py
+[1.953s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control
+[1.953s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot_system_with_sensor.ros2_control.xacro
+[1.954s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot.ros2_control.xacro
+[1.954s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot_system_position_only.ros2_control.xacro
+[1.954s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/ros2_control/rrbot_system_multi_interface.ros2_control.xacro
+[1.954s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf
+[1.955s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_system_multi_interface.urdf.xacro
+[1.955s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot.urdf.xacro
+[1.956s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_system_position_only.urdf.xacro
+[1.957s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_description.urdf.xacro
+[1.957s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/urdf/rrbot_system_with_sensor.urdf.xacro
+[1.958s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/rrbot_description.dsv
+[1.958s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/ament_index/resource_index/package_run_dependencies/rrbot_description
+[1.958s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/ament_index/resource_index/parent_prefix_path/rrbot_description
+[1.958s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/ament_prefix_path.sh
+[1.959s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/ament_prefix_path.dsv
+[1.959s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/path.sh
+[1.959s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/environment/path.dsv
+[1.965s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.bash
+[1.966s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.sh
+[1.966s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.zsh
+[1.966s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/local_setup.dsv
+[1.967s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.dsv
+[1.967s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/ament_index/resource_index/packages/rrbot_description
+[1.967s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/cmake/rrbot_descriptionConfig.cmake
+[1.971s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/cmake/rrbot_descriptionConfig-version.cmake
+[1.972s] -- Installing: /home/vp/robot_ws/install/rrbot_description/share/rrbot_description/package.xml
+[1.972s] Invoked command in '/home/vp/robot_ws/build/rrbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/odrive_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/rrbot_description
