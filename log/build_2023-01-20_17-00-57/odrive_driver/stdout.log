@@ -1,0 +1,28 @@
+running develop
+Removing /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive-driver.egg-link (link to .)
+running egg_info
+writing ../../build/odrive_driver/odrive_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/odrive_driver/odrive_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/odrive_driver/odrive_driver.egg-info/entry_points.txt
+writing requirements to ../../build/odrive_driver/odrive_driver.egg-info/requires.txt
+writing top-level names to ../../build/odrive_driver/odrive_driver.egg-info/top_level.txt
+reading manifest file '../../build/odrive_driver/odrive_driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/odrive_driver/odrive_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+copying odrive_driver/odrive_node.py -> /home/vp/robot_ws/build/odrive_driver/build/lib/odrive_driver
+running install
+running install_lib
+creating /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver
+copying /home/vp/robot_ws/build/odrive_driver/build/lib/odrive_driver/odrive_command.py -> /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver
+copying /home/vp/robot_ws/build/odrive_driver/build/lib/odrive_driver/__init__.py -> /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver
+copying /home/vp/robot_ws/build/odrive_driver/build/lib/odrive_driver/odrive_node.py -> /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver
+byte-compiling /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver/odrive_command.py to odrive_command.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver/odrive_node.py to odrive_node.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../build/odrive_driver/odrive_driver.egg-info to /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive_driver-0.0.0-py3.8.egg-info
+running install_scripts
+Installing odrive_node script to /home/vp/robot_ws/install/odrive_driver/lib/odrive_driver
+writing list of installed files to '/home/vp/robot_ws/build/odrive_driver/install.log'

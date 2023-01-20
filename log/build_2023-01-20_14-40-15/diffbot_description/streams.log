@@ -1,0 +1,35 @@
+[0.185s] Invoking command in '/home/vp/robot_ws/build/diffbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/diffbot_description
+[0.966s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.968s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.969s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.970s] -- Configuring done
+[0.971s] -- Generating done
+[0.971s] -- Build files have been written to: /home/vp/robot_ws/build/diffbot_description
+[0.984s] Invoked command in '/home/vp/robot_ws/build/diffbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_control_demos/ros2_control_demo_description/diffbot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/diffbot_description
+[0.985s] Invoking command in '/home/vp/robot_ws/build/diffbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diffbot_description -- -j8 -l8
+[1.029s] Invoked command in '/home/vp/robot_ws/build/diffbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/diffbot_description -- -j8 -l8
+[1.102s] Invoking command in '/home/vp/robot_ws/build/diffbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/diffbot_description
+[1.116s] -- Install configuration: ""
+[1.119s] -- Execute custom install script
+[1.120s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/config/diffbot.rviz
+[1.120s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/gazebo/diffbot.gazebo.xacro
+[1.121s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/gazebo/diffbot.materials.xacro
+[1.121s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/ros2_control/diffbot_system.ros2_control.xacro
+[1.122s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/urdf/diffbot.urdf.xacro
+[1.123s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/urdf/diffbot_system.urdf.xacro
+[1.123s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/package_run_dependencies/diffbot_description
+[1.124s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/parent_prefix_path/diffbot_description
+[1.125s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/ament_prefix_path.sh
+[1.126s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/ament_prefix_path.dsv
+[1.127s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/path.sh
+[1.128s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/environment/path.dsv
+[1.129s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.bash
+[1.130s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.sh
+[1.131s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.zsh
+[1.132s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/local_setup.dsv
+[1.133s] -- Symlinking: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.dsv
+[1.152s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/ament_index/resource_index/packages/diffbot_description
+[1.152s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/cmake/diffbot_descriptionConfig.cmake
+[1.153s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/cmake/diffbot_descriptionConfig-version.cmake
+[1.155s] -- Up-to-date symlink: /home/vp/robot_ws/install/diffbot_description/share/diffbot_description/package.xml
+[1.159s] Invoked command in '/home/vp/robot_ws/build/diffbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/diffbot_description

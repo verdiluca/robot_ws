@@ -1,0 +1,5 @@
+[ 20%] Built target vehicle_models
+[ 40%] Built target gtest
+[ 60%] Built target gtest_main
+[ 80%] Built target vehicle_models_test
+[ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m

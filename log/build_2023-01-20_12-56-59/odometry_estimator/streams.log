@@ -1,0 +1,23 @@
+[0.393s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[0.716s] [ 40%] Built target vehicle_models
+[0.716s] [ 40%] Built target gtest
+[0.717s] [ 60%] Built target gtest_main
+[0.718s] [35m[1mScanning dependencies of target odometry_estimator[0m
+[0.718s] [ 80%] Built target vehicle_models_test
+[0.719s] [ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[2.521s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In member function ‘[01m[Kvoid OdometryEstimator::publish()[m[K’:
+[2.521s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:69:30:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Ktf2_ros::TransformBroadcaster[m[K’ to ‘[01m[Kint[m[K’ in initialization
+[2.521s]    69 |   int broadcaster = tf2_ros::[01;31m[KTransformBroadcaster(this)[m[K;
+[2.522s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.522s]       |                              [01;31m[K|[m[K
+[2.522s]       |                              [01;31m[Ktf2_ros::TransformBroadcaster[m[K
+[2.530s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:88:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OdometryEstimator[m[K’ has no member named ‘[01m[Kbroadcaster[m[K’
+[2.531s]    88 |   this->[01;31m[Kbroadcaster[m[K.sendTransform(message_trans);
+[2.531s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.531s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:69:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbroadcaster[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.532s]    69 |   int [01;35m[Kbroadcaster[m[K = tf2_ros::TransformBroadcaster(this);
+[2.532s]       |       [01;35m[K^~~~~~~~~~~[m[K
+[4.209s] make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+[4.210s] make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+[4.210s] make: *** [Makefile:141: all] Errore 2
+[4.212s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
