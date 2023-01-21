@@ -1,0 +1,18 @@
+[2.357s] Invoking command in '/home/vp/robot_ws/build/ros2_control_test_nodes': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/ros2_control_test_nodes/build --no-deps install_data
+[3.012s] running develop
+[3.360s] running egg_info
+[3.360s] writing ros2_control_test_nodes.egg-info/PKG-INFO
+[3.361s] writing dependency_links to ros2_control_test_nodes.egg-info/dependency_links.txt
+[3.361s] writing entry points to ros2_control_test_nodes.egg-info/entry_points.txt
+[3.361s] writing requirements to ros2_control_test_nodes.egg-info/requires.txt
+[3.361s] writing top-level names to ros2_control_test_nodes.egg-info/top_level.txt
+[3.431s] reading manifest file 'ros2_control_test_nodes.egg-info/SOURCES.txt'
+[3.432s] writing manifest file 'ros2_control_test_nodes.egg-info/SOURCES.txt'
+[3.501s] running build_ext
+[3.502s] Creating /home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages/ros2-control-test-nodes.egg-link (link to .)
+[3.503s] Installing publisher_forward_position_controller script to /home/vp/robot_ws/install/ros2_control_test_nodes/lib/ros2_control_test_nodes
+[3.503s] Installing publisher_joint_trajectory_position_controller script to /home/vp/robot_ws/install/ros2_control_test_nodes/lib/ros2_control_test_nodes
+[3.503s] 
+[3.503s] Installed /home/vp/robot_ws/build/ros2_control_test_nodes
+[3.504s] running install_data
+[3.551s] Invoked command in '/home/vp/robot_ws/build/ros2_control_test_nodes' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_control_test_nodes/prefix_override:/home/vp/robot_ws/install/ros2_control_test_nodes/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/ros2_control_test_nodes/build --no-deps install_data

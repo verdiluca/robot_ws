@@ -1,0 +1,17 @@
+[0.576s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[1.150s] [ 30%] Built target vehicle_models
+[1.150s] [ 40%] Built target gtest
+[1.150s] [ 60%] Built target gtest_main
+[1.152s] [35m[1mScanning dependencies of target odometry_estimator[0m
+[1.159s] [ 80%] Built target vehicle_models_test
+[1.160s] [ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[3.973s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In member function ‘[01m[Kvoid OdometryEstimator::publish()[m[K’:
+[3.973s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:96:18:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Klong int[m[K’ [[01;31m[K-fpermissive[m[K]
+[3.973s]    96 |   long int aaa = [01;31m[K"aaaa"[m[K;
+[3.974s]       |                  [01;31m[K^~~~~~[m[K
+[3.974s]       |                  [01;31m[K|[m[K
+[3.974s]       |                  [01;31m[Kconst char*[m[K
+[6.675s] make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+[6.675s] make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+[6.675s] make: *** [Makefile:141: all] Errore 2
+[6.678s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8

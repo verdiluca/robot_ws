@@ -1,0 +1,75 @@
+[0.570s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_odometry_estimation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odometry_estimator
+[1.133s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.137s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.137s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.137s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.137s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.137s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.512s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.512s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.850s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.215s] -- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[2.230s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.471s] -- Configuring done
+[2.532s] -- Generating done
+[2.545s] -- Build files have been written to: /home/vp/robot_ws/build/odometry_estimator
+[2.575s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/ros2_odometry_estimation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/odometry_estimator
+[2.581s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[2.820s] [ 20%] Built target vehicle_models
+[2.821s] [35m[1mScanning dependencies of target odometry_estimator[0m
+[2.839s] [ 40%] Built target gtest_main
+[2.878s] [ 60%] Built target gtest
+[2.925s] [ 70%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[2.963s] [ 90%] Built target vehicle_models_test
+[5.213s] In file included from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[5.214s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_ros[m[K’ was not declared in this scope
+[5.214s]    28 |   rclcpp::Publisher<[01;31m[Ktf2_ros[m[K::TransformBroadcaster>::SharedPtr publisher2_;
+[5.214s]       |                     [01;31m[K^~~~~~~[m[K
+[5.214s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.214s]    28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster[01;31m[K>[m[K::SharedPtr publisher2_;
+[5.214s]       |                                                  [01;31m[K^[m[K
+[5.215s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.215s]    28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster>::[01;31m[KSharedPtr[m[K publisher2_;
+[5.215s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[5.215s]       |                                                              [32m[K;[m[K
+[5.216s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher2_[m[K’ does not name a type
+[5.216s]    28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster>::SharedPtr [01;31m[Kpublisher2_[m[K;
+[5.216s]       |                                                               [01;31m[K^~~~~~~~~~~[m[K
+[5.405s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In constructor ‘[01m[KOdometryEstimator::OdometryEstimator()[m[K’:
+[5.405s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:32:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher2_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_[m[K’?
+[5.406s]    32 |   [01;31m[Kpublisher2_[m[K = this->create_publisher<tf2_ros::TransformBroadcaster>("odom", 10);
+[5.406s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[5.406s]       |   [32m[Kpublisher_[m[K
+[6.993s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/create_publisher.hpp:21[m[K,
+[6.993s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:39[m[K,
+[6.993s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[6.993s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.993s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[6.993s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[6.993s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:10[m[K,
+[6.993s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[6.994s] /opt/ros/foxy/include/rclcpp/node_interfaces/get_node_topics_interface.hpp: In instantiation of ‘[01m[Kstd::shared_ptr<rclcpp::node_interfaces::NodeTopicsInterface> rclcpp::node_interfaces::get_node_topics_interface(NodeType&&) [with NodeType = tf2_ros::TransformBroadcaster&; typename std::enable_if<(! rcpputils::is_pointer<T>::value), int>::type <anonymous> = 0][m[K’:
+[6.994s] [01m[K/opt/ros/foxy/include/rclcpp/create_publisher.hpp:54:47:[m[K   required from ‘[01m[Kstd::shared_ptr<PublisherT> rclcpp::create_publisher(NodeT&, const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with MessageT = tf2_msgs::msg::TFMessage_<std::allocator<void> >; AllocatorT = std::allocator<void>; PublisherT = rclcpp::Publisher<tf2_msgs::msg::TFMessage_<std::allocator<void> > >; NodeT = tf2_ros::TransformBroadcaster; std::string = std::__cxx11::basic_string<char>][m[K’
+[6.994s] [01m[K/opt/ros/foxy/include/tf2_ros/transform_broadcaster.h:59:68:[m[K   required from ‘[01m[Ktf2_ros::TransformBroadcaster::TransformBroadcaster(NodeT&&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with NodeT = tf2_ros::TransformBroadcaster&; AllocatorT = std::allocator<void>][m[K’
+[6.994s] [01m[K/usr/include/c++/9/ext/new_allocator.h:146:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = tf2_ros::TransformBroadcaster; _Args = {tf2_ros::TransformBroadcaster&}; _Tp = tf2_ros::TransformBroadcaster][m[K’
+[6.994s] [01m[K/usr/include/c++/9/bits/alloc_traits.h:483:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp> >::construct(std::allocator_traits<std::allocator<_Tp> >::allocator_type&, _Up*, _Args&& ...) [with _Up = tf2_ros::TransformBroadcaster; _Args = {tf2_ros::TransformBroadcaster&}; _Tp = tf2_ros::TransformBroadcaster; std::allocator_traits<std::allocator<_Tp> >::allocator_type = std::allocator<tf2_ros::TransformBroadcaster>][m[K’
+[6.994s] [01m[K/opt/ros/foxy/include/rclcpp/experimental/intra_process_manager.hpp:423:38:[m[K   required from ‘[01m[Kvoid rclcpp::experimental::IntraProcessManager::add_owned_msg_to_buffers(std::unique_ptr<MessageT, MessageDeleter>, std::vector<long unsigned int>, std::shared_ptr<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>) [with MessageT = tf2_ros::TransformBroadcaster; Alloc = std::allocator<void>; Deleter = std::default_delete<tf2_ros::TransformBroadcaster>; typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type = std::allocator<tf2_ros::TransformBroadcaster>][m[K’
+[6.994s] [01m[K/opt/ros/foxy/include/rclcpp/experimental/intra_process_manager.hpp:282:9:[m[K   required from ‘[01m[Kstd::shared_ptr<const _Tp> rclcpp::experimental::IntraProcessManager::do_intra_process_publish_and_return_shared(uint64_t, std::unique_ptr<MessageT, MessageDeleter>, std::shared_ptr<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>) [with MessageT = tf2_ros::TransformBroadcaster; Alloc = std::allocator<void>; Deleter = std::default_delete<tf2_ros::TransformBroadcaster>; uint64_t = long unsigned int; typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type = std::allocator<tf2_ros::TransformBroadcaster>][m[K’
+[6.994s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:365:25:[m[K   required from ‘[01m[Kstd::shared_ptr<const _Tp> rclcpp::Publisher<MessageT, AllocatorT>::do_intra_process_publish_and_return_shared(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = tf2_ros::TransformBroadcaster; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<tf2_ros::TransformBroadcaster>][m[K’
+[6.994s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:201:31:[m[K   required from ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>) [with MessageT = tf2_ros::TransformBroadcaster; AllocatorT = std::allocator<void>; typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type = std::default_delete<tf2_ros::TransformBroadcaster>][m[K’
+[6.994s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:185:3:[m[K   required from here
+[6.995s] [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/get_node_topics_interface.hpp:90:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget_node_topics_interface_from_pointer(tf2_ros::TransformBroadcaster*)[m[K’
+[6.995s]    90 |   return [01;31m[Kdetail::get_node_topics_interface_from_pointer(&node)[m[K;
+[6.995s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[6.995s] [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/get_node_topics_interface.hpp:53:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeType, typename std::enable_if<rclcpp::node_interfaces::has_node_topics_interface<typename rcpputils::remove_pointer<T>::type>::value, int>::type <anonymous> > std::shared_ptr<rclcpp::node_interfaces::NodeTopicsInterface> rclcpp::node_interfaces::detail::get_node_topics_interface_from_pointer(NodeType)[m[K’
+[6.995s]    53 | [01;36m[Kget_node_topics_interface_from_pointer[m[K(NodeType node_pointer)
+[6.995s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.995s] [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/get_node_topics_interface.hpp:53:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.995s] [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/get_node_topics_interface.hpp:50:26:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, int>[m[K’
+[6.995s]    50 |   >::value, int>::type = [01;31m[K0[m[K
+[6.995s]       |                          [01;31m[K^[m[K
+[7.347s] make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+[7.347s] make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+[7.348s] make: *** [Makefile:141: all] Errore 2
+[7.350s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8

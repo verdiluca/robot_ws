@@ -1,0 +1,25 @@
+[0.421s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[0.773s] [ 20%] Built target vehicle_models
+[0.774s] [ 40%] Built target gtest
+[0.774s] [ 60%] Built target gtest_main
+[0.776s] [35m[1mScanning dependencies of target odometry_estimator[0m
+[0.776s] [ 80%] Built target vehicle_models_test
+[0.777s] [ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[2.652s] In file included from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[2.652s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_ros[m[K’ was not declared in this scope
+[2.652s]    28 |   rclcpp::Publisher<[01;31m[Ktf2_ros[m[K::TransformBroadcaster>::SharedPtr publisher2_;
+[2.652s]       |                     [01;31m[K^~~~~~~[m[K
+[2.652s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.653s]    28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster[01;31m[K>[m[K::SharedPtr publisher2_;
+[2.653s]       |                                                  [01;31m[K^[m[K
+[2.653s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.653s]    28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster>::[01;31m[KSharedPtr[m[K publisher2_;
+[2.653s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[2.653s]       |                                                              [32m[K;[m[K
+[2.655s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher2_[m[K’ does not name a type
+[2.655s]    28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster>::SharedPtr [01;31m[Kpublisher2_[m[K;
+[2.655s]       |                                                               [01;31m[K^~~~~~~~~~~[m[K
+[4.550s] make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+[4.550s] make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+[4.551s] make: *** [Makefile:141: all] Errore 2
+[4.553s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8

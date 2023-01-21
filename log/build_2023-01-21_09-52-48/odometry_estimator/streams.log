@@ -1,0 +1,67 @@
+[0.616s] Invoking command in '/home/vp/robot_ws/build/odometry_estimator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8
+[1.130s] [ 20%] Built target gtest_main
+[1.130s] [ 40%] Built target vehicle_models
+[1.131s] [ 60%] Built target gtest
+[1.131s] [35m[1mScanning dependencies of target odometry_estimator[0m
+[1.134s] [ 80%] Built target vehicle_models_test
+[1.134s] [ 90%] [32mBuilding CXX object CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o[0m
+[4.289s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:[m[K In member function ‘[01m[Kvoid OdometryEstimator::publish()[m[K’:
+[4.290s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:97:24:[m[K [01;31m[Kerror: [m[Kinvalid user-defined conversion from ‘[01m[Kconst char [8][m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’ [[01;31m[K-fpermissive[m[K]
+[4.290s]    97 |   publisher2_->publish([01;31m[K"sssssss"[m[K);
+[4.290s]       |                        [01;31m[K^~~~~~~~~[m[K
+[4.290s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/subscription_base.hpp:36[m[K,
+[4.290s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:26[m[K,
+[4.290s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.290s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.291s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.291s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.291s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.291s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.291s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.291s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.291s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:10[m[K,
+[4.291s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[4.292s] [01m[K/opt/ros/foxy/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’ <near match>
+[4.292s]    50 |   [01;36m[KSerializedMessage[m[K(
+[4.292s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.292s] [01m[K/opt/ros/foxy/include/rclcpp/serialized_message.hpp:50:3:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[4.292s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:97:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+[4.292s]    97 |   publisher2_->publish([01;31m[K"sssssss"[m[K);
+[4.293s]       |                        [01;31m[K^~~~~~~~~[m[K
+[4.293s]       |                        [01;31m[K|[m[K
+[4.293s]       |                        [01;31m[Kconst char*[m[K
+[4.293s] [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:97:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;31m[K-fpermissive[m[K]
+[4.293s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/subscription_base.hpp:36[m[K,
+[4.293s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:26[m[K,
+[4.293s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.293s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.294s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.294s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.294s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.294s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.294s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.294s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.294s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:10[m[K,
+[4.294s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[4.295s] [01m[K/opt/ros/foxy/include/rclcpp/serialized_message.hpp:51:12:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Krclcpp::SerializedMessage::SerializedMessage(size_t, const rcl_allocator_t&)[m[K’
+[4.295s]    51 |     [01;36m[Ksize_t initial_capacity[m[K,
+[4.295s]       |     [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[4.295s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[4.295s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[4.295s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[4.295s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.295s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.295s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.296s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.296s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.296s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.296s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.296s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:10[m[K,
+[4.296s]                  from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[4.296s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:232:37:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = nav_msgs::msg::Odometry_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[4.296s]   232 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[4.297s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[7.434s] make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+[7.435s] make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+[7.435s] make: *** [Makefile:141: all] Errore 2
+[7.438s] Invoked command in '/home/vp/robot_ws/build/odometry_estimator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_control_test_nodes:/home/vp/robot_ws/install/odrive_driver:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/odometry_estimator -- -j8 -l8

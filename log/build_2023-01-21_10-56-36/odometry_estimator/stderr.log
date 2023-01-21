@@ -1,0 +1,17 @@
+In file included from [01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/src/node/odometry_estimation_node.cpp:1[m[K:
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2_ros[m[K’ was not declared in this scope
+   28 |   rclcpp::Publisher<[01;31m[Ktf2_ros[m[K::TransformBroadcaster>::SharedPtr publisher2_;
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster[01;31m[K>[m[K::SharedPtr publisher2_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster>::[01;31m[KSharedPtr[m[K publisher2_;
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/vp/robot_ws/src/ros2_odometry_estimation/include/node/odometry_estimation_node.h:28:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher2_[m[K’ does not name a type
+   28 |   rclcpp::Publisher<tf2_ros::TransformBroadcaster>::SharedPtr [01;31m[Kpublisher2_[m[K;
+      |                                                               [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/odometry_estimator.dir/build.make:63: CMakeFiles/odometry_estimator.dir/src/node/odometry_estimation_node.cpp.o] Errore 1
+make[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/odometry_estimator.dir/all] Errore 2
+make: *** [Makefile:141: all] Errore 2
