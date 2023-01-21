@@ -30,6 +30,38 @@ demandx = 0.0
 demandz = 0.0
 pos0 = 0.0
 pos1 = 0.0
+pos0_diff = 0.0
+pos1_diff = 0.0
+pos0_old = 0.0
+pos1_old = 0.0
+pos0_mm_diff = 0.0
+pos1_mm_diff = 0.0
+phi = 0.0
+delta_th = 0.0
+angularz = 0.0
+pos_total_mm = 0.0
+pos_average_mm_diff = 0.0
+theta = 0.0
+TWO_PI = 0.0
+
+x = 0.0
+y = 0.0
+dth = 0.0
+
+prev_update_time = time.time()
+current_time = time.time()
+
+
+
+def get_quaternion_from_euler(roll, pitch, yaw):
+  
+    qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+    qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+    qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
+    qz = np.cos(roll/2) * np.cos(pitch/2) * np.sin(yaw/2) - np.sin(roll/2) * np.sin(pitch/2) * np.cos(yaw/2)
+  
+ 
+    return [qw, qx, qy, qz]
 
 
 
@@ -62,9 +94,29 @@ class ODriveNode(Node):
 
     def timer_callback(self):
 
+
+        global x
+        global y
+        global dth
+        global prev_update_time
+        global current_time
+        global demandx
+        global demandz
         global pos0
         global pos1
-
+        global pos0_diff
+        global pos1_diff
+        global pos0_old
+        global pos1_old
+        global pos0_mm_diff
+        global pos1_mm_diff
+        global phi
+        global delta_th
+        global angularz
+        global pos_total_mm
+        global pos_average_mm_diff
+        global theta
+        global TWO_PI
 
         msg3 = Int64()
         msg4 = Int64()
@@ -85,9 +137,9 @@ class ODriveNode(Node):
 
         vel1 = self.odrv0.get_velocity(1)
 
-        pos0 = (self.odrv0.get_position(0))
+        pos0 = (self.odrv0.get_position(0))*0.53 #numero del giro
 
-        pos1 = (self.odrv0.get_position(1))
+        pos1 = (self.odrv0.get_position(1))*0.53
 
         joint_state_position = JointState()
         joint_state_velocity = JointState()
@@ -101,6 +153,85 @@ class ODriveNode(Node):
 
         self.Joint_State.publish(joint_state_position)
         # self.Joint_State.publish(joint_state_velocity)
+
+        ###################################################################################################
+
+        vel = Int32()
+        msg = Float32()
+        msg2 = Twist()
+        v_l = Float32()
+        v_r = Float32()
+
+        self.broadcaster = TransformBroadcaster(self, 10)
+        self.odometry = Odometry()
+        odom_trans = TransformStamped()
+        self.odometry.header.frame_id = 'odom'
+        self.odometry.child_frame_id = 'base_link'
+        odom_trans.header.frame_id = 'odom'
+        odom_trans.child_frame_id = 'base_link'
+
+        pos0_diff = pos0 - pos0_old
+        pos1_diff = pos1 - pos1_old
+        pos0_old = pos0
+        pos1_old = pos1
+
+        pos0_mm_diff = pos0_diff  #0.0058
+        pos1_mm_diff = pos1_diff  #0.0058
+
+
+        current_time = time.time()
+        phi = ((pos1_mm_diff - pos0_mm_diff))
+        dt = (current_time - prev_update_time)
+        #delta_th = (demandz) * dt
+        delta_th += phi
+
+        #print(pos0)
+        print(pos1)
+        #print(pos0_mm_diff)
+        print(pos1_mm_diff)
+
+        if delta_th >= (math.pi)*2 :
+            delta_th -= (math.pi)*2
+            
+        if delta_th <= (-math.pi)*2 :
+            delta_th += (math.pi)*2
+
+        delta_x = pos0_mm_diff * math.cos(delta_th) * dt
+        delta_y = pos1_mm_diff * math.sin(delta_th) * dt
+
+        x += delta_x
+        y += delta_y
+        dth = delta_th
+
+        quat_tf = get_quaternion_from_euler(0,0,dth)
+        msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
+
+
+        self.odometry.pose.pose.position.x = x/1000
+        self.odometry.pose.pose.position.y = y/1000
+        self.odometry.pose.pose.position.z = 0.0
+        self.odometry.pose.pose.orientation = msg_quat
+        #self.odometry.pose.pose.orientation.y = 
+        #self.odometry.pose.pose.orientation.z = 
+        #self.odometry.pose.pose.orientation.w = 1.
+        self.odometry.twist.twist.linear.x = ((pos0_mm_diff + pos1_mm_diff) /2)/10
+        self.odometry.twist.twist.linear.y = 0.0
+        self.odometry.twist.twist.linear.z = 0.0
+        self.odometry.twist.twist.angular.x = 0.0
+        self.odometry.twist.twist.angular.y = 0.0
+        self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /360)*100
+        self.odometry.header.stamp = self.get_clock().now().to_msg()
+        self.odom.publish(self.odometry)
+
+        odom_trans.header.stamp = self.get_clock().now().to_msg()
+        odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
+        odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
+        odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
+        odom_trans.transform.rotation = self.odometry.pose.pose.orientation 
+        self.broadcaster.sendTransform(odom_trans)
+
+
+        ######################################################################################################à
 
 
     def cmd_callback(self, msg2):
