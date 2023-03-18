@@ -11,6 +11,7 @@ from std_msgs.msg import String
 from std_msgs.msg import Int32
 from std_msgs.msg import Int64
 from std_msgs.msg import Float32
+from std_msgs.msg import Float64
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
 from .odrive_command import ODriveController
@@ -28,12 +29,12 @@ from geometry_msgs.msg import TransformStamped
 
 demandx = 0.0
 demandz = 0.0
-pos0 = 0.0
-pos1 = 0.0
-pos0_diff = 0.0
-pos1_diff = 0.0
-pos0_old = 0.0
-pos1_old = 0.0
+posDX = 0.0
+posSX = 0.0
+delta_posDX = 0.0
+delta_posSX = 0.0
+posDX_old = 0.0
+posSX_old = 0.0
 pos0_mm_diff = 0.0
 pos1_mm_diff = 0.0
 phi = 0.0
@@ -41,7 +42,16 @@ delta_th = 0.0
 angularz = 0.0
 pos_total_mm = 0.0
 pos_average_mm_diff = 0.0
+wheel_mm = 530.0
+cpr = 90.0
+wheel_distance_mm = 570.0
+linear_speed = 0.0
+angular_speed = 0.0
+theta_old = 0.0
 theta = 0.0
+step_lenght = 0.0
+r_distance = 0.0
+l_distance = 0.0
 TWO_PI = 0.0
 
 x = 0.0
@@ -102,12 +112,12 @@ class ODriveNode(Node):
         global current_time
         global demandx
         global demandz
-        global pos0
-        global pos1
-        global pos0_diff
-        global pos1_diff
-        global pos0_old
-        global pos1_old
+        global posDX
+        global posSX
+        global delta_posDX
+        global delta_posSX
+        global posDX_old
+        global posSX_old
         global pos0_mm_diff
         global pos1_mm_diff
         global phi
@@ -116,6 +126,16 @@ class ODriveNode(Node):
         global pos_total_mm
         global pos_average_mm_diff
         global theta
+        global wheel_mm
+        global cpr
+        global wheel_distance_mm
+        global theta_old
+        global linear_speed
+        global angular_speed
+        global step_lenght
+        global r_distance
+        global l_distance
+
         global TWO_PI
 
         msg3 = Int64()
@@ -130,29 +150,25 @@ class ODriveNode(Node):
 
         vel0 = Float32()
         vel1 = Float32()
-        pos0 = Float32()
-        pos1 = Float32()
+        posDX = Float64()
+        posSX = Float64()
+
 
         vel0 = self.odrv0.get_velocity(0)
 
         vel1 = self.odrv0.get_velocity(1)
 
-        pos0 = (self.odrv0.get_position(0))*0.53 #numero del giro
+        posDX = (self.odrv0.get_position(0))
 
-        pos1 = (self.odrv0.get_position(1))*0.53
+        posSX = (self.odrv0.get_position(1))
 
         joint_state_position = JointState()
         joint_state_velocity = JointState()
 
         joint_state_position.name = ["joint0", "joint1"]
-        # joint_state_velocity.name = ["wheel_left_joint", "wheel_right_joint"]
-        joint_state_position.position = [pos0,pos1]
-        # joint_state_velocity.velocity = [vel0,vel1]
+        joint_state_position.position = [posDX,posSX]
         joint_state_position.header.stamp = self.get_clock().now().to_msg()
-        # joint_state_velocity.header.stamp = self.get_clock().now().to_msg()
-
         self.Joint_State.publish(joint_state_position)
-        # self.Joint_State.publish(joint_state_velocity)
 
         ###################################################################################################
 
@@ -162,6 +178,12 @@ class ODriveNode(Node):
         v_l = Float32()
         v_r = Float32()
 
+        r_distance = Float64()
+        l_distance = Float64()
+        step_lenght = Float64()
+
+        step_lenght = (530 / 90)
+
         self.broadcaster = TransformBroadcaster(self, 10)
         self.odometry = Odometry()
         odom_trans = TransformStamped()
@@ -170,56 +192,54 @@ class ODriveNode(Node):
         odom_trans.header.frame_id = 'odom'
         odom_trans.child_frame_id = 'base_link'
 
-        pos0_diff = pos0 - pos0_old
-        pos1_diff = pos1 - pos1_old
-        pos0_old = pos0
-        pos1_old = pos1
+        delta_posDX = posDX - posDX_old
+        delta_posSX = posSX - posSX_old
 
-        pos0_mm_diff = pos0_diff  #0.0058
-        pos1_mm_diff = pos1_diff  #0.0058
+        posDX_old = posDX
+        posSX_old = posSX
+
+        l_distance = delta_posSX * step_lenght / 1000
+        r_distance = delta_posDX * step_lenght / 1000
+        
+        theta = theta + (((l_distance - r_distance)/wheel_distance_mm) / 1000) 
+
+        x = x + (r_distance * math.sin(theta))
+        y = y + (l_distance * math.cos(theta))
+
+        linear_speed = ((l_distance + r_distance) / 2)*100
+        angular_speed = (theta - theta_old)*100
+
+        theta_old = theta
 
 
         current_time = time.time()
-        phi = ((pos1_mm_diff - pos0_mm_diff))
-        dt = (current_time - prev_update_time)
-        #delta_th = (demandz) * dt
-        delta_th += phi
 
-        #print(pos0)
-        print(pos1)
-        #print(pos0_mm_diff)
-        print(pos1_mm_diff)
+        delta_th = delta_th + theta
+
 
         if delta_th >= (math.pi)*2 :
             delta_th -= (math.pi)*2
-            
+
         if delta_th <= (-math.pi)*2 :
             delta_th += (math.pi)*2
+        
 
-        delta_x = pos0_mm_diff * math.cos(delta_th) * dt
-        delta_y = pos1_mm_diff * math.sin(delta_th) * dt
-
-        x += delta_x
-        y += delta_y
-        dth = delta_th
+        print(l_distance)
+        print(r_distance)
 
         quat_tf = get_quaternion_from_euler(0,0,dth)
         msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
 
-
-        self.odometry.pose.pose.position.x = x/1000
-        self.odometry.pose.pose.position.y = y/1000
+        self.odometry.pose.pose.position.x = x
+        self.odometry.pose.pose.position.y = y
         self.odometry.pose.pose.position.z = 0.0
         self.odometry.pose.pose.orientation = msg_quat
-        #self.odometry.pose.pose.orientation.y = 
-        #self.odometry.pose.pose.orientation.z = 
-        #self.odometry.pose.pose.orientation.w = 1.
-        self.odometry.twist.twist.linear.x = ((pos0_mm_diff + pos1_mm_diff) /2)/10
+        self.odometry.twist.twist.linear.x = linear_speed
         self.odometry.twist.twist.linear.y = 0.0
         self.odometry.twist.twist.linear.z = 0.0
         self.odometry.twist.twist.angular.x = 0.0
         self.odometry.twist.twist.angular.y = 0.0
-        self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /360)*100
+        self.odometry.twist.twist.angular.z = angular_speed
         self.odometry.header.stamp = self.get_clock().now().to_msg()
         self.odom.publish(self.odometry)
 
