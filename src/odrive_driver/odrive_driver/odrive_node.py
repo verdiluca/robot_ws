@@ -137,9 +137,9 @@ class ODriveNode(Node):
 
         vel1 = self.odrv0.get_velocity(1)
 
-        pos0 = (self.odrv0.get_position(0))*0.53 #numero del giro
+        pos1 = (self.odrv0.get_position(0)) #numero del giro
 
-        pos1 = (self.odrv0.get_position(1))*0.53
+        pos0 = (self.odrv0.get_position(1))
 
         joint_state_position = JointState()
         joint_state_velocity = JointState()
@@ -172,21 +172,13 @@ class ODriveNode(Node):
 
 
 
-
-
-
-
-
-
-
-
         pos0_diff = pos0 - pos0_old
         pos1_diff = pos1 - pos1_old
         pos0_old = pos0
         pos1_old = pos1
 
-        pos0_mm_diff = (pos0_diff  / (1 / 530)) #1 impulso al giro per ogni giro di ruota (530mm)
-        pos1_mm_diff = (pos1_diff  / (1 / 530))
+        pos0_mm_diff = (pos0_diff  / (1 / 519)) #1 impulso al giro per ogni giro di ruota (530mm)
+        pos1_mm_diff = (pos1_diff  / (1 / 519))
 
 
         current_time = time.time()
@@ -196,10 +188,7 @@ class ODriveNode(Node):
         #delta_th = (demandz) * dt
         delta_th += phi
 
-        #print(pos0)
-        # print(pos1)
-        #print(pos0_mm_diff)
-        # print(pos1_mm_diff)
+        
 
         if delta_th >= (math.pi)*2 :
             delta_th -= (math.pi)*2
@@ -212,8 +201,8 @@ class ODriveNode(Node):
 
         quat_tf = get_quaternion_from_euler(0,0,delta_th)
         msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
-
-
+        
+    
         self.odometry.pose.pose.position.x = x/1000
         self.odometry.pose.pose.position.y = y/1000
         self.odometry.pose.pose.position.z = 0.0
