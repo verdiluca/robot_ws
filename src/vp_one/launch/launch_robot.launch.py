@@ -31,61 +31,61 @@ def generate_launch_description():
     
     robot_description = Command(['ros2 param get --hide-type /robot_state_publisher robot_description'])
 
-    robot_controllers = PathJoinSubstitution(
-        [
-            FindPackageShare("odrive_demo_bringup"),
-            "config",
-            "diffbot_controllers.yaml",
-        ]
-    )
+    # robot_controllers = PathJoinSubstitution(
+    #     [
+    #         FindPackageShare("odrive_demo_bringup"),
+    #         "config",
+    #         "diffbot_controllers.yaml",
+    #     ]
+    # )
 
-    rviz_config_file = PathJoinSubstitution(
-        [
-            FindPackageShare("diffbot_description"),
-            "config",
-            "diffbot.rviz"
-        ]
-    )
+    # rviz_config_file = PathJoinSubstitution(
+    #     [
+    #         FindPackageShare("diffbot_description"),
+    #         "config",
+    #         "diffbot.rviz"
+    #     ]
+    # )
 
-    control_node = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-        parameters=[robot_description, robot_controllers],
-        output="both",
-    )
+    # control_node = Node(
+    #     package="controller_manager",
+    #     executable="ros2_control_node",
+    #     parameters=[robot_description, robot_controllers],
+    #     output="both",
+    # )
 
-    robot_state_pub_node = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        output="both",
-        parameters=[robot_description],
-    )
+    # robot_state_pub_node = Node(
+    #     package="robot_state_publisher",
+    #     executable="robot_state_publisher",
+    #     output="both",
+    #     parameters=[robot_description],
+    # )
 
-    joint_state_broadcaster_spawner = Node(
-        package="controller_manager",
-        executable="spawner.py",
-        arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
-    )
+    # joint_state_broadcaster_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner.py",
+    #     arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
+    # )
 
-    robot_controller_spawner = Node(
-        package="controller_manager",
-        executable="spawner.py",
-        arguments=["diffbot_base_controller", "-c", "/controller_manager"],
-    )
+    # robot_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner.py",
+    #     arguments=["diffbot_base_controller", "-c", "/controller_manager"],
+    # )
 
-    rviz_node = Node(
-        package="rviz2",
-        executable="rviz2",
-        name="rviz2",
-        arguments=["-d", rviz_config_file],
-    )
+    # rviz_node = Node(
+    #     package="rviz2",
+    #     executable="rviz2",
+    #     name="rviz2",
+    #     arguments=["-d", rviz_config_file],
+    # )
 
     
     return LaunchDescription([
-        #rsp,
-        # control_node,
-        # robot_state_pub_node,
-        # joint_state_broadcaster_spawner,
-        # robot_controller_spawner,
+        rsp,
+        #control_node,
+        #robot_state_pub_node,
+        #joint_state_broadcaster_spawner,
+        #robot_controller_spawner,
         # rviz_node
     ])

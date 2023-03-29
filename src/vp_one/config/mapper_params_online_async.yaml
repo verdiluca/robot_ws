@@ -19,14 +19,14 @@ slam_toolbox:
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    #map_file_name: /home/vp/robot_ws/my_map_serial   PER INSERIRE LA MAPPA, TOGLIERE SE BISOGNA MAPPARE
+    #map_file_name: test_steve
     # map_start_pose: [0.0, 0.0, 0.0]
-    #map_start_at_dock: true   #TOGLIERE SE BISOGNA MAPPARE
+    #map_start_at_dock: true
 
     debug_logging: false
     throttle_scans: 1
-    transform_publish_period: 0.02 #if 0 never publishes odometry
-    map_update_interval: 5.0
+    transform_publish_period: 0.005 #if 0 never publishes odometry
+    map_update_interval: 2.0
     resolution: 0.05
     max_laser_range: 20.0 #for rastering images
     minimum_time_interval: 0.5
@@ -38,8 +38,8 @@ slam_toolbox:
     # General Parameters
     use_scan_matching: true
     use_scan_barycenter: true
-    minimum_travel_distance: 0.5
-    minimum_travel_heading: 0.5
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.2
     scan_buffer_size: 10
     scan_buffer_maximum_scan_distance: 10.0
     link_match_minimum_response_fine: 0.1  

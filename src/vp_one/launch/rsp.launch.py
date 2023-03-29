@@ -19,7 +19,7 @@ def generate_launch_description():
     pkg_path = os.path.join(get_package_share_directory('vp_one'))
     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)
-    
+   
     # Create a robot_state_publisher node
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
     node_robot_state_publisher = Node(
@@ -29,12 +29,6 @@ def generate_launch_description():
         parameters=[params]
     )
 
-    # joint_state_broadcaster_spawner = Node(
-    #     package="controller_manager",
-    #     executable="spawner.py",
-    #     arguments=["joint_state_broadcaster", "-c", "/controller_manager"],
-    # )
-
 
     # Launch!
     return LaunchDescription([
@@ -42,14 +36,5 @@ def generate_launch_description():
             'use_sim_time',
             default_value='false',
             description='Use sim time if true'),
-        
-        # Node(
-        #     package="tf2_ros",
-        #     executable="static_transform_publisher",
-        #     output="screen",
-        #     arguments=["0", "0", "0", "0", "0", "0", "odom", "base_link"]
-        # ),
-
         node_robot_state_publisher,
-        #joint_state_broadcaster_spawner,
     ])
