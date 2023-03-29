@@ -11,6 +11,7 @@ from std_msgs.msg import String
 from std_msgs.msg import Int32
 from std_msgs.msg import Int64
 from std_msgs.msg import Float32
+from std_msgs.msg import Float64
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
 from .odrive_command import ODriveController
@@ -68,9 +69,9 @@ def get_quaternion_from_euler(roll, pitch, yaw):
 #INIZIO CLASSE
 
 class ODriveNode(Node):
-
+    
     def __init__(self, odrv0):
-
+        
         super().__init__('driver')
         self.odrv0 = odrv0
 
@@ -78,16 +79,16 @@ class ODriveNode(Node):
 
         self.odom = self.create_publisher(
             Odometry, 'odom', 10)
-
-
-        self.Joint_State = self.create_publisher(
-            JointState, 'joint_states', 10)
+    
+        # self.Joint_State = self.create_publisher(
+        #     JointState, 'joint_states', 10)
 
         timer_period = 1 / 100
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
-        self.cmd_vel_sub = self.create_subscription(
-           Twist, '/cmd_vel', self.cmd_callback, 10)
+        # self.cmd_vel_sub = self.create_subscription(
+        #    Twist, '/cmd_vel', self.cmd_callback, 10)
+        
 
 #-------------------------------------------------------------------------------------------------------------------#
 
@@ -122,11 +123,13 @@ class ODriveNode(Node):
 
         vel0 = Float32()
         vel1 = Float32()
-        pos0 = Float32()
-        pos1 = Float32()
+        pos0 = Float64
+        pos1 = Float64
         vel = Int32()
         msg = Float32()
         msg2 = Twist()
+        # x = float
+        # y = float
 
 #-------------------------------------------------------------------------------------------------------------------#
         
@@ -136,27 +139,27 @@ class ODriveNode(Node):
 
         vel1 = self.odrv0.get_velocity(1)
 
-        pos1 = (self.odrv0.get_position(0)) #numero del giro
+        pos1 = (self.odrv0.get_position(0))
 
         pos0 = (self.odrv0.get_position(1))
 
 #-------------------------------------------------------------------------------------------------------------------#
 
-        joint_state_position = JointState()
-        joint_state_velocity = JointState()
-        joint_state_position.name = ["joint0", "joint1"]
-        # joint_state_velocity.name = ["wheel_left_joint", "wheel_right_joint"]
-        joint_state_position.position = [pos0,pos1]
-        # joint_state_velocity.velocity = [vel0,vel1]
-        joint_state_position.header.stamp = self.get_clock().now().to_msg()
-        # joint_state_velocity.header.stamp = self.get_clock().now().to_msg()
-        self.Joint_State.publish(joint_state_position)
-        # self.Joint_State.publish(joint_state_velocity)
+        # joint_state_position = JointState()
+        # joint_state_velocity = JointState()
+        # joint_state_position.name = ["joint0", "joint1"]
+        # # joint_state_velocity.name = ["wheel_left_joint", "wheel_right_joint"]
+        # joint_state_position.position = [pos0,pos1]
+        # # joint_state_velocity.velocity = [vel0,vel1]
+        # joint_state_position.header.stamp = self.get_clock().now().to_msg()
+        # # joint_state_velocity.header.stamp = self.get_clock().now().to_msg()
+        # self.Joint_State.publish(joint_state_position)
+        # # self.Joint_State.publish(joint_state_velocity)
 
 #-------------------------------------------------------------------------------------------------------------------#
 
         if (c_time - p_time) >= loopTime :
-
+            
             p_time = (time.time()) * 1000
 
             self.broadcaster = TransformBroadcaster(self, 10)
@@ -175,7 +178,8 @@ class ODriveNode(Node):
             pos0_mm_diff = (pos0_diff  / (1 / 519)) #1 impulso al giro per ogni giro di ruota (530mm)
             pos1_mm_diff = (pos1_diff  / (1 / 519))
 
-            current_time = time.time()
+            current_time = self.get_clock().now().to_msg()
+
             phi = ((pos1_mm_diff - pos0_mm_diff) / 360) #angolo in radianti
             delta_th += phi
 
@@ -190,7 +194,7 @@ class ODriveNode(Node):
 
             quat_tf = get_quaternion_from_euler(0,0,delta_th)
             msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
-    
+            
             self.odometry.pose.pose.position.x = x/1000
             self.odometry.pose.pose.position.y = y/1000
             self.odometry.pose.pose.position.z = 0.0
@@ -201,10 +205,10 @@ class ODriveNode(Node):
             self.odometry.twist.twist.angular.x = 0.0
             self.odometry.twist.twist.angular.y = 0.0
             self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /6.28)*100
-            self.odometry.header.stamp = self.get_clock().now().to_msg()
+            self.odometry.header.stamp = current_time
             self.odom.publish(self.odometry)
-
-            odom_trans.header.stamp = self.get_clock().now().to_msg()
+            
+            odom_trans.header.stamp = current_time
             odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
             odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
             odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
@@ -214,13 +218,13 @@ class ODriveNode(Node):
 #-------------------------------------------------------------------------------------------------------------------#
 
 
-    def cmd_callback(self, msg2):
+    # def cmd_callback(self, msg2):
 
-        global angularz
+    #     global angularz
 
-        self.odrv0.command_velocity(0, msg2.linear.x + msg2.angular.z)
-        self.odrv0.command_velocity(1, msg2.linear.x - msg2.angular.z)
-        angularz = msg2.angular.z
+    #     self.odrv0.command_velocity(0, msg2.linear.x + msg2.angular.z)
+    #     self.odrv0.command_velocity(1, msg2.linear.x - msg2.angular.z)
+    #     angularz = msg2.angular.z
 
 
 
@@ -228,15 +232,16 @@ class ODriveNode(Node):
 
 
 def main(args=None):
+    
     rclpy.init(args=args)
-
+    
     odrv0 = ODriveController()
-
+    
     odrive_node = ODriveNode(odrv0)
     odrv0.encoder_offset_calibration()
     odrv0.arm_velocity_control()
-
+    
     rclpy.spin(odrive_node)
-
+    
     odrive_node.destroy_node()
     rclpy.shutdown()
