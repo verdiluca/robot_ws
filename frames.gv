@@ -1,1 +1,13 @@
-digraph G { "No tf data received" }
+digraph G {
+"base_link" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 1680097116.397607\nOldest transform: 1680097116.397607\n"];
+"chassis" -> "caster_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "chassis"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"chassis" -> "laser_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"chassis" -> "right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 0.771\nBuffer length: 2.595\nMost recent transform: 1680097118.991155\nOldest transform: 1680097116.396478\n"];
+"chassis" -> "left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 0.771\nBuffer length: 2.595\nMost recent transform: 1680097118.991155\nOldest transform: 1680097116.396478\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1680097118.9993827"[ shape=plaintext ] ;
+}->"odom";
+}

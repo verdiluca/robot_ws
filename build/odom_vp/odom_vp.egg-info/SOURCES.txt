@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+odom_vp/__init__.py
+odom_vp/odom_node.py
+odom_vp.egg-info/PKG-INFO
+odom_vp.egg-info/SOURCES.txt
+odom_vp.egg-info/dependency_links.txt
+odom_vp.egg-info/entry_points.txt
+odom_vp.egg-info/requires.txt
+odom_vp.egg-info/top_level.txt
+odom_vp.egg-info/zip-safe
+resource/odom_vp

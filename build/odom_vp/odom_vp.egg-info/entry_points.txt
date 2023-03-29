@@ -1,0 +1,3 @@
+[console_scripts]
+odom_node = odom_vp.odom_node:main
+
