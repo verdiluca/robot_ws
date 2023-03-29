@@ -80,14 +80,14 @@ class ODriveNode(Node):
         self.odom = self.create_publisher(
             Odometry, 'odom', 10)
     
-        # self.Joint_State = self.create_publisher(
-        #     JointState, 'joint_states', 10)
+        self.Joint_State = self.create_publisher(
+            JointState, 'joint_states', 10)
 
         timer_period = 1 / 100
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
-        # self.cmd_vel_sub = self.create_subscription(
-        #    Twist, '/cmd_vel', self.cmd_callback, 10)
+        self.cmd_vel_sub = self.create_subscription(
+           Twist, '/cmd_vel', self.cmd_callback, 10)
         
 
 #-------------------------------------------------------------------------------------------------------------------#
@@ -158,62 +158,58 @@ class ODriveNode(Node):
 
 #-------------------------------------------------------------------------------------------------------------------#
 
-        if (c_time - p_time) >= loopTime :
+        self.broadcaster = TransformBroadcaster(self, 10)
+        self.odometry = Odometry()
+        odom_trans = TransformStamped()
+        self.odometry.header.frame_id = 'odom'
+        self.odometry.child_frame_id = 'base_link'
+        odom_trans.header.frame_id = 'odom'
+        odom_trans.child_frame_id = 'base_link'
+
+        pos0_diff = pos0 - pos0_old
+        pos1_diff = pos1 - pos1_old
+        pos0_old = pos0
+        pos1_old = pos1
+
+        pos0_mm_diff = (pos0_diff  / (1 / 519)) #1 impulso al giro per ogni giro di ruota (530mm)
+        pos1_mm_diff = (pos1_diff  / (1 / 519))
+
+        current_time = self.get_clock().now().to_msg()
+
+        phi = ((pos1_mm_diff - pos0_mm_diff) / 360) #angolo in radianti
+        delta_th += phi
+
+        if delta_th >= (math.pi)*2 :
+            delta_th -= (math.pi)*2
+
+        if delta_th <= (-math.pi)*2 :
+            delta_th += (math.pi)*2
+
+        x += ((pos0_mm_diff + pos1_mm_diff) / 2) * math.cos(delta_th)
+        y += ((pos0_mm_diff + pos1_mm_diff) / 2) * math.sin(delta_th)
+
+        quat_tf = get_quaternion_from_euler(0,0,delta_th)
+        msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
             
-            p_time = (time.time()) * 1000
-
-            self.broadcaster = TransformBroadcaster(self, 10)
-            self.odometry = Odometry()
-            odom_trans = TransformStamped()
-            self.odometry.header.frame_id = 'odom'
-            self.odometry.child_frame_id = 'base_link'
-            odom_trans.header.frame_id = 'odom'
-            odom_trans.child_frame_id = 'base_link'
-
-            pos0_diff = pos0 - pos0_old
-            pos1_diff = pos1 - pos1_old
-            pos0_old = pos0
-            pos1_old = pos1
-
-            pos0_mm_diff = (pos0_diff  / (1 / 519)) #1 impulso al giro per ogni giro di ruota (530mm)
-            pos1_mm_diff = (pos1_diff  / (1 / 519))
-
-            current_time = self.get_clock().now().to_msg()
-
-            phi = ((pos1_mm_diff - pos0_mm_diff) / 360) #angolo in radianti
-            delta_th += phi
-
-            if delta_th >= (math.pi)*2 :
-                delta_th -= (math.pi)*2
-
-            if delta_th <= (-math.pi)*2 :
-                delta_th += (math.pi)*2
-
-            x += ((pos0_mm_diff + pos1_mm_diff) / 2) * math.cos(delta_th)
-            y += ((pos0_mm_diff + pos1_mm_diff) / 2) * math.sin(delta_th)
-
-            quat_tf = get_quaternion_from_euler(0,0,delta_th)
-            msg_quat = Quaternion(w=quat_tf[0], x=quat_tf[1], y=quat_tf[2], z=quat_tf[3])
+        self.odometry.pose.pose.position.x = x/1000
+        self.odometry.pose.pose.position.y = y/1000
+        self.odometry.pose.pose.position.z = 0.0
+        self.odometry.pose.pose.orientation = msg_quat
+        self.odometry.twist.twist.linear.x = ((pos0_mm_diff + pos1_mm_diff) /2)/10 #lasciare 10 con ciclo ogni 10ms
+        self.odometry.twist.twist.linear.y = 0.0
+        self.odometry.twist.twist.linear.z = 0.0
+        self.odometry.twist.twist.angular.x = 0.0
+        self.odometry.twist.twist.angular.y = 0.0
+        self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /6.28)*100
+        self.odometry.header.stamp = current_time
+        self.odom.publish(self.odometry)
             
-            self.odometry.pose.pose.position.x = x/1000
-            self.odometry.pose.pose.position.y = y/1000
-            self.odometry.pose.pose.position.z = 0.0
-            self.odometry.pose.pose.orientation = msg_quat
-            self.odometry.twist.twist.linear.x = ((pos0_mm_diff + pos1_mm_diff) /2)/10 #lasciare 10 con ciclo ogni 10ms
-            self.odometry.twist.twist.linear.y = 0.0
-            self.odometry.twist.twist.linear.z = 0.0
-            self.odometry.twist.twist.angular.x = 0.0
-            self.odometry.twist.twist.angular.y = 0.0
-            self.odometry.twist.twist.angular.z = ((pos1_mm_diff - pos0_mm_diff) /6.28)*100
-            self.odometry.header.stamp = current_time
-            self.odom.publish(self.odometry)
-            
-            odom_trans.header.stamp = current_time
-            odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
-            odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
-            odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
-            odom_trans.transform.rotation = self.odometry.pose.pose.orientation
-            self.broadcaster.sendTransform(odom_trans)
+        odom_trans.header.stamp = current_time
+        odom_trans.transform.translation.x = self.odometry.pose.pose.position.x
+        odom_trans.transform.translation.y = self.odometry.pose.pose.position.y
+        odom_trans.transform.translation.z = self.odometry.pose.pose.position.z
+        odom_trans.transform.rotation = self.odometry.pose.pose.orientation
+        self.broadcaster.sendTransform(odom_trans)
 
 #-------------------------------------------------------------------------------------------------------------------#
 
