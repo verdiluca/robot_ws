@@ -127,9 +127,6 @@ class OdomNode(Node):
         global p_time
         global loopTime
 
-        print(pos0)
-        print(pos1)
-
         joint_state_position = JointState()
         joint_state_velocity = JointState()
         joint_state_position.name = ["joint0", "joint1"]
