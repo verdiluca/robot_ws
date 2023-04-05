@@ -139,7 +139,7 @@ class OdomNode(Node):
         # self.Joint_State.publish(joint_state_velocity)
 
 #-------------------------------------------------------------------------------------------------------------------#
-
+        
         self.broadcaster = TransformBroadcaster(self, 10)
         self.odometry = Odometry()
         odom_trans = TransformStamped()
@@ -158,7 +158,7 @@ class OdomNode(Node):
 
         current_time = self.get_clock().now().to_msg()
 
-        phi = ((pos1_mm_diff - pos0_mm_diff) / 360) #angolo in radianti
+        phi = ((pos1_mm_diff - pos0_mm_diff) / 570) #era 360, corretto con 570 per errore nell'odometria
         delta_th += phi
 
         if delta_th >= (math.pi)*2 :
@@ -205,3 +205,4 @@ def main(args=None):
 
     odom_node.destroy_node()
     rclpy.shutdown()
+
