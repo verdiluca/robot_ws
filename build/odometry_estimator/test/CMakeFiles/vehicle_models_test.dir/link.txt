@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/vehicle_models_test.dir/vehicle_models_test.cpp.o  -o vehicle_models_test  ../gtest/libgtest_main.a ../gtest/libgtest.a ../libvehicle_models.a -pthread 

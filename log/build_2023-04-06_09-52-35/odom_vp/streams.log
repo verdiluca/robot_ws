@@ -1,0 +1,37 @@
+[1.014s] Invoking command in '/home/vp/robot_ws/src/odom_vp': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odom_vp build --build-base /home/vp/robot_ws/build/odom_vp/build install --record /home/vp/robot_ws/build/odom_vp/install.log --single-version-externally-managed
+[1.300s] running egg_info
+[1.301s] creating ../../build/odom_vp/odom_vp.egg-info
+[1.301s] writing ../../build/odom_vp/odom_vp.egg-info/PKG-INFO
+[1.301s] writing dependency_links to ../../build/odom_vp/odom_vp.egg-info/dependency_links.txt
+[1.301s] writing entry points to ../../build/odom_vp/odom_vp.egg-info/entry_points.txt
+[1.301s] writing requirements to ../../build/odom_vp/odom_vp.egg-info/requires.txt
+[1.302s] writing top-level names to ../../build/odom_vp/odom_vp.egg-info/top_level.txt
+[1.304s] writing manifest file '../../build/odom_vp/odom_vp.egg-info/SOURCES.txt'
+[1.342s] reading manifest file '../../build/odom_vp/odom_vp.egg-info/SOURCES.txt'
+[1.342s] writing manifest file '../../build/odom_vp/odom_vp.egg-info/SOURCES.txt'
+[1.343s] running build
+[1.343s] running build_py
+[1.343s] creating /home/vp/robot_ws/build/odom_vp/build
+[1.343s] creating /home/vp/robot_ws/build/odom_vp/build/lib
+[1.343s] creating /home/vp/robot_ws/build/odom_vp/build/lib/odom_vp
+[1.344s] copying odom_vp/__init__.py -> /home/vp/robot_ws/build/odom_vp/build/lib/odom_vp
+[1.344s] copying odom_vp/odom_node.py -> /home/vp/robot_ws/build/odom_vp/build/lib/odom_vp
+[1.344s] running install
+[1.344s] running install_lib
+[1.346s] creating /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp
+[1.346s] copying /home/vp/robot_ws/build/odom_vp/build/lib/odom_vp/__init__.py -> /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp
+[1.346s] copying /home/vp/robot_ws/build/odom_vp/build/lib/odom_vp/odom_node.py -> /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp
+[1.346s] byte-compiling /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp/__init__.py to __init__.cpython-38.pyc
+[1.348s] byte-compiling /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp/odom_node.py to odom_node.cpython-38.pyc
+[1.349s] running install_data
+[1.350s] creating /home/vp/robot_ws/install/odom_vp/share/ament_index
+[1.350s] creating /home/vp/robot_ws/install/odom_vp/share/ament_index/resource_index
+[1.350s] creating /home/vp/robot_ws/install/odom_vp/share/ament_index/resource_index/packages
+[1.350s] copying resource/odom_vp -> /home/vp/robot_ws/install/odom_vp/share/ament_index/resource_index/packages
+[1.350s] copying package.xml -> /home/vp/robot_ws/install/odom_vp/share/odom_vp
+[1.350s] running install_egg_info
+[1.351s] Copying ../../build/odom_vp/odom_vp.egg-info to /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp-0.0.0-py3.8.egg-info
+[1.352s] running install_scripts
+[1.371s] Installing odom_node script to /home/vp/robot_ws/install/odom_vp/lib/odom_vp
+[1.372s] writing list of installed files to '/home/vp/robot_ws/build/odom_vp/install.log'
+[1.395s] Invoked command in '/home/vp/robot_ws/src/odom_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odom_vp build --build-base /home/vp/robot_ws/build/odom_vp/build install --record /home/vp/robot_ws/build/odom_vp/install.log --single-version-externally-managed

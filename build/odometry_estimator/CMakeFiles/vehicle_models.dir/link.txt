@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvehicle_models.a  CMakeFiles/vehicle_models.dir/src/vehicle_models/vehicle_models.cpp.o
-/usr/bin/ranlib libvehicle_models.a

@@ -1,1 +1,0 @@
-/home/vp/robot_ws/src/odrive_ros2_control/odrive_hardware_interface/include/odrive_hardware_interface/odrive_endpoints.hpp

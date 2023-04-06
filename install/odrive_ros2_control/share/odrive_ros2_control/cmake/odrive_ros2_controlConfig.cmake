@@ -1,1 +1,0 @@
-/home/vp/robot_ws/build/odrive_ros2_control/ament_cmake_core/odrive_ros2_controlConfig.cmake

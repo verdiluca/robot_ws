@@ -1,0 +1,66 @@
+[0.510s] Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/vp_one -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/vp_one
+[0.609s] -- The C compiler identification is GNU 9.4.0
+[0.727s] -- The CXX compiler identification is GNU 9.4.0
+[0.735s] -- Check for working C compiler: /usr/bin/cc
+[0.814s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.816s] -- Detecting C compiler ABI info
+[0.894s] -- Detecting C compiler ABI info - done
+[0.917s] -- Detecting C compile features
+[0.918s] -- Detecting C compile features - done
+[0.921s] -- Check for working CXX compiler: /usr/bin/c++
+[1.010s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.012s] -- Detecting CXX compiler ABI info
+[1.101s] -- Detecting CXX compiler ABI info - done
+[1.127s] -- Detecting CXX compile features
+[1.127s] -- Detecting CXX compile features - done
+[1.131s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.164s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.164s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.440s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.543s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.548s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.549s] -- Added test 'lint_cmake' to check CMake code style
+[1.550s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.553s] -- Added test 'xmllint' to check XML markup files
+[1.557s] -- Configuring done
+[1.560s] -- Generating done
+[1.561s] -- Build files have been written to: /home/vp/robot_ws/build/vp_one
+[1.566s] Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/vp_one -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/vp_one
+[1.571s] Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[1.631s] Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[1.679s] Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one
+[1.695s] -- Install configuration: ""
+[1.695s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/config
+[1.695s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/config/view_bot.rviz
+[1.696s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/config/empty.yaml
+[1.696s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/config/my_controller.yaml
+[1.696s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/config/mapper_params_online_async.yaml
+[1.696s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/description
+[1.696s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot_core.xacro
+[1.697s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/description/inertial_macros.xacro
+[1.697s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot.urdf.xacro
+[1.697s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/description/gazebo_control.xacro
+[1.697s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/description/lidar.xacro
+[1.697s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/launch
+[1.698s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_sim.launch.py
+[1.698s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/rsp.launch.py
+[1.698s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/real_vp.py
+[1.698s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_robot.launch.py
+[1.698s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/worlds
+[1.699s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/worlds/empty.world
+[1.699s] -- Installing: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/package_run_dependencies/vp_one
+[1.699s] -- Installing: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/parent_prefix_path/vp_one
+[1.699s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/ament_prefix_path.sh
+[1.699s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/ament_prefix_path.dsv
+[1.699s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/path.sh
+[1.700s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/path.dsv
+[1.700s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.bash
+[1.700s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.sh
+[1.700s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.zsh
+[1.700s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.dsv
+[1.701s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/package.dsv
+[1.701s] -- Installing: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/packages/vp_one
+[1.701s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/cmake/vp_oneConfig.cmake
+[1.701s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/cmake/vp_oneConfig-version.cmake
+[1.701s] -- Installing: /home/vp/robot_ws/install/vp_one/share/vp_one/package.xml
+[1.706s] Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one
