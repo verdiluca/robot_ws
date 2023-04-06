@@ -22,7 +22,7 @@ from rcl_interfaces.msg import ParameterDescriptor
 from tf2_ros.transform_broadcaster import TransformBroadcaster
 from geometry_msgs.msg import TransformStamped
 
-#-------------------------------------------------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------#
 
 pos0 = 0.0
 pos1 = 0.0
