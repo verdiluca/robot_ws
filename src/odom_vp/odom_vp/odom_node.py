@@ -9,6 +9,7 @@ from sensor_msgs.msg import JointState
 from geometry_msgs.msg import Quaternion
 from tf2_ros.transform_broadcaster import TransformBroadcaster
 from geometry_msgs.msg import TransformStamped
+from sensor_msgs.msg import LaserScan
 
 #--------------------------------------------------------------------------------------------------------------------#
 
@@ -35,6 +36,7 @@ p_time = 0.0
 loopTime = 10.0
 prev_update_time = time.time()
 current_time = time.time()
+scan = 0.0
 
 #-------------------------------------------------------------------------------------------------------------------#
 

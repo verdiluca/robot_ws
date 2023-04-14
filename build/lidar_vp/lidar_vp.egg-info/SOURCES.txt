@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+lidar_vp/__init__.py
+lidar_vp/lidar_node.py
+lidar_vp.egg-info/PKG-INFO
+lidar_vp.egg-info/SOURCES.txt
+lidar_vp.egg-info/dependency_links.txt
+lidar_vp.egg-info/entry_points.txt
+lidar_vp.egg-info/requires.txt
+lidar_vp.egg-info/top_level.txt
+lidar_vp.egg-info/zip-safe
+resource/lidar_vp

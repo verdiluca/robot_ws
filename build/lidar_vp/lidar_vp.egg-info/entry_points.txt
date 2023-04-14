@@ -1,0 +1,3 @@
+[console_scripts]
+lidar_node = lidar_vp.lidar_node:main
+
