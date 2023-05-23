@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 lidar_vp/__init__.py
+lidar_vp/lidar_node copy.py
 lidar_vp/lidar_node.py
 lidar_vp.egg-info/PKG-INFO
 lidar_vp.egg-info/SOURCES.txt

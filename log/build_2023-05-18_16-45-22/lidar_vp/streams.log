@@ -1,0 +1,17 @@
+[1.589s] Invoking command in '/home/vp/robot_ws/build/lidar_vp': PS1=\[\e]4545;P;Cwd=\w\a\]\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/lidar_vp/build --no-deps install_data
+[1.912s] running develop
+[2.103s] running egg_info
+[2.103s] writing lidar_vp.egg-info/PKG-INFO
+[2.104s] writing dependency_links to lidar_vp.egg-info/dependency_links.txt
+[2.104s] writing entry points to lidar_vp.egg-info/entry_points.txt
+[2.104s] writing requirements to lidar_vp.egg-info/requires.txt
+[2.104s] writing top-level names to lidar_vp.egg-info/top_level.txt
+[2.146s] reading manifest file 'lidar_vp.egg-info/SOURCES.txt'
+[2.147s] writing manifest file 'lidar_vp.egg-info/SOURCES.txt'
+[2.196s] running build_ext
+[2.196s] Creating /home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar-vp.egg-link (link to .)
+[2.197s] Installing lidar_node script to /home/vp/robot_ws/install/lidar_vp/lib/lidar_vp
+[2.198s] 
+[2.198s] Installed /home/vp/robot_ws/build/lidar_vp
+[2.198s] running install_data
+[2.246s] Invoked command in '/home/vp/robot_ws/build/lidar_vp' returned '0': PS1=\[\e]4545;P;Cwd=\w\a\]\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/lidar_vp/build --no-deps install_data

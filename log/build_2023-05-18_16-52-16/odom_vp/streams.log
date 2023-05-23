@@ -1,0 +1,17 @@
+[1.542s] Invoking command in '/home/vp/robot_ws/build/odom_vp': PS1=\[\e]4545;P;Cwd=\w\a\]\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odom_vp/build --no-deps install_data
+[1.905s] running develop
+[2.121s] running egg_info
+[2.121s] writing odom_vp.egg-info/PKG-INFO
+[2.121s] writing dependency_links to odom_vp.egg-info/dependency_links.txt
+[2.121s] writing entry points to odom_vp.egg-info/entry_points.txt
+[2.121s] writing requirements to odom_vp.egg-info/requires.txt
+[2.122s] writing top-level names to odom_vp.egg-info/top_level.txt
+[2.159s] reading manifest file 'odom_vp.egg-info/SOURCES.txt'
+[2.160s] writing manifest file 'odom_vp.egg-info/SOURCES.txt'
+[2.212s] running build_ext
+[2.212s] Creating /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom-vp.egg-link (link to .)
+[2.213s] Installing odom_node script to /home/vp/robot_ws/install/odom_vp/lib/odom_vp
+[2.214s] 
+[2.214s] Installed /home/vp/robot_ws/build/odom_vp
+[2.214s] running install_data
+[2.250s] Invoked command in '/home/vp/robot_ws/build/odom_vp' returned '0': PS1=\[\e]4545;P;Cwd=\w\a\]\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odom_vp/build --no-deps install_data

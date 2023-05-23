@@ -10,5 +10,7 @@
         "deque": "cpp",
         "vector": "cpp"
     },
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cmake.sourceDirectory": "${workspaceFolder}/src/micro_ros_raspberrypi_pico_sdk",
+    "cmake.configureOnOpen": false
 }

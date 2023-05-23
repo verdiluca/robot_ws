@@ -1,0 +1,17 @@
+[1.595s] Invoking command in '/home/vp/robot_ws/build/odom_vp': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odom_vp/build --no-deps install_data
+[1.921s] running develop
+[2.097s] running egg_info
+[2.097s] writing odom_vp.egg-info/PKG-INFO
+[2.097s] writing dependency_links to odom_vp.egg-info/dependency_links.txt
+[2.097s] writing entry points to odom_vp.egg-info/entry_points.txt
+[2.098s] writing requirements to odom_vp.egg-info/requires.txt
+[2.098s] writing top-level names to odom_vp.egg-info/top_level.txt
+[2.147s] reading manifest file 'odom_vp.egg-info/SOURCES.txt'
+[2.147s] writing manifest file 'odom_vp.egg-info/SOURCES.txt'
+[2.194s] running build_ext
+[2.195s] Creating /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom-vp.egg-link (link to .)
+[2.196s] Installing odom_node script to /home/vp/robot_ws/install/odom_vp/lib/odom_vp
+[2.196s] 
+[2.197s] Installed /home/vp/robot_ws/build/odom_vp
+[2.197s] running install_data
+[2.231s] Invoked command in '/home/vp/robot_ws/build/odom_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/odom_vp/build --no-deps install_data
