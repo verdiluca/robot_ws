@@ -16,7 +16,7 @@ from sensor_msgs.msg import LaserScan
 from rclpy.qos import ReliabilityPolicy, QoSProfile
 
 #---------------------------------------------------------------DICHIARAZIONE_VARIABILI-------------------------------------------------------------------#
-
+#sssss
 #lidar
 n = 0.0
 ne = 0.0
