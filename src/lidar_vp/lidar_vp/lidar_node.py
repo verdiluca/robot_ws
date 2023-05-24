@@ -5,6 +5,8 @@ import numpy as np
 from rclpy.node import Node
 from std_msgs.msg import Float32
 from std_msgs.msg import Int32
+from std_msgs.msg import String
+from tf2_msgs.msg import TFMessage
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import Quaternion
@@ -53,10 +55,16 @@ logica_sterzo_sx = 1
 logica_sterzo_av = 1
 logica_arresto_proto = 1
 
+#timers
+T1End = False
 
 #generali
 Chiave = False
 Stop = False
+
+motori_avviati = False
+Proto_fermo = False
+Proto_arrestato = False
 
 Azzeramento_completato = False
 
@@ -73,6 +81,9 @@ class LidarNode(Node):
 
         self.subscription = self.create_subscription(
             LaserScan, 'scan', self.listener_callback, QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
+        
+        self.cmd_vel_sub = self.create_subscription(
+           TFMessage, '/VPsensori', self.sensori_callback, 10)
 
         self.vel_pub = self.create_publisher(
             Twist, '/cmd_vel', 50)
@@ -98,6 +109,25 @@ class LidarNode(Node):
 
         timer_period4 = 0.107
         self.timer4 = self.create_timer(timer_period4, self.Logica_Azzera_Variabili)
+
+        timer_period5 = 0.109
+        self.timer5 = self.create_timer(timer_period5, self.Logica_Controllo_Sensori_Partenza)
+
+        timer_period6 = 0.113
+        self.timer6 = self.create_timer(timer_period6, self.Logica_Proto_avanti)
+
+        timer_period7 = 0.127
+        self.timer7 = self.create_timer(timer_period7, self.Logica_Sterzo_DX)
+
+        timer_period8 = 0.131
+        self.timer8 = self.create_timer(timer_period8, self.Logica_Sterzo_SX)
+
+        timer_period9 = 0.137
+        self.timer9 = self.create_timer(timer_period9, self.Logica_Sterzo_AV)
+
+        timer_period10 = 0.139
+        self.timer10 = self.create_timer(timer_period10, self.Logica_Arresto_Proto)
+      
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------#
 
@@ -160,6 +190,29 @@ class LidarNode(Node):
         # print("OVEST:", o)
         # print("-------------------------------------------------")
 
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+    def sensori_callback(self, msg2):
+
+        global angularz
+
+        print(msg2.transforms.data[0].transform.stamp.sec)
+
+#-----------------------------------------------------------------------------TIMERS---------------------------------------------------------------------------#
+
+    def T1(timer1):
+        
+        global T1End
+        
+        while timer1:
+            time.sleep(1)
+            timer1 -= 1
+            if timer1 == 0:
+                T1End = True
+                
+
+
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #-------------------------------------------------------------------ASSEGNA_USCITE-----------------------------------------------------------------------------#
 
@@ -171,6 +224,17 @@ class LidarNode(Node):
         global Motori_sinistra
         global Motori_fermo
         global logica_proto
+        global Azzeramento_completato
+        global motori_avviati
+        global logica_azzera_variabili
+        global logica_controllo_sensori_partenza
+        global logica_proto_avanti
+        global logica_sterzo_dx
+        global logica_sterzo_sx
+        global logica_sterzo_av
+        global logica_arresto_proto
+        global Proto_fermo
+        global Proto_arrestato
 
         Motori_avanti = Twist()
         Motori_destra = Twist()
@@ -182,36 +246,70 @@ class LidarNode(Node):
         Motori_sinistra = Twist(linear=Vector3(x=0.0, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.5))
         Motori_fermo = Twist(linear=Vector3(x=0.0, y=0.0, z=0.0), angular=Vector3(x=0.0, y=0.0, z=0.0))
          
+        #self.vel_pub.publish(Motori_avanti)
         # geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0))
         
-        #USCITE
-        if logica_proto == 3:
-            self.vel_pub.publish(Motori_avanti)
-        
-        if logica_proto == 4 or logica_proto == 8:
-            self.vel_pub.publish(Motori_destra)
-        
-        if logica_proto == 5 or logica_proto == 7:
-            self.vel_pub.publish(Motori_sinistra)
-        
-        if logica_proto == 6 or logica_proto == 9 or logica_proto == 1:
-            self.vel_pub.publish(Motori_fermo)
+        #USCITE AZZERA VARIABILI
+        if logica_azzera_variabili == 2:
+            
+            logica_controllo_sensori_partenza = 1
+            logica_proto_avanti = 1
+            logica_sterzo_dx = 1
+            logica_sterzo_sx = 1
+            logica_sterzo_av = 1
+            logica_arresto_proto = 1
 
-        print(logica_proto)
+            Proto_fermo = False
+            motori_avviati = False
+            Proto_arrestato = False
+
+            Azzeramento_completato = True
+        
+        if logica_proto_avanti == 2:
+            self.vel_pub.publish(Motori_avanti)
+            motori_avviati = True
+
+        if logica_sterzo_dx == 2:
+            self.vel_pub.publish(Motori_destra)
+
+        if logica_sterzo_sx == 2:
+            self.vel_pub.publish(Motori_sinistra)
+
+        if logica_sterzo_av == 2:
+            self.vel_pub.publish(Motori_fermo)
+            Proto_fermo = True
+            
+        if logica_arresto_proto == 2:
+            self.vel_pub.publish(Motori_fermo)
+            Proto_arrestato = True
 
         
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #---------------------------------------------------------------------LOGICA_PROTO-----------------------------------------------------------------------------#
     def Logica_Proto(self):
-
+        
+        global logica_proto
+        global logica_azzera_variabili
+        global logica_controllo_sensori_partenza
+        global logica_sterzo_dx
+        global logica_sterzo_sx
+        global logica_arresto_proto
         global n
         global ne
         global e
         global no
         global o
+        global sas
+        global scs
+        global sbs
+        global sac
+        global scc
+        global sbc
+        global sad
+        global scd
+        global sbd
         global Media_E
         global Media_O
-        global logica_proto
         global Stop
         global Chiave
 
@@ -275,7 +373,9 @@ class LidarNode(Node):
 #---------------------------------------------------------------------LOGICA_AZZERA_VARIABILI------------------------------------------------------------------#
 
     def Logica_Azzera_Variabili(self):
-
+        
+        global logica_proto
+        global logica_azzera_variabili
         global Azzeramento_completato
 
         if logica_azzera_variabili == 1 and logica_proto == 2:
@@ -285,20 +385,171 @@ class LidarNode(Node):
             logica_azzera_variabili = 3
         
         if logica_azzera_variabili == 3 and logica_proto == 3:
+            Azzeramento_completato = False
             logica_azzera_variabili = 1
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #-----------------------------------------------------------LOGICA_CONTROLLO_SENSORI_PARTENZA------------------------------------------------------------------#
 
+    def Logica_Controllo_Sensori_Partenza(self):
+
+        global logica_proto
+        global logica_controllo_sensori_partenza
+        global Azzeramento_completato
+        global T1End
+        global T1
+        global n
+        global ne
+        global e
+        global no
+        global o
+        global sas
+        global scs
+        global sbs
+        global sac
+        global scc
+        global sbc
+        global sad
+        global scd
+        global sbd
+
+        if logica_controllo_sensori_partenza == 1 and logica_proto == 3:
+            logica_controllo_sensori_partenza = 2
+
+        if logica_controllo_sensori_partenza == 2 and (n < 0.35 or o < 0.35 or no < 0.35 or e < 0.35 or ne < 0.35 or sas < 0.35 or scs < 0.35 or sbs < 0.35 or sad < 0.35 or scd < 0.35 or sbd < 0.35 or sac < 0.35 or scc < 0.35 or sbc < 0.35):
+            T1(1)
+            logica_controllo_sensori_partenza = 3
+
+        elif logica_controllo_sensori_partenza == 2 and n > 0.35 and ne > 0.35 and no > 0.35 and e > 0.35 and o > 0.35 and sas > 0.35 and scs > 0.35 and sbs > 0.35 and sac > 0.35 and scc > 0.35 and sbc > 0.35 and sad > 0.35 and scd > 0.35 and sbd > 0.35:
+            logica_controllo_sensori_partenza = 4
+
+        if logica_controllo_sensori_partenza == 3 and T1End == True:
+            T1End == False 
+            logica_controllo_sensori_partenza = 2
+
+        if logica_controllo_sensori_partenza == 4 and logica_proto == 4:
+            logica_controllo_sensori_partenza == 1
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_PROTO_AVANTI------------------------------------------------------------------#
+
+    def Logica_Proto_avanti(self):
+
+            global logica_proto
+            global logica_proto_avanti
+            global motori_avviati
+
+            if logica_proto_avanti == 1 and logica_proto == 4:
+                logica_proto_avanti = 2
+
+            if logica_proto_avanti == 2 and motori_avviati == True:
+                logica_proto_avanti = 3
+
+            if logica_proto_avanti == 3 and (logica_proto == 5 or logica_proto == 6 or logica_proto == 7 or logica_proto == 8):
+                motori_avviati == False 
+                logica_proto_avanti = 1
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_STERZO_DX----------------------------------------------------------------------#
+
+    def Logica_Sterzo_DX(self):
+
+            global logica_proto
+            global logica_sterzo_dx
+            global n
+            global ne
+            global e
+            global no
+            global o
+            global sas
+            global scs
+            global sbs
+            global sac
+            global scc
+            global sbc
+            global sad
+            global scd
+            global sbd
+
+            if logica_sterzo_dx == 1 and logica_proto == 5:
+                logica_sterzo_dx = 2
+
+            if logica_sterzo_dx == 2 and (o > 0.35 and no > 0.35 and sas > 0.35 and scs > 0.35 and sbs > 0.35):
+                logica_sterzo_dx = 3
+
+            if logica_sterzo_dx == 3 and (logica_proto == 4 or logica_proto == 5 or logica_proto == 7 or logica_proto == 8):
+                logica_sterzo_dx = 1
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_STERZO_SX----------------------------------------------------------------------#
+
+    def Logica_Sterzo_SX(self):
+
+            global logica_proto
+            global logica_sterzo_sx
+            global n
+            global ne
+            global e
+            global no
+            global o
+            global sas
+            global scs
+            global sbs
+            global sac
+            global scc
+            global sbc
+            global sad
+            global scd
+            global sbd
+
+            if logica_sterzo_sx == 1 and logica_proto == 6:
+                logica_sterzo_sx = 2
+
+            if logica_sterzo_sx == 2 and (e > 0.35 and ne > 0.35 and sad > 0.35 and scd > 0.35 and sbd > 0.35):
+                logica_sterzo_sx = 3
+
+            if logica_sterzo_sx == 3 and (logica_proto == 4 or logica_proto == 6 or logica_proto == 7 or logica_proto == 8):
+                logica_sterzo_sx = 1
 
 
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_STERZO_AV----------------------------------------------------------------------#
+
+    def Logica_Sterzo_AV(self):
+
+            global logica_proto
+            global logica_sterzo_av
+            global Proto_fermo
+
+            if logica_sterzo_av == 1 and logica_proto == 7:
+                logica_sterzo_av = 2
+
+            if logica_sterzo_av == 2 and Proto_fermo == True:
+                logica_sterzo_av = 3
+
+            if logica_sterzo_av == 3 and (logica_proto == 5 or logica_proto == 6 or logica_proto == 8):
+                Proto_fermo == False
+                logica_sterzo_av = 1
 
 
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_ARRESTO_PROTO----------------------------------------------------------------------#
 
+    def Logica_Arresto_Proto(self):
 
+            global logica_proto
+            global logica_arresto_proto
+            global Proto_arrestato
 
+            if logica_arresto_proto == 1 and logica_proto == 8:
+                logica_arresto_proto = 2
 
+            if logica_arresto_proto == 2 and Proto_arrestato == True and logica_sterzo_av == 1 and logica_sterzo_dx == 1 and logica_sterzo_sx == 1:
+                logica_arresto_proto = 3
 
+            if logica_arresto_proto == 3 and logica_proto == 1:
+                Proto_arrestato = False
+                logica_arresto_proto = 1
 
 
 
