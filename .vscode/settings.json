@@ -11,6 +11,6 @@
         "vector": "cpp"
     },
     "git.ignoreLimitWarning": true,
-    "cmake.sourceDirectory": "${workspaceFolder}/src/micro_ros_raspberrypi_pico_sdk",
+    "cmake.sourceDirectory": "/home/vp/robot_ws/src/vp_one",
     "cmake.configureOnOpen": false
 }

@@ -68,6 +68,7 @@ Proto_arrestato = False
 
 Azzeramento_completato = False
 
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------#
 #INIZIO CLASSE
 
@@ -190,15 +191,19 @@ class LidarNode(Node):
         # print("OVEST:", o)
         # print("-------------------------------------------------")
 
-
+        
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
     def sensori_callback(self, msg2):
 
-        global angularz
+        
 
-        print(msg2.transforms.data[0].transform.stamp.sec)
+        print(msg2)
+              
+#tf2_msgs.msg.TFMessage(transforms=[geometry_msgs.msg.TransformStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=10, nanosec=20), frame_id=''), child_frame_id='', transform=geometry_msgs.msg.Transform(translation=geometry_msgs.msg.Vector3(x=30.0, y=40.0, z=50.0), rotation=geometry_msgs.msg.Quaternion(x=60.0, y=70.0, z=80.0, w=90.0)))])
 
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #-----------------------------------------------------------------------------TIMERS---------------------------------------------------------------------------#
 
     def T1(timer1):
@@ -449,13 +454,14 @@ class LidarNode(Node):
                 motori_avviati == False 
                 logica_proto_avanti = 1
 
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #-------------------------------------------------------------------------LOGICA_STERZO_DX----------------------------------------------------------------------#
 
     def Logica_Sterzo_DX(self):
 
             global logica_proto
             global logica_sterzo_dx
+            global logica_arresto_proto
             global n
             global ne
             global e
@@ -477,16 +483,20 @@ class LidarNode(Node):
             if logica_sterzo_dx == 2 and (o > 0.35 and no > 0.35 and sas > 0.35 and scs > 0.35 and sbs > 0.35):
                 logica_sterzo_dx = 3
 
+            elif logica_sterzo_dx == 2 and logica_proto == 8 and logica_arresto_proto == 2:
+                logica_sterzo_dx == 1
+
             if logica_sterzo_dx == 3 and (logica_proto == 4 or logica_proto == 5 or logica_proto == 7 or logica_proto == 8):
                 logica_sterzo_dx = 1
 
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #-------------------------------------------------------------------------LOGICA_STERZO_SX----------------------------------------------------------------------#
 
     def Logica_Sterzo_SX(self):
 
             global logica_proto
             global logica_sterzo_sx
+            global logica_arresto_proto
             global n
             global ne
             global e
@@ -508,17 +518,21 @@ class LidarNode(Node):
             if logica_sterzo_sx == 2 and (e > 0.35 and ne > 0.35 and sad > 0.35 and scd > 0.35 and sbd > 0.35):
                 logica_sterzo_sx = 3
 
+            elif logica_sterzo_sx == 2 and logica_proto == 8 and logica_arresto_proto == 2:
+                logica_sterzo_sx == 1
+
             if logica_sterzo_sx == 3 and (logica_proto == 4 or logica_proto == 6 or logica_proto == 7 or logica_proto == 8):
                 logica_sterzo_sx = 1
 
 
-#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #-------------------------------------------------------------------------LOGICA_STERZO_AV----------------------------------------------------------------------#
 
     def Logica_Sterzo_AV(self):
 
             global logica_proto
             global logica_sterzo_av
+            global logica_arresto_proto
             global Proto_fermo
 
             if logica_sterzo_av == 1 and logica_proto == 7:
@@ -527,13 +541,16 @@ class LidarNode(Node):
             if logica_sterzo_av == 2 and Proto_fermo == True:
                 logica_sterzo_av = 3
 
+            elif logica_sterzo_av == 2 and logica_proto == 8 and logica_arresto_proto == 2:
+                logica_sterzo_av == 1
+
             if logica_sterzo_av == 3 and (logica_proto == 5 or logica_proto == 6 or logica_proto == 8):
                 Proto_fermo == False
                 logica_sterzo_av = 1
 
 
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
-#-------------------------------------------------------------------------LOGICA_ARRESTO_PROTO----------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_ARRESTO_PROTO-----------------------------------------------------------------#
 
     def Logica_Arresto_Proto(self):
 
