@@ -1,0 +1,24 @@
+[1.992s] Invoking command in '/home/vp/robot_ws/build/odom_vp': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odom_vp/build
+[2.410s] running develop
+[2.784s] Invoked command in '/home/vp/robot_ws/build/odom_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odom_vp/build
+[2.789s] Invoking command in '/home/vp/robot_ws/src/odom_vp': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odom_vp build --build-base /home/vp/robot_ws/build/odom_vp/build install --record /home/vp/robot_ws/build/odom_vp/install.log --single-version-externally-managed
+[3.118s] running egg_info
+[3.119s] writing ../../build/odom_vp/odom_vp.egg-info/PKG-INFO
+[3.120s] writing dependency_links to ../../build/odom_vp/odom_vp.egg-info/dependency_links.txt
+[3.120s] writing entry points to ../../build/odom_vp/odom_vp.egg-info/entry_points.txt
+[3.120s] writing requirements to ../../build/odom_vp/odom_vp.egg-info/requires.txt
+[3.120s] writing top-level names to ../../build/odom_vp/odom_vp.egg-info/top_level.txt
+[3.181s] reading manifest file '../../build/odom_vp/odom_vp.egg-info/SOURCES.txt'
+[3.182s] writing manifest file '../../build/odom_vp/odom_vp.egg-info/SOURCES.txt'
+[3.182s] running build
+[3.183s] running build_py
+[3.183s] running install
+[3.185s] running install_lib
+[3.187s] running install_data
+[3.187s] running install_egg_info
+[3.191s] removing '/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp-0.0.0-py3.8.egg-info' (and everything under it)
+[3.191s] Copying ../../build/odom_vp/odom_vp.egg-info to /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp-0.0.0-py3.8.egg-info
+[3.192s] running install_scripts
+[3.228s] Installing odom_node script to /home/vp/robot_ws/install/odom_vp/lib/odom_vp
+[3.228s] writing list of installed files to '/home/vp/robot_ws/build/odom_vp/install.log'
+[3.268s] Invoked command in '/home/vp/robot_ws/src/odom_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odom_vp build --build-base /home/vp/robot_ws/build/odom_vp/build install --record /home/vp/robot_ws/build/odom_vp/install.log --single-version-externally-managed

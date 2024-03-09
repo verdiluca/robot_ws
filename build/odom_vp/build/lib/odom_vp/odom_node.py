@@ -1,28 +1,17 @@
 import rclpy
-import tf
 import math
 import time
 import numpy as np
-import geometry_msgs
-from odrive.enums import *
 from rclpy.node import Node
-from std_msgs.msg import Char
-from std_msgs.msg import String
-from std_msgs.msg import Int32
-from std_msgs.msg import Int64
 from std_msgs.msg import Float32
-from std_msgs.msg import Float64
 from nav_msgs.msg import Odometry
-from geometry_msgs.msg import Twist
 from sensor_msgs.msg import JointState
 from geometry_msgs.msg import Quaternion
-from geometry_msgs.msg import TwistStamped
-from scipy.spatial.transform import Rotation as R
-from rcl_interfaces.msg import ParameterDescriptor
 from tf2_ros.transform_broadcaster import TransformBroadcaster
 from geometry_msgs.msg import TransformStamped
+from sensor_msgs.msg import LaserScan
 
-#-------------------------------------------------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------#
 
 pos0 = 0.0
 pos1 = 0.0
@@ -47,6 +36,7 @@ p_time = 0.0
 loopTime = 10.0
 prev_update_time = time.time()
 current_time = time.time()
+scan = 0.0
 
 #-------------------------------------------------------------------------------------------------------------------#
 

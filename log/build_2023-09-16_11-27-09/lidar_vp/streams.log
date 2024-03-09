@@ -1,0 +1,27 @@
+[2.100s] Invoking command in '/home/vp/robot_ws/build/lidar_vp': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/lidar_vp/build
+[2.490s] running develop
+[2.758s] Invoked command in '/home/vp/robot_ws/build/lidar_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/lidar_vp/build
+[2.762s] Invoking command in '/home/vp/robot_ws/src/lidar_vp': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lidar_vp build --build-base /home/vp/robot_ws/build/lidar_vp/build install --record /home/vp/robot_ws/build/lidar_vp/install.log --single-version-externally-managed
+[3.137s] running egg_info
+[3.139s] writing ../../build/lidar_vp/lidar_vp.egg-info/PKG-INFO
+[3.139s] writing dependency_links to ../../build/lidar_vp/lidar_vp.egg-info/dependency_links.txt
+[3.139s] writing entry points to ../../build/lidar_vp/lidar_vp.egg-info/entry_points.txt
+[3.139s] writing requirements to ../../build/lidar_vp/lidar_vp.egg-info/requires.txt
+[3.139s] writing top-level names to ../../build/lidar_vp/lidar_vp.egg-info/top_level.txt
+[3.192s] reading manifest file '../../build/lidar_vp/lidar_vp.egg-info/SOURCES.txt'
+[3.193s] writing manifest file '../../build/lidar_vp/lidar_vp.egg-info/SOURCES.txt'
+[3.194s] running build
+[3.194s] running build_py
+[3.194s] copying lidar_vp/lidar_node.py -> /home/vp/robot_ws/build/lidar_vp/build/lib/lidar_vp
+[3.194s] running install
+[3.195s] running install_lib
+[3.197s] copying /home/vp/robot_ws/build/lidar_vp/build/lib/lidar_vp/lidar_node.py -> /home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar_vp
+[3.198s] byte-compiling /home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar_vp/lidar_node.py to lidar_node.cpython-38.pyc
+[3.203s] running install_data
+[3.204s] running install_egg_info
+[3.206s] removing '/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar_vp-0.0.0-py3.8.egg-info' (and everything under it)
+[3.207s] Copying ../../build/lidar_vp/lidar_vp.egg-info to /home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar_vp-0.0.0-py3.8.egg-info
+[3.208s] running install_scripts
+[3.236s] Installing lidar_node script to /home/vp/robot_ws/install/lidar_vp/lib/lidar_vp
+[3.236s] writing list of installed files to '/home/vp/robot_ws/build/lidar_vp/install.log'
+[3.274s] Invoked command in '/home/vp/robot_ws/src/lidar_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lidar_vp build --build-base /home/vp/robot_ws/build/lidar_vp/build install --record /home/vp/robot_ws/build/lidar_vp/install.log --single-version-externally-managed

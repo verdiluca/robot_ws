@@ -1,0 +1,23 @@
+[1.908s] Invoking command in '/home/vp/robot_ws/build/ros2_serial_interface': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/ros2_serial_interface/build --no-deps install_data
+[2.247s] running develop
+[2.452s] running egg_info
+[2.452s] writing ros2_serial_interface.egg-info/PKG-INFO
+[2.453s] writing dependency_links to ros2_serial_interface.egg-info/dependency_links.txt
+[2.453s] writing entry points to ros2_serial_interface.egg-info/entry_points.txt
+[2.453s] writing requirements to ros2_serial_interface.egg-info/requires.txt
+[2.453s] writing top-level names to ros2_serial_interface.egg-info/top_level.txt
+[2.500s] reading manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[2.502s] writing manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[2.552s] running build_ext
+[2.553s] Creating /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+[2.554s] Installing predef_timed_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.554s] Installing pynput_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.555s] Installing serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.555s] Installing terminal_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.555s] Installing virtual_serial_client script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.556s] Installing virtual_serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.556s] Installing virtual_serial_setup script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.556s] 
+[2.556s] Installed /home/vp/robot_ws/build/ros2_serial_interface
+[2.556s] running install_data
+[2.593s] Invoked command in '/home/vp/robot_ws/build/ros2_serial_interface' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vp/robot_ws/build/ros2_serial_interface/build --no-deps install_data
