@@ -9,7 +9,7 @@ setup.py
 ../../build/lidar_vp/lidar_vp.egg-info/top_level.txt
 ../../build/lidar_vp/lidar_vp.egg-info/zip-safe
 lidar_vp/__init__.py
-lidar_vp/lidar_node copy.py
+lidar_vp/lidar_node (copia).py
 lidar_vp/lidar_node.py
 lidar_vp.egg-info/PKG-INFO
 lidar_vp.egg-info/SOURCES.txt

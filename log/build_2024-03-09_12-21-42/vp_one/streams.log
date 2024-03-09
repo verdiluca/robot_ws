@@ -1,0 +1,35 @@
+[1.203s] Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[1.273s] Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/vp_one -- -j8 -l8
+[1.330s] Invoking command in '/home/vp/robot_ws/build/vp_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one
+[1.358s] -- Install configuration: ""
+[1.358s] -- Execute custom install script
+[1.359s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/config/empty.yaml
+[1.359s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/config/mapper_params_online_async.yaml
+[1.359s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/config/my_controller.yaml
+[1.359s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/config/view_bot.rviz
+[1.359s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/gazebo_control.xacro
+[1.359s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/inertial_macros.xacro
+[1.360s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/lidar.xacro
+[1.360s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot.urdf.xacro
+[1.360s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/description/robot_core.xacro
+[1.361s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_robot.launch.py
+[1.361s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/launch_sim.launch.py
+[1.361s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/real_vp.py
+[1.361s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/launch/rsp.launch.py
+[1.362s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/worlds/empty.world
+[1.362s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/package_run_dependencies/vp_one
+[1.362s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/parent_prefix_path/vp_one
+[1.362s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/ament_prefix_path.sh
+[1.362s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/ament_prefix_path.dsv
+[1.363s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/path.sh
+[1.363s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/environment/path.dsv
+[1.363s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.bash
+[1.363s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.sh
+[1.363s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.zsh
+[1.363s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/local_setup.dsv
+[1.364s] -- Symlinking: /home/vp/robot_ws/install/vp_one/share/vp_one/package.dsv
+[1.375s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/ament_index/resource_index/packages/vp_one
+[1.375s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/cmake/vp_oneConfig.cmake
+[1.376s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/cmake/vp_oneConfig-version.cmake
+[1.376s] -- Up-to-date symlink: /home/vp/robot_ws/install/vp_one/share/vp_one/package.xml
+[1.383s] Invoked command in '/home/vp/robot_ws/build/vp_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/vp_one

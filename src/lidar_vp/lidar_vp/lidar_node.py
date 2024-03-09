@@ -35,7 +35,6 @@ scd = 0.0
 sbs = 0.0
 sbc = 0.0
 sbd = 0.0
-chiave1 = 0
 
 Media_O = 0.0
 Media_E = 0.0
@@ -55,19 +54,62 @@ logica_sterzo_dx = 1
 logica_sterzo_sx = 1
 logica_sterzo_av = 1
 logica_arresto_proto = 1
+logica_sterzo_disincastro = 1
 
 #generali
-Stop = False
+chiave1 = 0
 
 motori_avviati = False
 Proto_fermo = False
 Proto_arrestato = False
+Sterzo_DX_finito = False
+Sterzo_SX_finito = False
 
 Azzeramento_completato = False
 
+#timers
+Timer_T1_avviato = False
+Timer_T1_concluso = False
 
-#---------------------------------------------------------------------------------------------------------------------------------------------------------#
-#INIZIO CLASSE
+Timer_T2_sterzo_iniziato = False
+Timer_T3_sterzo_iniziato = False
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-----------------------------------------------------------TIMER------------------------------------------------------------------------------------------------------#
+
+start_time = 0
+
+class timer:
+
+    t_avvio = time.time()
+    t_trascorso = 0
+
+    def __init__(self, preset=0):
+        self.preset = preset
+        self.t_trascorso = 0
+
+    def start(self):
+        self.t_avvio = time.time()
+
+    def elapsed(self):
+        self.t_trascorso = (time.time() - self.t_avvio)
+        if self.t_trascorso >= self.preset : 
+            return True
+        else :
+            return False
+        
+
+T1 = timer() # TIMER CONTROLLO SENSORI PARTENZA
+T2 = timer() # TIMER STERZO DX 135 GRADI
+T3 = timer() # TIMER STERZO SX 135 GRADI
+
+#define _takeTime(timer) timer = millis()
+#define _tempoTrascorso(timer) (millis()-timer)
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#---------------------------------------------------------INIZIO CLASSE------------------------------------------------------------------------------------------------#
+
 
 class LidarNode(Node):
 
@@ -75,7 +117,7 @@ class LidarNode(Node):
 
         super().__init__('driver')
 
-#-------------------------------------------------------------------------------------------------------------------#
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
         self.subscription = self.create_subscription(
             LaserScan, 'scan', self.listener_callback, QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT))
@@ -161,23 +203,18 @@ class LidarNode(Node):
         # timer_period10 = 0.139
         # self.timer10 = self.create_timer(timer_period10, self.Logica_Arresto_Proto)
       
-
 #---------------------------------------------------------------------------------------------------------------------------------------------------------#
-
+#----------------------------------------------------------------------RICHIAMO_VARIABILI-----------------------------------------------------------------#
+        
     def test_callback(self, msg):
 
         global test_1
         test_1 = msg.data
 
-
-
-
     def chiave_callback(self, msg):
 
         global chiave1
         chiave1 = msg.data
-
-
 
     def listener_callback(self, msg):
 
@@ -237,6 +274,7 @@ class LidarNode(Node):
         print("NORD OVEST:", no)
         print("OVEST:", o)
         print("proto:", logica_proto)
+        print("chiave:", chiave1)
         print("-------------------------------------------------")
 
         
@@ -274,6 +312,17 @@ class LidarNode(Node):
         global logica_arresto_proto
         global Proto_fermo
         global Proto_arrestato
+        global logica_sterzo_disincastro
+        global Timer_T1_avviato
+        global Timer_T1_concluso
+        global Timer_T2_sterzo_iniziato
+        global Timer_T3_sterzo_iniziato
+        global Sterzo_DX_finito
+        global Sterzo_SX_finito
+
+        T1.preset = 1
+        T2.preset = 2.5
+        T3.preset = 2.5
 
         Motori_avanti = Twist()
         Motori_destra = Twist()
@@ -288,35 +337,111 @@ class LidarNode(Node):
         #self.vel_pub.publish(Motori_avanti)
         # geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0))
         
-        #USCITE AZZERA VARIABILI
-        # if logica_azzera_variabili == 2:
+        # USCITE LOGICA AZZERA VARIABILI
+        if logica_azzera_variabili == 2:
             
-        #     logica_controllo_sensori_partenza = 1
-        #     logica_proto_avanti = 1
-        #     logica_sterzo_dx = 1
-        #     logica_sterzo_sx = 1
-        #     logica_sterzo_av = 1
-        #     logica_arresto_proto = 1
+            logica_controllo_sensori_partenza = 1
+            logica_proto_avanti = 1
+            logica_sterzo_dx = 1
+            logica_sterzo_sx = 1
+            logica_sterzo_av = 1
+            logica_arresto_proto = 1
+            logica_sterzo_disincastro = 1
 
-        #     Proto_fermo = False
-        #     motori_avviati = False
-        #     Proto_arrestato = False
+            # Proto_fermo = False
+            motori_avviati = False
+            # Proto_arrestato = False
+            Sterzo_SX_finito = False
+            Sterzo_SX_finito = False
 
-        #     Azzeramento_completato = True
+            Timer_T1_avviato = False
+            Timer_T1_concluso = False
+            Timer_T2_sterzo_iniziato = False
+
+            Azzeramento_completato = True
+
+        # USCITE LOGICA PCONTROLLO SENSORI PARTENZA
+        if logica_controllo_sensori_partenza == 2:
+            T1.start()
+            Timer_T1_avviato == True
+            Timer_T1_concluso == False
+
+        if logica_controllo_sensori_partenza == 3:
+            Timer_T1_avviato == False
+            if (T1.elapsed() == True) :
+                 Timer_T1_concluso == True
         
-        if logica_proto == 3:
-            self.vel_pub.publish(Motori_avanti)
+        # USCITE LOGICA PROTO AVANTI
+        if logica_proto_avanti == 1:
+            motori_avviati = False
 
-        if logica_proto == 4 or logica_proto == 8:
+        if logica_proto_avanti == 2:
+            self.vel_pub.publish(Motori_avanti)
+            motori_avviati = True
+
+        if logica_proto_avanti == 3:
+            motori_avviati = False
+
+        # USCITE LOGICA STERZO DX
+        if logica_sterzo_dx == 1:
+            Timer_T2_sterzo_iniziato = False
+            Sterzo_DX_finito == False
+
+        if logica_sterzo_dx == 2:
             self.vel_pub.publish(Motori_destra)
 
-        if logica_proto == 5 or logica_proto == 7:
+            if Timer_T2_sterzo_iniziato == False:
+                T2.start()
+                Timer_T2_sterzo_iniziato = True
+                Sterzo_DX_finito == False
+            
+            if Timer_T2_sterzo_iniziato == True:
+                if (T2.elapsed() == True):
+                    self.vel_pub.publish(Motori_fermo)
+                    Sterzo_DX_finito == True
+        
+        if logica_sterzo_dx == 3:
+            Timer_T2_sterzo_iniziato = False
+            Sterzo_DX_finito == False
+
+        # USCITE LOGICA STERZO SX
+        if logica_sterzo_sx == 1:
+            Timer_T3_sterzo_iniziato = False
+            Sterzo_SX_finito == False
+
+        if logica_sterzo_sx == 2:
             self.vel_pub.publish(Motori_sinistra)
 
-        if logica_proto == 6 or logica_proto == 1:
-            self.vel_pub.publish(Motori_fermo)
-
+            if Timer_T3_sterzo_iniziato == False:
+                T3.start()
+                Timer_T3_sterzo_iniziato = True
+                Sterzo_SX_finito == False
+            
+            if Timer_T3_sterzo_iniziato == True:
+                if (T3.elapsed() == True):
+                    self.vel_pub.publish(Motori_fermo)
+                    Sterzo_SX_finito == True
         
+        if logica_sterzo_sx == 3:
+            Timer_T3_sterzo_iniziato = False
+            Sterzo_SX_finito == False
+
+
+
+        # USCITE MOTORI
+        # if logica_proto == 4 and logica_proto_avanti == 2:
+        #     self.vel_pub.publish(Motori_avanti)
+
+        # if logica_proto == 4 or logica_proto == 8:
+        #     self.vel_pub.publish(Motori_destra)
+
+        # if logica_proto == 5 or logica_proto == 7:
+        #     self.vel_pub.publish(Motori_sinistra)
+
+        # if logica_proto == 6 or logica_proto == 1:
+        #     self.vel_pub.publish(Motori_fermo)
+
+
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
 #---------------------------------------------------------------------LOGICA_PROTO-----------------------------------------------------------------------------#
     def Logica_Proto(self):
@@ -327,6 +452,7 @@ class LidarNode(Node):
         global logica_sterzo_dx
         global logica_sterzo_sx
         global logica_arresto_proto
+        global logica_sterzo_disincastro
         global n
         global ne
         global e
@@ -345,45 +471,113 @@ class LidarNode(Node):
         global Media_O
         global Stop
         global chiave1
+        global callme
+        global start_time
+
+        #-----------------ESEMPIO_TIMER------------------#
+        # T1.preset = 3
+
+        # if logica_proto == 1 and chiave1 == 1:
+        #     #start_time = time.time()
+        #     T1.start()
+        #     logica_proto = 22 #era 2
 
 
+        # if logica_proto == 22:
+        #     if (T1.elapsed() == True) :
+        #         logica_proto = 33 #era 2
+
+        #------------------------------------------------#
+
+
+
+        #if logica_proto == 2 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55:
+        #    logica_proto = 3
+        #elif logica_proto == 2 and (n < 0.55 or ne < 0.55 or no < 0.55 or e < 0.55 or o < 0.55):
+        #    logica_proto = 1
+
+        #if logica_proto == 3 and no < 0.55 and o < 0.55 and no > 0 and o > 0:
+        #    logica_proto = 4
+        #elif logica_proto == 3 and (e < 0.55 or ne < 0.55) and ne > 0 and e > 0:
+        #    logica_proto = 5
+        #elif logica_proto == 3 and n < 0.55 and n > 0:
+        #    logica_proto = 6
+
+        #if logica_proto == 4 and no > 0.55 and o > 0.55 and no > 0 and o > 0:
+        #    logica_proto = 3
+
+        #if logica_proto == 5 and ne > 0.55 and e > 0.55 and ne > 0 and e > 0:
+        #    logica_proto = 3
+        
+        #if logica_proto == 6 and Media_O > Media_E:
+        #    logica_proto = 7
+        #elif logica_proto == 6 and Media_E > Media_O:
+        #    logica_proto = 8
+        
+        #if logica_proto == 7 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.5 and o > 0.55:
+        #    logica_proto = 3
+        
+        #if logica_proto == 8 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55:
+        #    logica_proto = 3
+
+        #if logica_proto > 1 and chiave1 == 0:
+        #    logica_proto = 1
+
+        #INIZIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+            
         if logica_proto == 1 and chiave1 == 1:
             logica_proto = 2
 
+        if logica_proto == 2 and logica_azzera_variabili == 1:
+            logica_proto = 3 
 
-        if logica_proto == 2 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55:
-            logica_proto = 3
-        elif logica_proto == 2 and (n < 0.55 or ne < 0.55 or no < 0.55 or e < 0.55 or o < 0.55):
-            logica_proto = 1
-
-        if logica_proto == 3 and no < 0.55 and o < 0.55 and no > 0 and o > 0:
+        if logica_proto == 3 and logica_controllo_sensori_partenza == 4:
             logica_proto = 4
-        elif logica_proto == 3 and (e < 0.55 or ne < 0.55) and ne > 0 and e > 0:
+
+        if logica_proto == 4 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55:
             logica_proto = 5
-        elif logica_proto == 3 and n < 0.55 and n > 0:
+        elif logica_proto == 4 and no < 0.55 and o < 0.55 and no > 0 and o > 0:
             logica_proto = 6
-
-        if logica_proto == 4 and no > 0.55 and o > 0.55 and no > 0 and o > 0:
-            logica_proto = 3
-
-        if logica_proto == 5 and ne > 0.55 and e > 0.55 and ne > 0 and e > 0:
-            logica_proto = 3
-        
-        if logica_proto == 6 and Media_O > Media_E:
+        elif logica_proto == 4 and n < 0.55 and n > 0:
             logica_proto = 7
-        elif logica_proto == 6 and Media_E > Media_O:
+        elif logica_proto == 4 and chiave1 == 0:
             logica_proto = 8
-        
-        if logica_proto == 7 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.5 and o > 0.55:
-            logica_proto = 3
-        
-        if logica_proto == 8 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55:
-            logica_proto = 3
 
-        if logica_proto > 1 and chiave1 == 0:
+        if logica_proto == 5 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55 and logica_sterzo_dx == 3:
+            logica_proto = 4
+        elif logica_proto == 5 and n < 0.55 and logica_sterzo_dx == 3:
+            logica_proto = 7
+        elif logica_proto == 5 and logica_sterzo_dx == 3 and (ne < 0.55 or e < 0.55):
+            logica_proto = 9
+        elif logica_proto == 5 and chiave1 == 0:
+            logica_proto = 8
+
+        if logica_proto == 6 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55 and logica_sterzo_dx == 3:
+            logica_proto = 4
+        elif logica_proto == 6 and n < 0.55 and logica_sterzo_sx == 3:
+            logica_proto = 7
+        elif logica_proto == 6 and logica_sterzo_sx == 3 and (no < 0.55 or o < 0.55):
+            logica_proto = 9
+        elif logica_proto == 6 and chiave1 == 0:
+            logica_proto = 8
+
+        if logica_proto == 7 and Media_E > Media_O:
+            logica_proto = 5
+        elif logica_proto == 7 and Media_O > Media_E:
+            logica_proto = 6
+        elif logica_proto == 7 and chiave1 == 0:
+            logica_proto = 8
+
+        if logica_proto == 8 and logica_arresto_proto == 3:
             logica_proto = 1
 
-        
+        if logica_proto == 9 and logica_sterzo_disincastro == 4 and n > 0.55 and ne > 0.55 and no > 0.55 and e > 0.55 and o > 0.55:
+            logica_proto == 4
+        elif logica_proto == 9 and chiave1 == 0:
+            logica_proto == 8
+
+        if logica_proto > 1 and chiave1 == 0: #ARRESTO GENERALE PER SICUREZZA NEL CASO IN QUALCHE FASE NON PARTISSE
+            logica_proto = 8
 
         # if logica_proto == 1 and Chiave == True:
         #     logica_proto = 2
@@ -449,153 +643,155 @@ class LidarNode(Node):
 # #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
 # #---------------------------------------------------------------------LOGICA_AZZERA_VARIABILI------------------------------------------------------------------#
 
-#     def Logica_Azzera_Variabili(self):
+    def Logica_Azzera_Variabili(self):
         
-#         global logica_proto
-#         global logica_azzera_variabili
-#         global Azzeramento_completato
+        global logica_proto
+        global logica_azzera_variabili
+        global Azzeramento_completato
 
-#         if logica_azzera_variabili == 1 and logica_proto == 2:
-#             logica_azzera_variabili = 2
+        if logica_azzera_variabili == 1 and logica_proto == 2:
+            logica_azzera_variabili = 2
 
-#         if logica_azzera_variabili == 2 and Azzeramento_completato == True:
-#             logica_azzera_variabili = 3
+        if logica_azzera_variabili == 2 and Azzeramento_completato == True:
+            logica_azzera_variabili = 3
         
-#         if logica_azzera_variabili == 3 and logica_proto == 3:
-#             Azzeramento_completato = False
-#             logica_azzera_variabili = 1
+        if logica_azzera_variabili == 3 and logica_proto == 3:
+            Azzeramento_completato = False
+            logica_azzera_variabili = 1
 
-# #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# #-----------------------------------------------------------LOGICA_CONTROLLO_SENSORI_PARTENZA------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-----------------------------------------------------------LOGICA_CONTROLLO_SENSORI_PARTENZA------------------------------------------------------------------#
 
-#     def Logica_Controllo_Sensori_Partenza(self):
+    def Logica_Controllo_Sensori_Partenza(self):
 
-#         global logica_proto
-#         global logica_controllo_sensori_partenza
-#         global Azzeramento_completato
-#         global n
-#         global ne
-#         global e
-#         global no
-#         global o
-#         global sas
-#         global scs
-#         global sbs
-#         global sac
-#         global scc
-#         global sbc
-#         global sad
-#         global scd
-#         global sbd
+        global logica_proto
+        global logica_controllo_sensori_partenza
+        global Azzeramento_completato
+        global n
+        global ne
+        global e
+        global no
+        global o
+        global sas
+        global scs
+        global sbs
+        global sac
+        global scc
+        global sbc
+        global sad
+        global scd
+        global sbd
+        global Timer_T1_avviato
+        global Timer_T1_concluso
 
-#         if logica_controllo_sensori_partenza == 1 and logica_proto == 3:
-#             logica_controllo_sensori_partenza = 2
+        if logica_controllo_sensori_partenza == 1 and logica_proto == 3:
+            logica_controllo_sensori_partenza = 2
 
-#         if logica_controllo_sensori_partenza == 2 and (n < 0.35 or no < 0.35 or e < 0.35 or ne < 0.35) and (n > 0 and ne > 0 and no > 0 and e > 0):
-            
-#             logica_controllo_sensori_partenza = 3
+        if logica_controllo_sensori_partenza == 2 and (n < 0.35 or no < 0.35 or ne < 0.35 or e < 0.35 or o < 0.35) and (n > 0 and ne > 0 and no > 0 and e > 0 and o > 0) and Timer_T1_avviato == True:
+            logica_controllo_sensori_partenza = 3
+        elif logica_controllo_sensori_partenza == 2 and n > 0.35 and ne > 0.35 and no > 0.35 and e > 0.35 and o < 0.35:
+            logica_controllo_sensori_partenza = 4
 
-#         elif logica_controllo_sensori_partenza == 2 and n > 0.35 and ne > 0.35 and no > 0.35 and e > 0.35:
-#             logica_controllo_sensori_partenza = 4
+        if logica_controllo_sensori_partenza == 3 and Timer_T1_concluso == True:
+            logica_controllo_sensori_partenza = 2
 
-#         if logica_controllo_sensori_partenza == 3:
-#             logica_controllo_sensori_partenza = 2
+        if logica_controllo_sensori_partenza == 4 and logica_proto == 4:
+            logica_controllo_sensori_partenza == 1
 
-#         if logica_controllo_sensori_partenza == 4 and logica_proto == 4:
-#             logica_controllo_sensori_partenza == 1
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_PROTO_AVANTI------------------------------------------------------------------#
 
-# #--------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# #-------------------------------------------------------------------------LOGICA_PROTO_AVANTI------------------------------------------------------------------#
+    def Logica_Proto_avanti(self):
 
-#     def Logica_Proto_avanti(self):
+        global logica_proto
+        global logica_proto_avanti
+        global motori_avviati
 
-#             global logica_proto
-#             global logica_proto_avanti
-#             global motori_avviati
+        if logica_proto_avanti == 1 and logica_proto == 4:
+            logica_proto_avanti = 2
 
-#             if logica_proto_avanti == 1 and logica_proto == 4:
-#                 logica_proto_avanti = 2
+        if logica_proto_avanti == 2 and motori_avviati == True:
+            logica_proto_avanti = 3
 
-#             if logica_proto_avanti == 2 and motori_avviati == True:
-#                 logica_proto_avanti = 3
+        if logica_proto_avanti == 3 and (logica_proto == 5 or logica_proto == 6 or logica_proto == 7 or logica_proto == 8):
+            motori_avviati == False 
+            logica_proto_avanti = 1
 
-#             if logica_proto_avanti == 3 and (logica_proto == 5 or logica_proto == 6 or logica_proto == 7 or logica_proto == 8):
-#                 motori_avviati == False 
-#                 logica_proto_avanti = 1
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_STERZO_DX----------------------------------------------------------------------#
 
-# #---------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# #-------------------------------------------------------------------------LOGICA_STERZO_DX----------------------------------------------------------------------#
+    def Logica_Sterzo_DX(self):
 
-#     def Logica_Sterzo_DX(self):
+        global logica_proto
+        global logica_sterzo_dx
+        global logica_arresto_proto
+        global logica_sterzo_disincastro
+        global n
+        global ne
+        global e
+        global no
+        global o
+        global sas
+        global scs
+        global sbs
+        global sac
+        global scc
+        global sbc
+        global sad
+        global scd
+        global sbd
+        global Sterzo_DX_finito
 
-#             global logica_proto
-#             global logica_sterzo_dx
-#             global logica_arresto_proto
-#             global n
-#             global ne
-#             global e
-#             global no
-#             global o
-#             global sas
-#             global scs
-#             global sbs
-#             global sac
-#             global scc
-#             global sbc
-#             global sad
-#             global scd
-#             global sbd
+        if logica_sterzo_dx == 1 and logica_proto == 5:
+            logica_sterzo_dx = 2
 
-#             if logica_sterzo_dx == 1 and logica_proto == 5:
-#                 logica_sterzo_dx = 2
+        if logica_sterzo_dx == 2 and no > 0.55 and o > 0.55 and Sterzo_DX_finito == True:
+            logica_sterzo_dx = 3
+        elif logica_sterzo_dx == 2 and (no < 0.55 or o < 0.55) and Sterzo_DX_finito == True:
+            logica_sterzo_dx == 1
 
-#             if logica_sterzo_dx == 2 and (no > 0.35) and no > 0:
-#                 logica_sterzo_dx = 3
+        if logica_sterzo_dx == 3 and (logica_proto == 4 or (logica_proto == 9 and logica_sterzo_disincastro == 2) or logica_proto == 8):
+            logica_sterzo_dx = 1
 
-#             elif logica_sterzo_dx == 2 and logica_proto == 8 and logica_arresto_proto == 2:
-#                 logica_sterzo_dx == 1
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_STERZO_SX----------------------------------------------------------------------#
 
-#             if logica_sterzo_dx == 3 and (logica_proto == 4 or logica_proto == 7 or logica_proto == 8):
-#                 logica_sterzo_dx = 1
+    def Logica_Sterzo_SX(self):
 
-# #---------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# #-------------------------------------------------------------------------LOGICA_STERZO_SX----------------------------------------------------------------------#
+        global logica_proto
+        global logica_sterzo_sx
+        global logica_arresto_proto
+        global logica_sterzo_disincastro
+        global n
+        global ne
+        global e
+        global no
+        global o
+        global sas
+        global scs
+        global sbs
+        global sac
+        global scc
+        global sbc
+        global sad
+        global scd
+        global sbd
+        global Sterzo_SX_finito
 
-#     def Logica_Sterzo_SX(self):
+        if logica_sterzo_sx == 1 and logica_proto == 6:
+            logica_sterzo_sx = 2
 
-#             global logica_proto
-#             global logica_sterzo_sx
-#             global logica_arresto_proto
-#             global n
-#             global ne
-#             global e
-#             global no
-#             global o
-#             global sas
-#             global scs
-#             global sbs
-#             global sac
-#             global scc
-#             global sbc
-#             global sad
-#             global scd
-#             global sbd
+        if logica_sterzo_sx == 2 and e > 0.55 and ne > 0.55 and  Sterzo_SX_finito == True:
+            logica_sterzo_sx = 3
+        elif logica_sterzo_sx == 2 and (ne < 0.55 or e < 0.55) and Sterzo_SX_finito == True:
+            logica_sterzo_sx == 1
 
-#             if logica_sterzo_sx == 1 and logica_proto == 6:
-#                 logica_sterzo_sx = 2
-
-#             if logica_sterzo_sx == 2 and (e > 0.35 and ne > 0.35) and ne > 0 and e > 0:
-#                 logica_sterzo_sx = 3
-
-#             elif logica_sterzo_sx == 2 and logica_proto == 8 and logica_arresto_proto == 2:
-#                 logica_sterzo_sx == 1
-
-#             if logica_sterzo_sx == 3 and (logica_proto == 4 or logica_proto == 7 or logica_proto == 8):
-#                 logica_sterzo_sx = 1
+        if logica_sterzo_sx == 3 and (logica_proto == 4 or (logica_proto == 9 and logica_sterzo_disincastro == 3) or logica_proto == 8):
+            logica_sterzo_sx = 1
 
 
-# #---------------------------------------------------------------------------------------------------------------------------------------------------------------#
-# #-------------------------------------------------------------------------LOGICA_STERZO_AV----------------------------------------------------------------------#
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------------------------LOGICA_STERZO_AV----------------------------------------------------------------------#
 
 #     def Logica_Sterzo_AV(self):
 
