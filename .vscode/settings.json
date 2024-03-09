@@ -11,6 +11,6 @@
         "vector": "cpp"
     },
     "git.ignoreLimitWarning": true,
-    "cmake.sourceDirectory": "/home/vp/robot_ws/src/vp_one",
+    "cmake.sourceDirectory": "/Users/lucaverdi/Documents/GitHub/robot_ws/src/vp_one",
     "cmake.configureOnOpen": false
 }
