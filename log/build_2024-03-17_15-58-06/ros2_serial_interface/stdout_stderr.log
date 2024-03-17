@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing ros2_serial_interface.egg-info/PKG-INFO
+writing dependency_links to ros2_serial_interface.egg-info/dependency_links.txt
+writing entry points to ros2_serial_interface.egg-info/entry_points.txt
+writing requirements to ros2_serial_interface.egg-info/requires.txt
+writing top-level names to ros2_serial_interface.egg-info/top_level.txt
+reading manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+writing manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+Installing predef_timed_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing pynput_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing terminal_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing virtual_serial_client script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing virtual_serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing virtual_serial_setup script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+
+Installed /home/vp/robot_ws/build/ros2_serial_interface
+running symlink_data

@@ -1,0 +1,17 @@
+[2.029s] Invoking command in '/home/vp/robot_ws/build/odrive_driver': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build --no-deps symlink_data
+[2.422s] running develop
+[2.654s] running egg_info
+[2.654s] writing odrive_driver.egg-info/PKG-INFO
+[2.654s] writing dependency_links to odrive_driver.egg-info/dependency_links.txt
+[2.654s] writing entry points to odrive_driver.egg-info/entry_points.txt
+[2.655s] writing requirements to odrive_driver.egg-info/requires.txt
+[2.655s] writing top-level names to odrive_driver.egg-info/top_level.txt
+[2.708s] reading manifest file 'odrive_driver.egg-info/SOURCES.txt'
+[2.709s] writing manifest file 'odrive_driver.egg-info/SOURCES.txt'
+[2.755s] running build_ext
+[2.755s] Creating /home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages/odrive-driver.egg-link (link to .)
+[2.756s] Installing odrive_node script to /home/vp/robot_ws/install/odrive_driver/lib/odrive_driver
+[2.757s] 
+[2.757s] Installed /home/vp/robot_ws/build/odrive_driver
+[2.757s] running symlink_data
+[2.795s] Invoked command in '/home/vp/robot_ws/build/odrive_driver' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odrive_driver/prefix_override:/home/vp/robot_ws/install/odrive_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vp/robot_ws/build/odrive_driver/build --no-deps symlink_data

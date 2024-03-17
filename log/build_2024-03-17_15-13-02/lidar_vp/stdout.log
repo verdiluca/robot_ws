@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing lidar_vp.egg-info/PKG-INFO
+writing dependency_links to lidar_vp.egg-info/dependency_links.txt
+writing entry points to lidar_vp.egg-info/entry_points.txt
+writing requirements to lidar_vp.egg-info/requires.txt
+writing top-level names to lidar_vp.egg-info/top_level.txt
+reading manifest file 'lidar_vp.egg-info/SOURCES.txt'
+writing manifest file 'lidar_vp.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar-vp.egg-link (link to .)
+Installing lidar_node script to /home/vp/robot_ws/install/lidar_vp/lib/lidar_vp
+
+Installed /home/vp/robot_ws/build/lidar_vp
+running symlink_data

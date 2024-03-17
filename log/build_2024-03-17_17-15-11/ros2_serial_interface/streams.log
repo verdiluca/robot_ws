@@ -1,0 +1,23 @@
+[1.783s] Invoking command in '/home/vp/robot_ws/build/ros2_serial_interface': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vp/robot_ws/build/ros2_serial_interface/build --no-deps symlink_data
+[2.137s] running develop
+[2.343s] running egg_info
+[2.344s] writing ros2_serial_interface.egg-info/PKG-INFO
+[2.345s] writing dependency_links to ros2_serial_interface.egg-info/dependency_links.txt
+[2.345s] writing entry points to ros2_serial_interface.egg-info/entry_points.txt
+[2.345s] writing requirements to ros2_serial_interface.egg-info/requires.txt
+[2.345s] writing top-level names to ros2_serial_interface.egg-info/top_level.txt
+[2.390s] reading manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[2.391s] writing manifest file 'ros2_serial_interface.egg-info/SOURCES.txt'
+[2.441s] running build_ext
+[2.441s] Creating /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+[2.443s] Installing predef_timed_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.443s] Installing pynput_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.443s] Installing serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.444s] Installing terminal_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.444s] Installing virtual_serial_client script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.444s] Installing virtual_serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.445s] Installing virtual_serial_setup script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[2.445s] 
+[2.445s] Installed /home/vp/robot_ws/build/ros2_serial_interface
+[2.445s] running symlink_data
+[2.493s] Invoked command in '/home/vp/robot_ws/build/ros2_serial_interface' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vp/robot_ws/build/ros2_serial_interface/build --no-deps symlink_data

@@ -1,0 +1,17 @@
+[2.000s] Invoking command in '/home/vp/robot_ws/build/lidar_vp': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vp/robot_ws/build/lidar_vp/build --no-deps symlink_data
+[2.362s] running develop
+[2.568s] running egg_info
+[2.569s] writing lidar_vp.egg-info/PKG-INFO
+[2.569s] writing dependency_links to lidar_vp.egg-info/dependency_links.txt
+[2.569s] writing entry points to lidar_vp.egg-info/entry_points.txt
+[2.569s] writing requirements to lidar_vp.egg-info/requires.txt
+[2.570s] writing top-level names to lidar_vp.egg-info/top_level.txt
+[2.613s] reading manifest file 'lidar_vp.egg-info/SOURCES.txt'
+[2.614s] writing manifest file 'lidar_vp.egg-info/SOURCES.txt'
+[2.666s] running build_ext
+[2.667s] Creating /home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar-vp.egg-link (link to .)
+[2.668s] Installing lidar_node script to /home/vp/robot_ws/install/lidar_vp/lib/lidar_vp
+[2.668s] 
+[2.669s] Installed /home/vp/robot_ws/build/lidar_vp
+[2.669s] running symlink_data
+[2.702s] Invoked command in '/home/vp/robot_ws/build/lidar_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/vp/robot_ws/build/lidar_vp/build --no-deps symlink_data
