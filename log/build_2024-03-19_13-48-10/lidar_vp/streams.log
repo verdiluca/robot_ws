@@ -1,0 +1,21 @@
+[2.392s] Invoking command in '/home/vp/robot_ws/src/lidar_vp': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_vp build --build-base /home/vp/robot_ws/build/lidar_vp/build install --record /home/vp/robot_ws/build/lidar_vp/install.log --single-version-externally-managed install_data
+[2.885s] running egg_info
+[2.886s] writing ../../build/lidar_vp/lidar_vp.egg-info/PKG-INFO
+[2.886s] writing dependency_links to ../../build/lidar_vp/lidar_vp.egg-info/dependency_links.txt
+[2.887s] writing entry points to ../../build/lidar_vp/lidar_vp.egg-info/entry_points.txt
+[2.887s] writing requirements to ../../build/lidar_vp/lidar_vp.egg-info/requires.txt
+[2.887s] writing top-level names to ../../build/lidar_vp/lidar_vp.egg-info/top_level.txt
+[2.969s] reading manifest file '../../build/lidar_vp/lidar_vp.egg-info/SOURCES.txt'
+[2.971s] writing manifest file '../../build/lidar_vp/lidar_vp.egg-info/SOURCES.txt'
+[2.971s] running build
+[2.971s] running build_py
+[2.972s] running install
+[2.973s] running install_lib
+[2.976s] running install_data
+[2.977s] running install_egg_info
+[2.980s] removing '/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar_vp-0.0.0-py3.8.egg-info' (and everything under it)
+[2.981s] Copying ../../build/lidar_vp/lidar_vp.egg-info to /home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages/lidar_vp-0.0.0-py3.8.egg-info
+[2.983s] running install_scripts
+[3.022s] Installing lidar_node script to /home/vp/robot_ws/install/lidar_vp/lib/lidar_vp
+[3.022s] writing list of installed files to '/home/vp/robot_ws/build/lidar_vp/install.log'
+[3.061s] Invoked command in '/home/vp/robot_ws/src/lidar_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/lidar_vp/prefix_override:/home/vp/robot_ws/install/lidar_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_vp build --build-base /home/vp/robot_ws/build/lidar_vp/build install --record /home/vp/robot_ws/build/lidar_vp/install.log --single-version-externally-managed install_data

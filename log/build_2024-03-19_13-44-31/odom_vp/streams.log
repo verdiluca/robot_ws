@@ -1,0 +1,31 @@
+[2.423s] Invoking command in '/home/vp/robot_ws/build/odom_vp': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odom_vp/build
+[3.057s] running develop
+[3.392s] Removing /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom-vp.egg-link (link to .)
+[3.435s] Invoked command in '/home/vp/robot_ws/build/odom_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/odom_vp/build
+[3.436s] Invoking command in '/home/vp/robot_ws/src/odom_vp': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odom_vp build --build-base /home/vp/robot_ws/build/odom_vp/build install --record /home/vp/robot_ws/build/odom_vp/install.log --single-version-externally-managed install_data --force
+[3.952s] running egg_info
+[3.954s] writing ../../build/odom_vp/odom_vp.egg-info/PKG-INFO
+[3.954s] writing dependency_links to ../../build/odom_vp/odom_vp.egg-info/dependency_links.txt
+[3.955s] writing entry points to ../../build/odom_vp/odom_vp.egg-info/entry_points.txt
+[3.955s] writing requirements to ../../build/odom_vp/odom_vp.egg-info/requires.txt
+[3.955s] writing top-level names to ../../build/odom_vp/odom_vp.egg-info/top_level.txt
+[4.049s] reading manifest file '../../build/odom_vp/odom_vp.egg-info/SOURCES.txt'
+[4.051s] writing manifest file '../../build/odom_vp/odom_vp.egg-info/SOURCES.txt'
+[4.052s] running build
+[4.052s] running build_py
+[4.054s] running install
+[4.056s] running install_lib
+[4.059s] creating /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp
+[4.059s] copying /home/vp/robot_ws/build/odom_vp/build/lib/odom_vp/odom_node.py -> /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp
+[4.061s] copying /home/vp/robot_ws/build/odom_vp/build/lib/odom_vp/__init__.py -> /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp
+[4.063s] byte-compiling /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp/odom_node.py to odom_node.cpython-38.pyc
+[4.068s] byte-compiling /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp/__init__.py to __init__.cpython-38.pyc
+[4.068s] running install_data
+[4.069s] copying resource/odom_vp -> /home/vp/robot_ws/install/odom_vp/share/ament_index/resource_index/packages
+[4.069s] copying package.xml -> /home/vp/robot_ws/install/odom_vp/share/odom_vp
+[4.069s] running install_egg_info
+[4.072s] Copying ../../build/odom_vp/odom_vp.egg-info to /home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages/odom_vp-0.0.0-py3.8.egg-info
+[4.074s] running install_scripts
+[4.114s] Installing odom_node script to /home/vp/robot_ws/install/odom_vp/lib/odom_vp
+[4.116s] writing list of installed files to '/home/vp/robot_ws/build/odom_vp/install.log'
+[4.163s] Invoked command in '/home/vp/robot_ws/src/odom_vp' returned '0': PYTHONPATH=/home/vp/robot_ws/build/odom_vp/prefix_override:/home/vp/robot_ws/install/odom_vp/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odom_vp build --build-base /home/vp/robot_ws/build/odom_vp/build install --record /home/vp/robot_ws/build/odom_vp/install.log --single-version-externally-managed install_data --force

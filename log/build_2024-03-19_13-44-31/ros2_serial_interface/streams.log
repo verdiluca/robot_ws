@@ -1,0 +1,50 @@
+[2.597s] Invoking command in '/home/vp/robot_ws/build/ros2_serial_interface': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/ros2_serial_interface/build
+[3.242s] running develop
+[3.605s] Removing /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+[3.651s] Invoked command in '/home/vp/robot_ws/build/ros2_serial_interface' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/vp/robot_ws/build/ros2_serial_interface/build
+[3.653s] Invoking command in '/home/vp/robot_ws/src/ros2_serial_interface': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_serial_interface build --build-base /home/vp/robot_ws/build/ros2_serial_interface/build install --record /home/vp/robot_ws/build/ros2_serial_interface/install.log --install-scripts $base/lib/ros2_serial_interface --single-version-externally-managed install_data --force
+[4.234s] running egg_info
+[4.235s] writing ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/PKG-INFO
+[4.235s] writing dependency_links to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/dependency_links.txt
+[4.236s] writing entry points to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/entry_points.txt
+[4.236s] writing requirements to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/requires.txt
+[4.236s] writing top-level names to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/top_level.txt
+[4.303s] reading manifest file '../../build/ros2_serial_interface/ros2_serial_interface.egg-info/SOURCES.txt'
+[4.305s] writing manifest file '../../build/ros2_serial_interface/ros2_serial_interface.egg-info/SOURCES.txt'
+[4.305s] running build
+[4.305s] running build_py
+[4.309s] running install
+[4.309s] running install_lib
+[4.311s] creating /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.311s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/virtual_serial_setup.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.312s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/virtual_serial_server.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.312s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/pynput_key_pub.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.312s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/serial_server.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.313s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/__init__.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.313s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/predef_timed_pub.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.313s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/virtual_serial_client.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.314s] copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/terminal_key_pub.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+[4.314s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/virtual_serial_setup.py to virtual_serial_setup.cpython-38.pyc
+[4.318s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/virtual_serial_server.py to virtual_serial_server.cpython-38.pyc
+[4.319s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/pynput_key_pub.py to pynput_key_pub.cpython-38.pyc
+[4.319s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/serial_server.py to serial_server.cpython-38.pyc
+[4.321s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/__init__.py to __init__.cpython-38.pyc
+[4.323s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/predef_timed_pub.py to predef_timed_pub.cpython-38.pyc
+[4.324s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/virtual_serial_client.py to virtual_serial_client.cpython-38.pyc
+[4.325s] byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/terminal_key_pub.py to terminal_key_pub.cpython-38.pyc
+[4.326s] running install_data
+[4.326s] copying resource/ros2_serial_interface -> /home/vp/robot_ws/install/ros2_serial_interface/share/ament_index/resource_index/packages
+[4.326s] copying package.xml -> /home/vp/robot_ws/install/ros2_serial_interface/share/ros2_serial_interface
+[4.327s] copying launch/serial_server_launch.py -> /home/vp/robot_ws/install/ros2_serial_interface/share/ros2_serial_interface
+[4.327s] running install_egg_info
+[4.328s] Copying ../../build/ros2_serial_interface/ros2_serial_interface.egg-info to /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface-0.0.0-py3.8.egg-info
+[4.330s] running install_scripts
+[4.359s] Installing predef_timed_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[4.359s] Installing pynput_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[4.360s] Installing serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[4.360s] Installing terminal_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[4.360s] Installing virtual_serial_client script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[4.360s] Installing virtual_serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[4.361s] Installing virtual_serial_setup script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[4.361s] writing list of installed files to '/home/vp/robot_ws/build/ros2_serial_interface/install.log'
+[4.390s] Invoked command in '/home/vp/robot_ws/src/ros2_serial_interface' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_serial_interface build --build-base /home/vp/robot_ws/build/ros2_serial_interface/build install --record /home/vp/robot_ws/build/ros2_serial_interface/install.log --install-scripts $base/lib/ros2_serial_interface --single-version-externally-managed install_data --force

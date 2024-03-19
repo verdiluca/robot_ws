@@ -1,0 +1,27 @@
+[2.464s] Invoking command in '/home/vp/robot_ws/src/ros2_serial_interface': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_serial_interface build --build-base /home/vp/robot_ws/build/ros2_serial_interface/build install --record /home/vp/robot_ws/build/ros2_serial_interface/install.log --install-scripts $base/lib/ros2_serial_interface --single-version-externally-managed install_data
+[2.920s] running egg_info
+[2.921s] writing ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/PKG-INFO
+[2.921s] writing dependency_links to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/dependency_links.txt
+[2.922s] writing entry points to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/entry_points.txt
+[2.922s] writing requirements to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/requires.txt
+[2.922s] writing top-level names to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/top_level.txt
+[2.996s] reading manifest file '../../build/ros2_serial_interface/ros2_serial_interface.egg-info/SOURCES.txt'
+[2.998s] writing manifest file '../../build/ros2_serial_interface/ros2_serial_interface.egg-info/SOURCES.txt'
+[2.998s] running build
+[2.999s] running build_py
+[3.000s] running install
+[3.001s] running install_lib
+[3.005s] running install_data
+[3.005s] running install_egg_info
+[3.008s] removing '/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface-0.0.0-py3.8.egg-info' (and everything under it)
+[3.009s] Copying ../../build/ros2_serial_interface/ros2_serial_interface.egg-info to /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface-0.0.0-py3.8.egg-info
+[3.012s] running install_scripts
+[3.045s] Installing predef_timed_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[3.045s] Installing pynput_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[3.045s] Installing serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[3.046s] Installing terminal_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[3.046s] Installing virtual_serial_client script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[3.046s] Installing virtual_serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[3.046s] Installing virtual_serial_setup script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+[3.046s] writing list of installed files to '/home/vp/robot_ws/build/ros2_serial_interface/install.log'
+[3.088s] Invoked command in '/home/vp/robot_ws/src/ros2_serial_interface' returned '0': PYTHONPATH=/home/vp/robot_ws/build/ros2_serial_interface/prefix_override:/home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ros2_serial_interface build --build-base /home/vp/robot_ws/build/ros2_serial_interface/build install --record /home/vp/robot_ws/build/ros2_serial_interface/install.log --install-scripts $base/lib/ros2_serial_interface --single-version-externally-managed install_data

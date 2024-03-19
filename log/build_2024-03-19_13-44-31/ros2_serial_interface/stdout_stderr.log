@@ -1,0 +1,46 @@
+running develop
+Removing /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2-serial-interface.egg-link (link to .)
+running egg_info
+writing ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/requires.txt
+writing top-level names to ../../build/ros2_serial_interface/ros2_serial_interface.egg-info/top_level.txt
+reading manifest file '../../build/ros2_serial_interface/ros2_serial_interface.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2_serial_interface/ros2_serial_interface.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/virtual_serial_setup.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/virtual_serial_server.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/pynput_key_pub.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/serial_server.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/__init__.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/predef_timed_pub.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/virtual_serial_client.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+copying /home/vp/robot_ws/build/ros2_serial_interface/build/lib/ros2_serial_interface/terminal_key_pub.py -> /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/virtual_serial_setup.py to virtual_serial_setup.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/virtual_serial_server.py to virtual_serial_server.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/pynput_key_pub.py to pynput_key_pub.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/serial_server.py to serial_server.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/predef_timed_pub.py to predef_timed_pub.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/virtual_serial_client.py to virtual_serial_client.cpython-38.pyc
+byte-compiling /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface/terminal_key_pub.py to terminal_key_pub.cpython-38.pyc
+running install_data
+copying resource/ros2_serial_interface -> /home/vp/robot_ws/install/ros2_serial_interface/share/ament_index/resource_index/packages
+copying package.xml -> /home/vp/robot_ws/install/ros2_serial_interface/share/ros2_serial_interface
+copying launch/serial_server_launch.py -> /home/vp/robot_ws/install/ros2_serial_interface/share/ros2_serial_interface
+running install_egg_info
+Copying ../../build/ros2_serial_interface/ros2_serial_interface.egg-info to /home/vp/robot_ws/install/ros2_serial_interface/lib/python3.8/site-packages/ros2_serial_interface-0.0.0-py3.8.egg-info
+running install_scripts
+Installing predef_timed_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing pynput_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing terminal_key_pub script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing virtual_serial_client script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing virtual_serial_server script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+Installing virtual_serial_setup script to /home/vp/robot_ws/install/ros2_serial_interface/lib/ros2_serial_interface
+writing list of installed files to '/home/vp/robot_ws/build/ros2_serial_interface/install.log'

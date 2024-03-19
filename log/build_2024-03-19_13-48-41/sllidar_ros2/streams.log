@@ -1,0 +1,68 @@
+[1.396s] Invoking command in '/home/vp/robot_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/sllidar_ros2
+[1.424s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.486s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.955s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.974s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.085s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.095s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.375s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.514s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.519s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.931s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.277s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[3.474s] -- Configuring done
+[3.515s] -- Generating done
+[3.520s] -- Build files have been written to: /home/vp/robot_ws/build/sllidar_ros2
+[3.545s] Invoked command in '/home/vp/robot_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake /home/vp/robot_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vp/robot_ws/install/sllidar_ros2
+[3.547s] Invoking command in '/home/vp/robot_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/sllidar_ros2 -- -j8 -l8
+[3.760s] [ 90%] Built target sllidar_node
+[3.777s] [100%] Built target sllidar_client
+[3.814s] Invoked command in '/home/vp/robot_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --build /home/vp/robot_ws/build/sllidar_ros2 -- -j8 -l8
+[3.937s] Invoking command in '/home/vp/robot_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/sllidar_ros2
+[3.951s] -- Install configuration: ""
+[3.952s] -- Execute custom install script
+[3.954s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[3.954s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py
+[3.954s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py
+[3.954s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py
+[3.955s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py
+[3.955s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py
+[3.956s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py
+[3.957s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py
+[3.957s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py
+[3.957s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py
+[3.957s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py
+[3.958s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py
+[3.958s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py
+[3.958s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py
+[3.958s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py
+[3.958s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py
+[3.959s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py
+[3.960s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py
+[3.960s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py
+[3.960s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py
+[3.960s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py
+[3.961s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py
+[3.961s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py
+[3.961s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py
+[3.961s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[3.961s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[3.962s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[3.962s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[3.963s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[3.963s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[3.964s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[3.966s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[3.966s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[3.968s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[3.968s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[3.969s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[3.969s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[3.969s] -- Symlinking: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[3.981s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[3.982s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.982s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.983s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[3.983s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[3.984s] -- Up-to-date symlink: /home/vp/robot_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[3.989s] Invoked command in '/home/vp/robot_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vp/robot_ws/install/ros2_serial_interface:/home/vp/robot_ws/install/odrive_driver:/home/vp/robot_ws/install/odom_vp:/home/vp/robot_ws/install/lidar_vp:/home/vp/aros2/install/aros2duino:/opt/ros/foxy /usr/bin/cmake --install /home/vp/robot_ws/build/sllidar_ros2
